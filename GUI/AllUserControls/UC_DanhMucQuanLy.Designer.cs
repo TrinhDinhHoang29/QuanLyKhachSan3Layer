@@ -31,16 +31,16 @@ namespace GUI.AllUserControls
         {
             this.Panel_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.panel_QuanLyHoaDon = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_QuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
             this.panel_QuanLyTienIch = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_QuanLyTienIch = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_QuanLyNhanVien.SuspendLayout();
             this.Panel_QuanLyKhachHang.SuspendLayout();
             this.panel_QuanLyHoaDon.SuspendLayout();
@@ -67,6 +67,22 @@ namespace GUI.AllUserControls
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản lý nhân viên";
             // 
+            // btn_QuanLyNhanVien
+            // 
+            this.btn_QuanLyNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
+            this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(151, 122);
+            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(13, 14);
+            this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
+            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(122, 98);
+            this.btn_QuanLyNhanVien.TabIndex = 0;
+            // 
             // Panel_QuanLyKhachHang
             // 
             this.Panel_QuanLyKhachHang.BorderColor = System.Drawing.Color.Black;
@@ -87,6 +103,23 @@ namespace GUI.AllUserControls
             this.label2.TabIndex = 1;
             this.label2.Text = "Quản lý khách hàng";
             // 
+            // btn_QuanLyKhachHang
+            // 
+            this.btn_QuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
+            this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(151, 122);
+            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(13, 14);
+            this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
+            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(122, 98);
+            this.btn_QuanLyKhachHang.TabIndex = 0;
+            this.btn_QuanLyKhachHang.Click += new System.EventHandler(this.btn_QuanLyKhachHang_Click);
+            // 
             // panel_QuanLyHoaDon
             // 
             this.panel_QuanLyHoaDon.BorderColor = System.Drawing.Color.Black;
@@ -106,6 +139,22 @@ namespace GUI.AllUserControls
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Quản lý phòng";
+            // 
+            // btn_QuanLyPhong
+            // 
+            this.btn_QuanLyPhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyPhong.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyPhong.Image = global::GUI.Properties.Resources.IMG_QuanLyRoom;
+            this.btn_QuanLyPhong.ImageSize = new System.Drawing.Size(151, 122);
+            this.btn_QuanLyPhong.Location = new System.Drawing.Point(13, 14);
+            this.btn_QuanLyPhong.Name = "btn_QuanLyPhong";
+            this.btn_QuanLyPhong.Size = new System.Drawing.Size(122, 98);
+            this.btn_QuanLyPhong.TabIndex = 0;
             // 
             // panel_QuanLyTienIch
             // 
@@ -142,54 +191,6 @@ namespace GUI.AllUserControls
             this.btn_QuanLyTienIch.Name = "btn_QuanLyTienIch";
             this.btn_QuanLyTienIch.Size = new System.Drawing.Size(122, 98);
             this.btn_QuanLyTienIch.TabIndex = 0;
-            // 
-            // btn_QuanLyPhong
-            // 
-            this.btn_QuanLyPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyPhong.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyPhong.Image = global::GUI.Properties.Resources.IMG_QuanLyRoom;
-            this.btn_QuanLyPhong.ImageSize = new System.Drawing.Size(151, 122);
-            this.btn_QuanLyPhong.Location = new System.Drawing.Point(13, 14);
-            this.btn_QuanLyPhong.Name = "btn_QuanLyPhong";
-            this.btn_QuanLyPhong.Size = new System.Drawing.Size(122, 98);
-            this.btn_QuanLyPhong.TabIndex = 0;
-            // 
-            // btn_QuanLyKhachHang
-            // 
-            this.btn_QuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
-            this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(151, 122);
-            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(13, 14);
-            this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
-            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(122, 98);
-            this.btn_QuanLyKhachHang.TabIndex = 0;
-            // 
-            // btn_QuanLyNhanVien
-            // 
-            this.btn_QuanLyNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
-            this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(151, 122);
-            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(13, 14);
-            this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
-            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(122, 98);
-            this.btn_QuanLyNhanVien.TabIndex = 0;
             // 
             // UC_DanhMucQuanLy
             // 

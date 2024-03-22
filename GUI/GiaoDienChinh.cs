@@ -20,6 +20,7 @@ namespace GUI
         private void btn_DanhSachQuanLy_Click(object sender, EventArgs e)
         {
             uC_DanhMucQuanLy1.BringToFront();
+            
         }
 
         private void uC_BaoCaoThongKe1_Load(object sender, EventArgs e)

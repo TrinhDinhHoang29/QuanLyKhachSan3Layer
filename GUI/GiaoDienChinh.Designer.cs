@@ -791,7 +791,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aquamarine;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1370, 702);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.btn_BaoCaoThongKe);

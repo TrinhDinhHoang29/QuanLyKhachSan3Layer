@@ -70,6 +70,12 @@
     <Compile Include="AllUserControls\UC_HeThong.Designer.cs">
       <DependentUpon>UC_HeThong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QuanLyKhachHang.Designer.cs">
+      <DependentUpon>Frm_QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uC_HeThong1.cs" />
     <EmbeddedResource Include="AllUserControls\UC_BaoCaoThongKe.resx">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\UC_HeThong.resx">
       <DependentUpon>UC_HeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QuanLyKhachHang.resx">
+      <DependentUpon>Frm_QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDienChinh.resx">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>
