@@ -16,5 +16,10 @@ namespace GUI.AllUserControls
         {
             InitializeComponent();
         }
+
+        private void UC_HeThong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

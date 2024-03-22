@@ -63,6 +63,46 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_DangXuat {
+            get {
+                object obj = ResourceManager.GetObject("IMG_DangXuat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_DangXuat1 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_DangXuat1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_DoiMatKhau {
+            get {
+                object obj = ResourceManager.GetObject("IMG_DoiMatKhau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_LoaiPhong {
+            get {
+                object obj = ResourceManager.GetObject("IMG_LoaiPhong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_QuanLyDichVu {
             get {
                 object obj = ResourceManager.GetObject("IMG_QuanLyDichVu", resourceCulture);
@@ -96,6 +136,26 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap IMG_QuanLyRoom {
             get {
                 object obj = ResourceManager.GetObject("IMG_QuanLyRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_SapXep {
+            get {
+                object obj = ResourceManager.GetObject("IMG_SapXep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_Thoat {
+            get {
+                object obj = ResourceManager.GetObject("IMG_Thoat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

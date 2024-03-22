@@ -142,5 +142,23 @@
   <ItemGroup>
     <None Include="Resources\IMG_ThongKeHoaDon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_DoiMatKhau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_DangXuat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_DangXuat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_Thoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_LoaiPhong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_SapXep.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

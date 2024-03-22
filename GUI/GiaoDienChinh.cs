@@ -31,5 +31,15 @@ namespace GUI
         {
             uC_BaoCaoThongKe1.BringToFront();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            uC_HeThong1.BringToFront();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
