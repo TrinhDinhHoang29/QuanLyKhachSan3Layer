@@ -31,10 +31,10 @@ namespace GUI.AllUserControls
         {
             this.panel_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.panel_ThongKeDanhThu = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_ThongKeDanhThu = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.panel_ThongKeHoaDon.SuspendLayout();
             this.panel_ThongKeDanhThu.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,21 @@ namespace GUI.AllUserControls
             this.label2.Size = new System.Drawing.Size(96, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Thông kê hóa đơn";
+            // 
+            // btn_ThongKeHoaDon
+            // 
+            this.btn_ThongKeHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThongKeHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThongKeHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ThongKeHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources.IMG_ThongKeHoaDon;
+            this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(151, 122);
+            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(13, 14);
+            this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
+            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(122, 98);
+            this.btn_ThongKeHoaDon.TabIndex = 0;
             // 
             // panel_ThongKeDanhThu
             // 
@@ -89,21 +104,7 @@ namespace GUI.AllUserControls
             this.btn_ThongKeDanhThu.Name = "btn_ThongKeDanhThu";
             this.btn_ThongKeDanhThu.Size = new System.Drawing.Size(122, 98);
             this.btn_ThongKeDanhThu.TabIndex = 0;
-            // 
-            // btn_ThongKeHoaDon
-            // 
-            this.btn_ThongKeHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThongKeHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThongKeHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ThongKeHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources.IMG_ThongKeHoaDon;
-            this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(151, 122);
-            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(13, 14);
-            this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
-            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(122, 98);
-            this.btn_ThongKeHoaDon.TabIndex = 0;
+            this.btn_ThongKeDanhThu.Click += new System.EventHandler(this.btn_ThongKeDanhThu_Click);
             // 
             // UC_BaoCaoThongKe
             // 

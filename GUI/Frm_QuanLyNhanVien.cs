@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.AllUserControls
+namespace GUI
 {
-    public partial class UC_BaoCaoThongKe : UserControl
+    public partial class Frm_QuanLyNhanVien : Form
     {
-        public UC_BaoCaoThongKe()
+        public Frm_QuanLyNhanVien()
         {
             InitializeComponent();
         }
 
-        private void btn_ThongKeDanhThu_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            Frm_ThongKeDanhThu item = new Frm_ThongKeDanhThu();
-            item.Show();
+
         }
     }
 }

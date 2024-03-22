@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Frm_QuanLyKhachHang : Form
+    public partial class Frm_QuanLyPhong : Form
     {
-        public Frm_QuanLyKhachHang()
+        public Frm_QuanLyPhong()
         {
             InitializeComponent();
-        }
-
-        private void Frm_QuanLyKhachHang_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

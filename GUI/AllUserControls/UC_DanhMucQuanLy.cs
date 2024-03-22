@@ -24,5 +24,23 @@ namespace GUI.AllUserControls
             item.Show();
             
         }
+
+        private void btn_QuanLyNhanVien_Click(object sender, EventArgs e)
+        {
+            Frm_QuanLyNhanVien item = new Frm_QuanLyNhanVien();
+            item.Show();
+        }
+
+        private void btn_QuanLyTienIch_Click(object sender, EventArgs e)
+        {
+            Frm_QuanLyTienIch item = new Frm_QuanLyTienIch();
+            item.Show();
+        }
+
+        private void btn_QuanLyPhong_Click(object sender, EventArgs e)
+        {
+            Frm_QuanLyPhong item = new Frm_QuanLyPhong();
+            item.Show();
+        }
     }
 }
