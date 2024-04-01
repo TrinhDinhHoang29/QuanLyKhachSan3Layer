@@ -25,8 +25,10 @@ namespace GUI
 
         private void Frm_ThongKeDanhThu_Load(object sender, EventArgs e)
         {
-            ChartArea chartArea = chart1.ChartAreas[0];
-            chartArea.AxisX.Title = "Doanh thu";
+            //ChartArea chartArea = chart1.ChartAreas[0];
+            //chartArea.AxisX.Title = "Doanh thu";
+            //chartArea.AxisX.Minimum = 0; // Giá trị tối thiểu của trục X
+            //chartArea.AxisX.Maximum = 10; // Giá trị tối đa của trục X
         }
     }
 }
