@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DTO;
 
 namespace GUI
 {
     public partial class Frm_QuanLyKhachSan : Form
     {
+        NhanVienBUS nv = new NhanVienBUS();
         public Frm_QuanLyKhachSan()
         {
             InitializeComponent();
@@ -54,6 +57,7 @@ namespace GUI
         {
             Form frm_QuanLiNhanVien = new Frm_QuanLyNhanVien();
             frm_QuanLiNhanVien.Show();
+            
         }
 
         private void btn_QuanLyKhachHang_Click(object sender, EventArgs e)
@@ -79,5 +83,12 @@ namespace GUI
             Form frm_ThongKeDanhThu = new Frm_ThongKeDanhThu();
             frm_ThongKeDanhThu.Show();
         }
+
+        private void Frm_QuanLyKhachSan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

@@ -91,7 +91,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="uC_HeThong1.cs" />
     <EmbeddedResource Include="Frm_QuanLyKhachHang.resx">
       <DependentUpon>Frm_QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>

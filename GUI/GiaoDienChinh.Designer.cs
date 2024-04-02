@@ -73,64 +73,64 @@ namespace GUI
             this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.btn_QuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btn_QuanLyDichVu = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.btn_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btn_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.btn_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.btn_ThongKeDanhThu = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.btn_DangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.btn_SapXep = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.btn_LoaiPhong = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.btn_DoiMatKhau = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.btn_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyDichVu = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.btn_ThongKeDanhThu = new Guna.UI2.WinForms.Guna2Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.btn_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label31 = new System.Windows.Forms.Label();
-            this.btn_DoiMatKhau = new Guna.UI2.WinForms.Guna2Button();
-            this.label32 = new System.Windows.Forms.Label();
-            this.btn_LoaiPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.label33 = new System.Windows.Forms.Label();
-            this.btn_SapXep = new Guna.UI2.WinForms.Guna2Button();
-            this.label34 = new System.Windows.Forms.Label();
-            this.btn_DangXuat = new Guna.UI2.WinForms.Guna2Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -191,7 +191,6 @@ namespace GUI
             this.label24.Size = new System.Drawing.Size(74, 15);
             this.label24.TabIndex = 2;
             this.label24.Text = "Phòng trống";
-            this.label24.Click += new System.EventHandler(this.label2_Click);
             // 
             // label12
             // 
@@ -205,7 +204,6 @@ namespace GUI
             this.label12.Size = new System.Drawing.Size(74, 15);
             this.label12.TabIndex = 2;
             this.label12.Text = "Phòng trống";
-            this.label12.Click += new System.EventHandler(this.label2_Click);
             // 
             // label20
             // 
@@ -784,65 +782,6 @@ namespace GUI
             this.tabPage1.Text = "Danh sách quản lý";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.groupBox5);
-            this.tabPage3.Controls.Add(this.groupBox9);
-            this.tabPage3.Controls.Add(this.groupBox10);
-            this.tabPage3.Controls.Add(this.groupBox11);
-            this.tabPage3.Controls.Add(this.groupBox12);
-            this.tabPage3.Location = new System.Drawing.Point(4, 44);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1338, 161);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Hệ thống";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox13);
-            this.tabPage4.Controls.Add(this.groupBox14);
-            this.tabPage4.Controls.Add(this.groupBox15);
-            this.tabPage4.Controls.Add(this.groupBox16);
-            this.tabPage4.Location = new System.Drawing.Point(4, 44);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1338, 161);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Trợ giúp";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.btn_QuanLyNhanVien);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(170, 149);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.btn_QuanLyKhachHang);
-            this.groupBox2.Location = new System.Drawing.Point(185, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(170, 149);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Controls.Add(this.btn_QuanLyDichVu);
-            this.groupBox3.Location = new System.Drawing.Point(364, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(170, 149);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label28);
@@ -853,134 +792,15 @@ namespace GUI
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             // 
-            // groupBox9
+            // label28
             // 
-            this.groupBox9.Controls.Add(this.label34);
-            this.groupBox9.Controls.Add(this.btn_DangXuat);
-            this.groupBox9.Location = new System.Drawing.Point(541, 6);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(170, 149);
-            this.groupBox9.TabIndex = 1;
-            this.groupBox9.TabStop = false;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label33);
-            this.groupBox10.Controls.Add(this.btn_SapXep);
-            this.groupBox10.Location = new System.Drawing.Point(364, 6);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(170, 149);
-            this.groupBox10.TabIndex = 2;
-            this.groupBox10.TabStop = false;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.label32);
-            this.groupBox11.Controls.Add(this.btn_LoaiPhong);
-            this.groupBox11.Location = new System.Drawing.Point(185, 6);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(170, 149);
-            this.groupBox11.TabIndex = 3;
-            this.groupBox11.TabStop = false;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.label31);
-            this.groupBox12.Controls.Add(this.btn_DoiMatKhau);
-            this.groupBox12.Location = new System.Drawing.Point(6, 6);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(170, 149);
-            this.groupBox12.TabIndex = 4;
-            this.groupBox12.TabStop = false;
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Location = new System.Drawing.Point(541, 6);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(170, 149);
-            this.groupBox13.TabIndex = 1;
-            this.groupBox13.TabStop = false;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Location = new System.Drawing.Point(364, 6);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(170, 149);
-            this.groupBox14.TabIndex = 2;
-            this.groupBox14.TabStop = false;
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Location = new System.Drawing.Point(185, 6);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(170, 149);
-            this.groupBox15.TabIndex = 3;
-            this.groupBox15.TabStop = false;
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Location = new System.Drawing.Point(6, 6);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(170, 149);
-            this.groupBox16.TabIndex = 4;
-            this.groupBox16.TabStop = false;
-            // 
-            // btn_QuanLyNhanVien
-            // 
-            this.btn_QuanLyNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
-            this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyNhanVien.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(20, 19);
-            this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
-            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyNhanVien.TabIndex = 1;
-            this.btn_QuanLyNhanVien.Click += new System.EventHandler(this.btn_QuanLyNhanVien_Click);
-            // 
-            // btn_QuanLyKhachHang
-            // 
-            this.btn_QuanLyKhachHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
-            this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyKhachHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(23, 19);
-            this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
-            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyKhachHang.TabIndex = 1;
-            this.btn_QuanLyKhachHang.Click += new System.EventHandler(this.btn_QuanLyKhachHang_Click);
-            // 
-            // btn_QuanLyDichVu
-            // 
-            this.btn_QuanLyDichVu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyDichVu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyDichVu.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyDichVu.Image = global::GUI.Properties.Resources.IMG_QuanLyDichVu;
-            this.btn_QuanLyDichVu.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyDichVu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyDichVu.Location = new System.Drawing.Point(20, 19);
-            this.btn_QuanLyDichVu.Name = "btn_QuanLyDichVu";
-            this.btn_QuanLyDichVu.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyDichVu.TabIndex = 1;
-            this.btn_QuanLyDichVu.Click += new System.EventHandler(this.btn_QuanLyDichVu_Click);
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(35, 128);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(103, 16);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Quản lí phòng";
             // 
             // btn_QuanLyPhong
             // 
@@ -1001,25 +821,15 @@ namespace GUI
             this.btn_QuanLyPhong.TabIndex = 1;
             this.btn_QuanLyPhong.Click += new System.EventHandler(this.btn_QuanLyPhong_Click);
             // 
-            // label25
+            // groupBox3
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(17, 128);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(126, 16);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "Quản lí nhân viên";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(13, 128);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(139, 16);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "Quản lí khách hàng";
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.btn_QuanLyDichVu);
+            this.groupBox3.Location = new System.Drawing.Point(364, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(170, 149);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
             // 
             // label27
             // 
@@ -1031,15 +841,152 @@ namespace GUI
             this.label27.TabIndex = 1;
             this.label27.Text = "Quản lí dịch vụ";
             // 
-            // label28
+            // btn_QuanLyDichVu
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(35, 128);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(103, 16);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Quản lí phòng";
+            this.btn_QuanLyDichVu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyDichVu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyDichVu.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyDichVu.Image = global::GUI.Properties.Resources.IMG_QuanLyDichVu;
+            this.btn_QuanLyDichVu.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyDichVu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyDichVu.Location = new System.Drawing.Point(20, 19);
+            this.btn_QuanLyDichVu.Name = "btn_QuanLyDichVu";
+            this.btn_QuanLyDichVu.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyDichVu.TabIndex = 1;
+            this.btn_QuanLyDichVu.Click += new System.EventHandler(this.btn_QuanLyDichVu_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.btn_QuanLyKhachHang);
+            this.groupBox2.Location = new System.Drawing.Point(185, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(170, 149);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(13, 128);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(139, 16);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Quản lí khách hàng";
+            // 
+            // btn_QuanLyKhachHang
+            // 
+            this.btn_QuanLyKhachHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
+            this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyKhachHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
+            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyKhachHang.TabIndex = 1;
+            this.btn_QuanLyKhachHang.Click += new System.EventHandler(this.btn_QuanLyKhachHang_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.btn_QuanLyNhanVien);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(170, 149);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(17, 128);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(126, 16);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Quản lí nhân viên";
+            // 
+            // btn_QuanLyNhanVien
+            // 
+            this.btn_QuanLyNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
+            this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyNhanVien.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(20, 19);
+            this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
+            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyNhanVien.TabIndex = 1;
+            this.btn_QuanLyNhanVien.Click += new System.EventHandler(this.btn_QuanLyNhanVien_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox7);
+            this.tabPage2.Controls.Add(this.groupBox8);
+            this.tabPage2.Location = new System.Drawing.Point(4, 44);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Báo cáo thống kê";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label30);
+            this.groupBox7.Controls.Add(this.btn_ThongKeHoaDon);
+            this.groupBox7.Location = new System.Drawing.Point(185, 6);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(170, 149);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(19, 121);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(133, 16);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "Thống kê hóa đơn";
+            // 
+            // btn_ThongKeHoaDon
+            // 
+            this.btn_ThongKeHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_ThongKeHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ThongKeHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThongKeHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThongKeHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ThongKeHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources.IMG_ThongKeHoaDon;
+            this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_ThongKeHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(22, 12);
+            this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
+            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(129, 106);
+            this.btn_ThongKeHoaDon.TabIndex = 3;
             // 
             // groupBox8
             // 
@@ -1050,6 +997,16 @@ namespace GUI
             this.groupBox8.Size = new System.Drawing.Size(170, 149);
             this.groupBox8.TabIndex = 4;
             this.groupBox8.TabStop = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(19, 121);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(135, 16);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Thống kê danh thu";
             // 
             // btn_ThongKeDanhThu
             // 
@@ -1070,178 +1027,20 @@ namespace GUI
             this.btn_ThongKeDanhThu.TabIndex = 3;
             this.btn_ThongKeDanhThu.Click += new System.EventHandler(this.btn_ThongKeDanhThu_Click);
             // 
-            // label29
+            // tabPage3
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(19, 121);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(135, 16);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "Thống kê danh thu";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.label30);
-            this.groupBox7.Controls.Add(this.btn_ThongKeHoaDon);
-            this.groupBox7.Location = new System.Drawing.Point(185, 6);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(170, 149);
-            this.groupBox7.TabIndex = 3;
-            this.groupBox7.TabStop = false;
-            // 
-            // btn_ThongKeHoaDon
-            // 
-            this.btn_ThongKeHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ThongKeHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThongKeHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThongKeHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThongKeHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ThongKeHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources.IMG_ThongKeHoaDon;
-            this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_ThongKeHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(22, 12);
-            this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
-            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(129, 106);
-            this.btn_ThongKeHoaDon.TabIndex = 3;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(19, 121);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(133, 16);
-            this.label30.TabIndex = 2;
-            this.label30.Text = "Thống kê hóa đơn";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox7);
-            this.tabPage2.Controls.Add(this.groupBox8);
-            this.tabPage2.Location = new System.Drawing.Point(4, 44);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1338, 161);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Báo cáo thống kê";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(38, 121);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(97, 16);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "Đổi mật khẩu";
-            this.label31.Click += new System.EventHandler(this.label31_Click);
-            // 
-            // btn_DoiMatKhau
-            // 
-            this.btn_DoiMatKhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_DoiMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DoiMatKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DoiMatKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DoiMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DoiMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DoiMatKhau.ForeColor = System.Drawing.Color.White;
-            this.btn_DoiMatKhau.Image = global::GUI.Properties.Resources.IMG_DoiMatKhau;
-            this.btn_DoiMatKhau.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_DoiMatKhau.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DoiMatKhau.Location = new System.Drawing.Point(22, 12);
-            this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
-            this.btn_DoiMatKhau.Size = new System.Drawing.Size(129, 106);
-            this.btn_DoiMatKhau.TabIndex = 3;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(44, 121);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(85, 16);
-            this.label32.TabIndex = 2;
-            this.label32.Text = "Loại phòng";
-            // 
-            // btn_LoaiPhong
-            // 
-            this.btn_LoaiPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_LoaiPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_LoaiPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_LoaiPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_LoaiPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_LoaiPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_LoaiPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_LoaiPhong.ForeColor = System.Drawing.Color.White;
-            this.btn_LoaiPhong.Image = global::GUI.Properties.Resources.IMG_LoaiPhong;
-            this.btn_LoaiPhong.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_LoaiPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_LoaiPhong.Location = new System.Drawing.Point(22, 12);
-            this.btn_LoaiPhong.Name = "btn_LoaiPhong";
-            this.btn_LoaiPhong.Size = new System.Drawing.Size(129, 106);
-            this.btn_LoaiPhong.TabIndex = 3;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(54, 121);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(65, 16);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "Sắp xếp";
-            // 
-            // btn_SapXep
-            // 
-            this.btn_SapXep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_SapXep.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SapXep.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_SapXep.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_SapXep.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_SapXep.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_SapXep.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_SapXep.ForeColor = System.Drawing.Color.White;
-            this.btn_SapXep.Image = global::GUI.Properties.Resources.IMG_SapXep;
-            this.btn_SapXep.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_SapXep.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_SapXep.Location = new System.Drawing.Point(22, 12);
-            this.btn_SapXep.Name = "btn_SapXep";
-            this.btn_SapXep.Size = new System.Drawing.Size(129, 106);
-            this.btn_SapXep.TabIndex = 3;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(48, 121);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(76, 16);
-            this.label34.TabIndex = 2;
-            this.label34.Text = "Đăng xuất";
-            // 
-            // btn_DangXuat
-            // 
-            this.btn_DangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_DangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DangXuat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Image = global::GUI.Properties.Resources.IMG_Thoat;
-            this.btn_DangXuat.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_DangXuat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DangXuat.Location = new System.Drawing.Point(22, 12);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(129, 106);
-            this.btn_DangXuat.TabIndex = 3;
+            this.tabPage3.Controls.Add(this.groupBox5);
+            this.tabPage3.Controls.Add(this.groupBox9);
+            this.tabPage3.Controls.Add(this.groupBox10);
+            this.tabPage3.Controls.Add(this.groupBox11);
+            this.tabPage3.Controls.Add(this.groupBox12);
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Hệ thống";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -1281,6 +1080,205 @@ namespace GUI
             this.btn_Thoat.Size = new System.Drawing.Size(129, 106);
             this.btn_Thoat.TabIndex = 3;
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label34);
+            this.groupBox9.Controls.Add(this.btn_DangXuat);
+            this.groupBox9.Location = new System.Drawing.Point(541, 6);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(170, 149);
+            this.groupBox9.TabIndex = 1;
+            this.groupBox9.TabStop = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(48, 121);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(76, 16);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "Đăng xuất";
+            // 
+            // btn_DangXuat
+            // 
+            this.btn_DangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_DangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DangXuat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
+            this.btn_DangXuat.Image = global::GUI.Properties.Resources.IMG_Thoat;
+            this.btn_DangXuat.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_DangXuat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_DangXuat.Location = new System.Drawing.Point(22, 12);
+            this.btn_DangXuat.Name = "btn_DangXuat";
+            this.btn_DangXuat.Size = new System.Drawing.Size(129, 106);
+            this.btn_DangXuat.TabIndex = 3;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label33);
+            this.groupBox10.Controls.Add(this.btn_SapXep);
+            this.groupBox10.Location = new System.Drawing.Point(364, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(170, 149);
+            this.groupBox10.TabIndex = 2;
+            this.groupBox10.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(54, 121);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(65, 16);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "Sắp xếp";
+            // 
+            // btn_SapXep
+            // 
+            this.btn_SapXep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_SapXep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SapXep.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SapXep.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SapXep.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_SapXep.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_SapXep.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_SapXep.ForeColor = System.Drawing.Color.White;
+            this.btn_SapXep.Image = global::GUI.Properties.Resources.IMG_SapXep;
+            this.btn_SapXep.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_SapXep.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_SapXep.Location = new System.Drawing.Point(22, 12);
+            this.btn_SapXep.Name = "btn_SapXep";
+            this.btn_SapXep.Size = new System.Drawing.Size(129, 106);
+            this.btn_SapXep.TabIndex = 3;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label32);
+            this.groupBox11.Controls.Add(this.btn_LoaiPhong);
+            this.groupBox11.Location = new System.Drawing.Point(185, 6);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(170, 149);
+            this.groupBox11.TabIndex = 3;
+            this.groupBox11.TabStop = false;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(44, 121);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(85, 16);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Loại phòng";
+            // 
+            // btn_LoaiPhong
+            // 
+            this.btn_LoaiPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_LoaiPhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_LoaiPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_LoaiPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_LoaiPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_LoaiPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_LoaiPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_LoaiPhong.ForeColor = System.Drawing.Color.White;
+            this.btn_LoaiPhong.Image = global::GUI.Properties.Resources.IMG_LoaiPhong;
+            this.btn_LoaiPhong.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_LoaiPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_LoaiPhong.Location = new System.Drawing.Point(22, 12);
+            this.btn_LoaiPhong.Name = "btn_LoaiPhong";
+            this.btn_LoaiPhong.Size = new System.Drawing.Size(129, 106);
+            this.btn_LoaiPhong.TabIndex = 3;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.label31);
+            this.groupBox12.Controls.Add(this.btn_DoiMatKhau);
+            this.groupBox12.Location = new System.Drawing.Point(6, 6);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(170, 149);
+            this.groupBox12.TabIndex = 4;
+            this.groupBox12.TabStop = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(38, 121);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(97, 16);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Đổi mật khẩu";
+            this.label31.Click += new System.EventHandler(this.label31_Click);
+            // 
+            // btn_DoiMatKhau
+            // 
+            this.btn_DoiMatKhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_DoiMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DoiMatKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DoiMatKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DoiMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DoiMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DoiMatKhau.ForeColor = System.Drawing.Color.White;
+            this.btn_DoiMatKhau.Image = global::GUI.Properties.Resources.IMG_DoiMatKhau;
+            this.btn_DoiMatKhau.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_DoiMatKhau.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_DoiMatKhau.Location = new System.Drawing.Point(22, 12);
+            this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
+            this.btn_DoiMatKhau.Size = new System.Drawing.Size(129, 106);
+            this.btn_DoiMatKhau.TabIndex = 3;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox13);
+            this.tabPage4.Controls.Add(this.groupBox14);
+            this.tabPage4.Controls.Add(this.groupBox15);
+            this.tabPage4.Controls.Add(this.groupBox16);
+            this.tabPage4.Location = new System.Drawing.Point(4, 44);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Trợ giúp";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Location = new System.Drawing.Point(541, 6);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(170, 149);
+            this.groupBox13.TabIndex = 1;
+            this.groupBox13.TabStop = false;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Location = new System.Drawing.Point(364, 6);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(170, 149);
+            this.groupBox14.TabIndex = 2;
+            this.groupBox14.TabStop = false;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Location = new System.Drawing.Point(185, 6);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(170, 149);
+            this.groupBox15.TabIndex = 3;
+            this.groupBox15.TabStop = false;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Location = new System.Drawing.Point(6, 6);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(170, 149);
+            this.groupBox16.TabIndex = 4;
+            this.groupBox16.TabStop = false;
+            // 
             // Frm_QuanLyKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1292,21 +1290,28 @@ namespace GUI
             this.Controls.Add(this.panel2);
             this.Name = "Frm_QuanLyKhachSan";
             this.Text = "Quản lý khách sạn";
+            this.Load += new System.EventHandler(this.Frm_QuanLyKhachSan_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
@@ -1315,13 +1320,7 @@ namespace GUI
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
