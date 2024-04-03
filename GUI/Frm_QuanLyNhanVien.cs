@@ -36,9 +36,12 @@ namespace GUI
             {
                 int checkInsertAccount = nv.insertData(txt_TenDangNhap.Text, txt_MatKhau.Text, txt_LoaiTaiKhoang.Text);
                 MessageBox.Show("Update thành công");
-            }catch(Exception ex)
+                dGridView_NhanVien.DataSource = nv.getDataAll();
+
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex+ txt_TenDangNhap.Text);
+                MessageBox.Show("Lỗi: " + ex);
             }
           
 

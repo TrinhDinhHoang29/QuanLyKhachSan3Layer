@@ -21,5 +21,17 @@ namespace BLL
         {
             return nv.insertData(username, password, role);
         }
+        public int updateData(string id,string username,string password,string role)
+        {
+            return nv.updateData(id, username, password, role);
+        }
+        public DataTable getDataById(int id)
+        {
+            return nv.getDataById(id);
+        }
+        public DataTable selectLike(string username)
+        {
+            return nv.selectLike(username);
+        }
     }
 }
