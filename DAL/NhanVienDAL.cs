@@ -63,5 +63,13 @@ namespace DAL
             };
             return db.getData("sp_acounts_Like_Username", para);
         }
+        public DataTable getDataByUsername(string username)
+        {
+            SqlParameter[] para = new SqlParameter[]
+            {
+            new SqlParameter("@username", username)
+            };
+            return db.getData("sp_account_Select_Username", para);
+        }
     }
 }

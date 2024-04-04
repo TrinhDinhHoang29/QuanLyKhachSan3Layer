@@ -33,5 +33,26 @@ namespace BLL
         {
             return nv.selectLike(username);
         }
+        public bool ValidateLogin(string username, string password)
+        {
+            // Lấy thông tin người dùng từ database dựa trên username
+            DataTable dt = nv.getDataByUsername(username);
+
+            // Kiểm tra xem có dữ liệu trả về từ database hay không
+            if (dt.Rows.Count > 0)
+            {
+                // Lấy mật khẩu từ dữ liệu trả về
+                string storedPassword = dt.Rows[0]["password_hash"].ToString();
+                // So sánh mật khẩu đã nhập với mật khẩu trong database
+                if (password == storedPassword)
+                {
+                    // Đăng nhập thành công
+                    return true;
+                }
+            }
+
+            // Đăng nhập thất bại
+            return false;
+        }
     }
 }
