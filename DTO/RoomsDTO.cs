@@ -6,20 +6,17 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class RoomsDTO
+   public class RoomsDTO
     {
-        public int customer_id { get; set; }
-        public string first_name { get; set; }
 
-        public string last_name { get; set; }
+        public int room_id { get; set; }
+        public string room_number { get; set; }
 
-        public string email { get; set; }
+        public string room_type { get; set; }
 
-        public string phone { get; set; }
-        public string address { get; set; }
+        public string bed_type { get; set; }
 
-
-
+        public float price_per_night { get; set; }
 
     }
 }

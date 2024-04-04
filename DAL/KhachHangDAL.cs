@@ -45,7 +45,7 @@ namespace DAL
             {
                     new SqlParameter("@customer_id",id)
             };
-            return db.ExcuteSQL("sp_customer_Update_Id", para);
+            return db.ExcuteSQL("sp_customer_Delete_Id", para);
         }
         public int updateData(int id,string first_name, string last_name, string email, string phone, string address)
         {
@@ -67,6 +67,14 @@ namespace DAL
                 new SqlParameter("@fullName",fullName)
             };
             return db.getData("sp_customer_Like_FullName", para);
+        }
+        public int deleteDataSoft(int id)
+        {
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@customer_id",id)
+            };
+            return db.ExcuteSQL("sp_customer_DeleteSoft_Id", para);
         }
     }
 }

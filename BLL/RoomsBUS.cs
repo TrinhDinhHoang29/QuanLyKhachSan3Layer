@@ -8,7 +8,7 @@ using DAL;
 using System.Data;
 namespace BLL
 {
-    class RoomsBUS
+   public class RoomsBUS
     {
         private RoomsDAL room = new RoomsDAL();
 

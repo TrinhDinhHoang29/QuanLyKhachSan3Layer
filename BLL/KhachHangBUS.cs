@@ -9,7 +9,7 @@ using System.Data;
 
 namespace BLL
 {
-    class KhachHangBUS
+   public class KhachHangBUS
     {
         private KhachHangDAL kh = new KhachHangDAL();
         public DataTable getDataAll()
@@ -31,6 +31,14 @@ namespace BLL
         public DataTable selectLike(string fullName)
         {
             return kh.selectLike(fullName);
+        }
+        public int deleteData(int id)
+        {
+            return kh.deleteData(id);
+        }
+        public int deleteDataSoft(int id)
+        {
+            return kh.deleteDataSoft(id);
         }
     }
 }
