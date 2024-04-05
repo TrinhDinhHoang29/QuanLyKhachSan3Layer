@@ -21,7 +21,7 @@ namespace BLL
         {
             return nv.insertData(username, password, role);
         }
-        public int updateData(string id,string username,string password,string role)
+        public int updateData(int id,string username,string password,string role)
         {
             return nv.updateData(id, username, password, role);
         }
@@ -32,6 +32,10 @@ namespace BLL
         public DataTable selectLike(string username)
         {
             return nv.selectLike(username);
+        }
+        public int deleteDataSoft(int id)
+        {
+            return nv.deleteDataSoft(id);
         }
         public bool ValidateLogin(string username, string password)
         {

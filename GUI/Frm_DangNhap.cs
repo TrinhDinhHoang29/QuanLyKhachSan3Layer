@@ -53,7 +53,6 @@ namespace GUI
                 // Đăng nhập thất bại
                 labelError.Visible = true;
                 labelError.Text = "Tên đăng nhập hoặc mật khẩu sai.";
-
             }
         }
     }

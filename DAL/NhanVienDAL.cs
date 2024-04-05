@@ -44,7 +44,7 @@ namespace DAL
             };
             return db.ExcuteSQL("sp_acounts_Delete_Id", para);
         }
-        public int updateData(string id,string username,string password,string role)
+        public int updateData(int id,string username,string password,string role)
         {
             SqlParameter[] para = new SqlParameter[]
             {
@@ -59,7 +59,7 @@ namespace DAL
         {
             SqlParameter[] para = new SqlParameter[]
             {
-                new SqlParameter("@fullName",userName)
+                new SqlParameter("@username",userName)
             };
             return db.getData("sp_acounts_Like_Username", para);
         }
@@ -70,6 +70,14 @@ namespace DAL
             new SqlParameter("@username", username)
             };
             return db.getData("sp_account_Select_Username", para);
+        }
+        public int deleteDataSoft(int id)
+        {
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@account_id",id)
+            };
+            return db.ExcuteSQL("sp_accounts_DeleteSoft_Id", para);
         }
     }
 }
