@@ -14,7 +14,7 @@ namespace DAL
         public DataTable getDataAll()
         {
 
-            return db.getDataTable("SELECT * FROM Rooms");
+            return db.getDataTable("SELECT * FROM Rooms WHERE deleted = 0");
         }
         public DataTable getDataById(int id)
         {
@@ -64,6 +64,14 @@ namespace DAL
                 new SqlParameter("@room_number",numberRoom)
             };
             return db.getData("sp_room_Like_roomNumber", para);
+        }
+        public int deleteDataSoft(int id)
+        {
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@room_id",id)
+            };
+            return db.ExcuteSQL("sp_rooms_DeleteSoft_Id", para);
         }
     }
 }

@@ -32,5 +32,10 @@ namespace BLL
         {
             return room.selectLike(numberRoom);
         }
+        public int deleteDataSoft(int id)
+        {
+            return room.deleteDataSoft(id);
+        }
+
     }
 }
