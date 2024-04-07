@@ -35,22 +35,22 @@ namespace GUI
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rad_User = new System.Windows.Forms.RadioButton();
+            this.rad_Admin = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_XoaNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XoaTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
             this.btn_ThemTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_TimKiemNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_TimKiemNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.lstView_DanhSachNV = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.rad_Admin = new System.Windows.Forms.RadioButton();
-            this.rad_User = new System.Windows.Forms.RadioButton();
+            this.btn_TimKiemNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_TimKiemNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -121,6 +121,29 @@ namespace GUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tài khoản";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // rad_User
+            // 
+            this.rad_User.AutoSize = true;
+            this.rad_User.Location = new System.Drawing.Point(262, 118);
+            this.rad_User.Name = "rad_User";
+            this.rad_User.Size = new System.Drawing.Size(62, 22);
+            this.rad_User.TabIndex = 11;
+            this.rad_User.TabStop = true;
+            this.rad_User.Text = "User";
+            this.rad_User.UseVisualStyleBackColor = true;
+            // 
+            // rad_Admin
+            // 
+            this.rad_Admin.AutoSize = true;
+            this.rad_Admin.Location = new System.Drawing.Point(170, 118);
+            this.rad_Admin.Name = "rad_Admin";
+            this.rad_Admin.Size = new System.Drawing.Size(72, 22);
+            this.rad_Admin.TabIndex = 10;
+            this.rad_Admin.TabStop = true;
+            this.rad_Admin.Text = "Admin";
+            this.rad_Admin.UseVisualStyleBackColor = true;
+            this.rad_Admin.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -196,69 +219,6 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 16;
             // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Tất cã"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
-            this.pictureBox1.Location = new System.Drawing.Point(109, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_TimKiemNhanVien
-            // 
-            this.btn_TimKiemNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiemNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiemNhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiemNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiemNhanVien.Location = new System.Drawing.Point(544, 3);
-            this.btn_TimKiemNhanVien.Name = "btn_TimKiemNhanVien";
-            this.btn_TimKiemNhanVien.Size = new System.Drawing.Size(97, 36);
-            this.btn_TimKiemNhanVien.TabIndex = 20;
-            this.btn_TimKiemNhanVien.Text = "Tìm kiếm";
-            this.btn_TimKiemNhanVien.Click += new System.EventHandler(this.btn_TimKiemNhanVien_Click);
-            // 
-            // txt_TimKiemNV
-            // 
-            this.txt_TimKiemNV.BorderColor = System.Drawing.Color.Black;
-            this.txt_TimKiemNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_TimKiemNV.DefaultText = "";
-            this.txt_TimKiemNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_TimKiemNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_TimKiemNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TimKiemNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TimKiemNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_TimKiemNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemNV.Location = new System.Drawing.Point(148, 3);
-            this.txt_TimKiemNV.Name = "txt_TimKiemNV";
-            this.txt_TimKiemNV.PasswordChar = '\0';
-            this.txt_TimKiemNV.PlaceholderText = "";
-            this.txt_TimKiemNV.SelectedText = "";
-            this.txt_TimKiemNV.Size = new System.Drawing.Size(390, 36);
-            this.txt_TimKiemNV.TabIndex = 19;
-            // 
             // lstView_DanhSachNV
             // 
             this.lstView_DanhSachNV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -301,28 +261,68 @@ namespace GUI
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 138;
             // 
-            // rad_Admin
+            // btn_TimKiemNhanVien
             // 
-            this.rad_Admin.AutoSize = true;
-            this.rad_Admin.Location = new System.Drawing.Point(170, 118);
-            this.rad_Admin.Name = "rad_Admin";
-            this.rad_Admin.Size = new System.Drawing.Size(72, 22);
-            this.rad_Admin.TabIndex = 10;
-            this.rad_Admin.TabStop = true;
-            this.rad_Admin.Text = "Admin";
-            this.rad_Admin.UseVisualStyleBackColor = true;
-            this.rad_Admin.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.btn_TimKiemNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiemNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiemNhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiemNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiemNhanVien.Location = new System.Drawing.Point(544, 3);
+            this.btn_TimKiemNhanVien.Name = "btn_TimKiemNhanVien";
+            this.btn_TimKiemNhanVien.Size = new System.Drawing.Size(97, 36);
+            this.btn_TimKiemNhanVien.TabIndex = 20;
+            this.btn_TimKiemNhanVien.Text = "Tìm kiếm";
+            this.btn_TimKiemNhanVien.Click += new System.EventHandler(this.btn_TimKiemNhanVien_Click);
             // 
-            // rad_User
+            // txt_TimKiemNV
             // 
-            this.rad_User.AutoSize = true;
-            this.rad_User.Location = new System.Drawing.Point(262, 118);
-            this.rad_User.Name = "rad_User";
-            this.rad_User.Size = new System.Drawing.Size(62, 22);
-            this.rad_User.TabIndex = 11;
-            this.rad_User.TabStop = true;
-            this.rad_User.Text = "User";
-            this.rad_User.UseVisualStyleBackColor = true;
+            this.txt_TimKiemNV.BorderColor = System.Drawing.Color.Black;
+            this.txt_TimKiemNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TimKiemNV.DefaultText = "";
+            this.txt_TimKiemNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_TimKiemNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_TimKiemNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TimKiemNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemNV.Location = new System.Drawing.Point(138, 3);
+            this.txt_TimKiemNV.Name = "txt_TimKiemNV";
+            this.txt_TimKiemNV.PasswordChar = '\0';
+            this.txt_TimKiemNV.PlaceholderText = "";
+            this.txt_TimKiemNV.SelectedText = "";
+            this.txt_TimKiemNV.Size = new System.Drawing.Size(390, 36);
+            this.txt_TimKiemNV.TabIndex = 19;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Black;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Tất cã"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
+            this.guna2ComboBox1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
+            this.pictureBox1.Location = new System.Drawing.Point(109, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_QuanLyNhanVien
             // 
