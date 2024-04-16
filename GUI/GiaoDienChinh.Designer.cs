@@ -71,6 +71,9 @@ namespace GUI
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label33 = new System.Windows.Forms.Label();
             this.btn_SapXep = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.btn_DatPhong = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.label31 = new System.Windows.Forms.Label();
             this.btn_DoiMatKhau = new Guna.UI2.WinForms.Guna2Button();
@@ -80,9 +83,6 @@ namespace GUI
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label32 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.btn_DatPhong = new Guna.UI2.WinForms.Guna2Button();
             this.panel3.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -98,9 +98,9 @@ namespace GUI
             this.groupBox5.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_ListRooms
@@ -108,9 +108,10 @@ namespace GUI
             this.panel_ListRooms.BackColor = System.Drawing.Color.DarkGray;
             this.panel_ListRooms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_ListRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_ListRooms.Location = new System.Drawing.Point(12, 231);
+            this.panel_ListRooms.Location = new System.Drawing.Point(16, 284);
+            this.panel_ListRooms.Margin = new System.Windows.Forms.Padding(4);
             this.panel_ListRooms.Name = "panel_ListRooms";
-            this.panel_ListRooms.Size = new System.Drawing.Size(1346, 344);
+            this.panel_ListRooms.Size = new System.Drawing.Size(1794, 423);
             this.panel_ListRooms.TabIndex = 0;
             // 
             // panel3
@@ -121,9 +122,10 @@ namespace GUI
             this.panel3.Controls.Add(this.guna2Button15);
             this.panel3.Controls.Add(this.guna2Button16);
             this.panel3.Controls.Add(this.guna2Button14);
-            this.panel3.Location = new System.Drawing.Point(12, 581);
+            this.panel3.Location = new System.Drawing.Point(16, 715);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1346, 102);
+            this.panel3.Size = new System.Drawing.Size(1794, 125);
             this.panel3.TabIndex = 0;
             // 
             // guna2Button17
@@ -136,9 +138,10 @@ namespace GUI
             this.guna2Button17.FillColor = System.Drawing.Color.DarkOrange;
             this.guna2Button17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button17.ForeColor = System.Drawing.Color.White;
-            this.guna2Button17.Location = new System.Drawing.Point(599, 28);
+            this.guna2Button17.Location = new System.Drawing.Point(799, 34);
+            this.guna2Button17.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button17.Name = "guna2Button17";
-            this.guna2Button17.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button17.Size = new System.Drawing.Size(240, 55);
             this.guna2Button17.TabIndex = 0;
             this.guna2Button17.Text = "Đang sửa: 0";
             // 
@@ -152,9 +155,10 @@ namespace GUI
             this.guna2Button15.FillColor = System.Drawing.Color.Maroon;
             this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button15.ForeColor = System.Drawing.Color.White;
-            this.guna2Button15.Location = new System.Drawing.Point(211, 28);
+            this.guna2Button15.Location = new System.Drawing.Point(281, 34);
+            this.guna2Button15.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button15.Name = "guna2Button15";
-            this.guna2Button15.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button15.Size = new System.Drawing.Size(240, 55);
             this.guna2Button15.TabIndex = 0;
             this.guna2Button15.Text = "Có khách: 0";
             // 
@@ -168,9 +172,10 @@ namespace GUI
             this.guna2Button16.FillColor = System.Drawing.Color.Silver;
             this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button16.ForeColor = System.Drawing.Color.White;
-            this.guna2Button16.Location = new System.Drawing.Point(405, 28);
+            this.guna2Button16.Location = new System.Drawing.Point(540, 34);
+            this.guna2Button16.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button16.Name = "guna2Button16";
-            this.guna2Button16.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button16.Size = new System.Drawing.Size(240, 55);
             this.guna2Button16.TabIndex = 0;
             this.guna2Button16.Text = "Đang dọn: 0";
             // 
@@ -184,9 +189,10 @@ namespace GUI
             this.guna2Button14.FillColor = System.Drawing.Color.Green;
             this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button14.ForeColor = System.Drawing.Color.White;
-            this.guna2Button14.Location = new System.Drawing.Point(17, 28);
+            this.guna2Button14.Location = new System.Drawing.Point(23, 34);
+            this.guna2Button14.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button14.Size = new System.Drawing.Size(240, 55);
             this.guna2Button14.TabIndex = 0;
             this.guna2Button14.Text = "Phòng trống: 12";
             // 
@@ -197,10 +203,11 @@ namespace GUI
             this.guna2TabControl1.Controls.Add(this.tabPage3);
             this.guna2TabControl1.Controls.Add(this.tabPage4);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(12, 12);
+            this.guna2TabControl1.Location = new System.Drawing.Point(16, 15);
+            this.guna2TabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1346, 209);
+            this.guna2TabControl1.Size = new System.Drawing.Size(1795, 257);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -232,9 +239,10 @@ namespace GUI
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(1787, 209);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Danh sách quản lý";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -243,9 +251,11 @@ namespace GUI
             // 
             this.groupBox6.Controls.Add(this.label1);
             this.groupBox6.Controls.Add(this.btn_QuanLiTrangThai);
-            this.groupBox6.Location = new System.Drawing.Point(717, 6);
+            this.groupBox6.Location = new System.Drawing.Point(956, 7);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(170, 149);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(227, 183);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             // 
@@ -253,9 +263,10 @@ namespace GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 128);
+            this.label1.Location = new System.Drawing.Point(39, 158);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 16);
+            this.label1.Size = new System.Drawing.Size(155, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản lí trạng thái";
             // 
@@ -273,9 +284,10 @@ namespace GUI
             this.btn_QuanLiTrangThai.Image = ((System.Drawing.Image)(resources.GetObject("btn_QuanLiTrangThai.Image")));
             this.btn_QuanLiTrangThai.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_QuanLiTrangThai.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLiTrangThai.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLiTrangThai.Location = new System.Drawing.Point(31, 23);
+            this.btn_QuanLiTrangThai.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QuanLiTrangThai.Name = "btn_QuanLiTrangThai";
-            this.btn_QuanLiTrangThai.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLiTrangThai.Size = new System.Drawing.Size(172, 130);
             this.btn_QuanLiTrangThai.TabIndex = 1;
             this.btn_QuanLiTrangThai.Click += new System.EventHandler(this.btn_QuanLiTrangThai_Click);
             // 
@@ -283,9 +295,11 @@ namespace GUI
             // 
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.btn_QuanLyPhong);
-            this.groupBox4.Location = new System.Drawing.Point(541, 6);
+            this.groupBox4.Location = new System.Drawing.Point(721, 7);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(170, 149);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(227, 183);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             // 
@@ -293,9 +307,10 @@ namespace GUI
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(35, 128);
+            this.label28.Location = new System.Drawing.Point(47, 158);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(103, 16);
+            this.label28.Size = new System.Drawing.Size(125, 20);
             this.label28.TabIndex = 1;
             this.label28.Text = "Quản lí phòng";
             // 
@@ -312,9 +327,10 @@ namespace GUI
             this.btn_QuanLyPhong.Image = global::GUI.Properties.Resources.IMG_QuanLyRoom;
             this.btn_QuanLyPhong.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_QuanLyPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyPhong.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLyPhong.Location = new System.Drawing.Point(31, 23);
+            this.btn_QuanLyPhong.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QuanLyPhong.Name = "btn_QuanLyPhong";
-            this.btn_QuanLyPhong.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyPhong.Size = new System.Drawing.Size(172, 130);
             this.btn_QuanLyPhong.TabIndex = 1;
             this.btn_QuanLyPhong.Click += new System.EventHandler(this.btn_QuanLyPhong_Click);
             // 
@@ -322,9 +338,11 @@ namespace GUI
             // 
             this.groupBox3.Controls.Add(this.label27);
             this.groupBox3.Controls.Add(this.btn_QuanLyDichVu);
-            this.groupBox3.Location = new System.Drawing.Point(364, 6);
+            this.groupBox3.Location = new System.Drawing.Point(485, 7);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(170, 149);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(227, 183);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
@@ -332,9 +350,10 @@ namespace GUI
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(35, 128);
+            this.label27.Location = new System.Drawing.Point(47, 158);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(109, 16);
+            this.label27.Size = new System.Drawing.Size(135, 20);
             this.label27.TabIndex = 1;
             this.label27.Text = "Quản lí dịch vụ";
             // 
@@ -351,9 +370,10 @@ namespace GUI
             this.btn_QuanLyDichVu.Image = global::GUI.Properties.Resources.IMG_QuanLyDichVu;
             this.btn_QuanLyDichVu.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_QuanLyDichVu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyDichVu.Location = new System.Drawing.Point(20, 19);
+            this.btn_QuanLyDichVu.Location = new System.Drawing.Point(27, 23);
+            this.btn_QuanLyDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QuanLyDichVu.Name = "btn_QuanLyDichVu";
-            this.btn_QuanLyDichVu.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyDichVu.Size = new System.Drawing.Size(172, 130);
             this.btn_QuanLyDichVu.TabIndex = 1;
             this.btn_QuanLyDichVu.Click += new System.EventHandler(this.btn_QuanLyDichVu_Click);
             // 
@@ -361,9 +381,11 @@ namespace GUI
             // 
             this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.btn_QuanLyKhachHang);
-            this.groupBox2.Location = new System.Drawing.Point(185, 6);
+            this.groupBox2.Location = new System.Drawing.Point(247, 7);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(170, 149);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(227, 183);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
@@ -371,9 +393,10 @@ namespace GUI
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(13, 128);
+            this.label26.Location = new System.Drawing.Point(17, 158);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(139, 16);
+            this.label26.Size = new System.Drawing.Size(170, 20);
             this.label26.TabIndex = 1;
             this.label26.Text = "Quản lí khách hàng";
             // 
@@ -390,9 +413,10 @@ namespace GUI
             this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
             this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_QuanLyKhachHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(31, 23);
+            this.btn_QuanLyKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
-            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(172, 130);
             this.btn_QuanLyKhachHang.TabIndex = 1;
             this.btn_QuanLyKhachHang.Click += new System.EventHandler(this.btn_QuanLyKhachHang_Click);
             // 
@@ -400,9 +424,11 @@ namespace GUI
             // 
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.btn_QuanLyNhanVien);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(8, 7);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(170, 149);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(227, 183);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -410,9 +436,10 @@ namespace GUI
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(17, 128);
+            this.label25.Location = new System.Drawing.Point(23, 158);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(126, 16);
+            this.label25.Size = new System.Drawing.Size(155, 20);
             this.label25.TabIndex = 1;
             this.label25.Text = "Quản lí nhân viên";
             // 
@@ -429,9 +456,10 @@ namespace GUI
             this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
             this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_QuanLyNhanVien.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(20, 19);
+            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(27, 23);
+            this.btn_QuanLyNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
-            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(172, 130);
             this.btn_QuanLyNhanVien.TabIndex = 1;
             this.btn_QuanLyNhanVien.Click += new System.EventHandler(this.btn_QuanLyNhanVien_Click);
             // 
@@ -440,9 +468,10 @@ namespace GUI
             this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Controls.Add(this.groupBox8);
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(1787, 209);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Báo cáo thống kê";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -451,9 +480,11 @@ namespace GUI
             // 
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.btn_ThongKeHoaDon);
-            this.groupBox7.Location = new System.Drawing.Point(185, 6);
+            this.groupBox7.Location = new System.Drawing.Point(247, 7);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(170, 149);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Size = new System.Drawing.Size(227, 183);
             this.groupBox7.TabIndex = 3;
             this.groupBox7.TabStop = false;
             // 
@@ -461,9 +492,10 @@ namespace GUI
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(19, 121);
+            this.label30.Location = new System.Drawing.Point(25, 149);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(133, 16);
+            this.label30.Size = new System.Drawing.Size(157, 20);
             this.label30.TabIndex = 2;
             this.label30.Text = "Thống kê hóa đơn";
             // 
@@ -480,18 +512,21 @@ namespace GUI
             this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources.IMG_ThongKeHoaDon;
             this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_ThongKeHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(22, 12);
+            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(29, 15);
+            this.btn_ThongKeHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
-            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(129, 106);
+            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(172, 130);
             this.btn_ThongKeHoaDon.TabIndex = 3;
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label29);
             this.groupBox8.Controls.Add(this.btn_ThongKeDanhThu);
-            this.groupBox8.Location = new System.Drawing.Point(6, 6);
+            this.groupBox8.Location = new System.Drawing.Point(8, 7);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(170, 149);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox8.Size = new System.Drawing.Size(227, 183);
             this.groupBox8.TabIndex = 4;
             this.groupBox8.TabStop = false;
             // 
@@ -499,9 +534,10 @@ namespace GUI
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(19, 121);
+            this.label29.Location = new System.Drawing.Point(25, 149);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(135, 16);
+            this.label29.Size = new System.Drawing.Size(163, 20);
             this.label29.TabIndex = 2;
             this.label29.Text = "Thống kê danh thu";
             // 
@@ -518,9 +554,10 @@ namespace GUI
             this.btn_ThongKeDanhThu.Image = global::GUI.Properties.Resources.IMG_ThongKeDanhThu;
             this.btn_ThongKeDanhThu.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_ThongKeDanhThu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ThongKeDanhThu.Location = new System.Drawing.Point(22, 12);
+            this.btn_ThongKeDanhThu.Location = new System.Drawing.Point(29, 15);
+            this.btn_ThongKeDanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThongKeDanhThu.Name = "btn_ThongKeDanhThu";
-            this.btn_ThongKeDanhThu.Size = new System.Drawing.Size(129, 106);
+            this.btn_ThongKeDanhThu.Size = new System.Drawing.Size(172, 130);
             this.btn_ThongKeDanhThu.TabIndex = 3;
             this.btn_ThongKeDanhThu.Click += new System.EventHandler(this.btn_ThongKeDanhThu_Click);
             // 
@@ -532,9 +569,10 @@ namespace GUI
             this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox12);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Size = new System.Drawing.Size(1787, 209);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Hệ thống";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -543,9 +581,11 @@ namespace GUI
             // 
             this.groupBox5.Controls.Add(this.label35);
             this.groupBox5.Controls.Add(this.btn_Thoat);
-            this.groupBox5.Location = new System.Drawing.Point(717, 6);
+            this.groupBox5.Location = new System.Drawing.Point(956, 7);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(170, 149);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(227, 183);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
@@ -553,9 +593,10 @@ namespace GUI
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(62, 121);
+            this.label35.Location = new System.Drawing.Point(83, 149);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(48, 16);
+            this.label35.Size = new System.Drawing.Size(56, 20);
             this.label35.TabIndex = 2;
             this.label35.Text = "Thoát";
             // 
@@ -572,18 +613,22 @@ namespace GUI
             this.btn_Thoat.Image = global::GUI.Properties.Resources.IMG_DangXuat1;
             this.btn_Thoat.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_Thoat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Thoat.Location = new System.Drawing.Point(22, 12);
+            this.btn_Thoat.Location = new System.Drawing.Point(29, 15);
+            this.btn_Thoat.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(129, 106);
+            this.btn_Thoat.Size = new System.Drawing.Size(172, 130);
             this.btn_Thoat.TabIndex = 3;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label34);
             this.groupBox9.Controls.Add(this.btn_DangXuat);
-            this.groupBox9.Location = new System.Drawing.Point(541, 6);
+            this.groupBox9.Location = new System.Drawing.Point(721, 7);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(170, 149);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox9.Size = new System.Drawing.Size(227, 183);
             this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
             // 
@@ -591,9 +636,10 @@ namespace GUI
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(48, 121);
+            this.label34.Location = new System.Drawing.Point(64, 149);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(76, 16);
+            this.label34.Size = new System.Drawing.Size(93, 20);
             this.label34.TabIndex = 2;
             this.label34.Text = "Đăng xuất";
             // 
@@ -610,18 +656,22 @@ namespace GUI
             this.btn_DangXuat.Image = global::GUI.Properties.Resources.IMG_Thoat;
             this.btn_DangXuat.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_DangXuat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DangXuat.Location = new System.Drawing.Point(22, 12);
+            this.btn_DangXuat.Location = new System.Drawing.Point(29, 15);
+            this.btn_DangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(129, 106);
+            this.btn_DangXuat.Size = new System.Drawing.Size(172, 130);
             this.btn_DangXuat.TabIndex = 3;
+            this.btn_DangXuat.Click += new System.EventHandler(this.btn_DangXuat_Click);
             // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.label33);
             this.groupBox10.Controls.Add(this.btn_SapXep);
-            this.groupBox10.Location = new System.Drawing.Point(364, 6);
+            this.groupBox10.Location = new System.Drawing.Point(485, 7);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(170, 149);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox10.Size = new System.Drawing.Size(227, 183);
             this.groupBox10.TabIndex = 2;
             this.groupBox10.TabStop = false;
             // 
@@ -629,9 +679,10 @@ namespace GUI
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(54, 121);
+            this.label33.Location = new System.Drawing.Point(72, 149);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(65, 16);
+            this.label33.Size = new System.Drawing.Size(76, 20);
             this.label33.TabIndex = 2;
             this.label33.Text = "Sắp xếp";
             // 
@@ -648,18 +699,64 @@ namespace GUI
             this.btn_SapXep.Image = global::GUI.Properties.Resources.IMG_SapXep;
             this.btn_SapXep.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_SapXep.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_SapXep.Location = new System.Drawing.Point(22, 12);
+            this.btn_SapXep.Location = new System.Drawing.Point(29, 15);
+            this.btn_SapXep.Margin = new System.Windows.Forms.Padding(4);
             this.btn_SapXep.Name = "btn_SapXep";
-            this.btn_SapXep.Size = new System.Drawing.Size(129, 106);
+            this.btn_SapXep.Size = new System.Drawing.Size(172, 130);
             this.btn_SapXep.TabIndex = 3;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label32);
+            this.groupBox11.Controls.Add(this.btn_DatPhong);
+            this.groupBox11.Location = new System.Drawing.Point(247, 7);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox11.Size = new System.Drawing.Size(227, 183);
+            this.groupBox11.TabIndex = 3;
+            this.groupBox11.TabStop = false;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(59, 149);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(94, 20);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Đặt phòng";
+            // 
+            // btn_DatPhong
+            // 
+            this.btn_DatPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_DatPhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DatPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DatPhong.ForeColor = System.Drawing.Color.White;
+            this.btn_DatPhong.Image = global::GUI.Properties.Resources.DatPhongNew;
+            this.btn_DatPhong.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_DatPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_DatPhong.Location = new System.Drawing.Point(31, 15);
+            this.btn_DatPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_DatPhong.Name = "btn_DatPhong";
+            this.btn_DatPhong.Size = new System.Drawing.Size(172, 130);
+            this.btn_DatPhong.TabIndex = 3;
+            this.btn_DatPhong.Click += new System.EventHandler(this.btn_DatPhong_Click);
             // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.label31);
             this.groupBox12.Controls.Add(this.btn_DoiMatKhau);
-            this.groupBox12.Location = new System.Drawing.Point(6, 6);
+            this.groupBox12.Location = new System.Drawing.Point(8, 7);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(170, 149);
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox12.Size = new System.Drawing.Size(227, 183);
             this.groupBox12.TabIndex = 4;
             this.groupBox12.TabStop = false;
             // 
@@ -667,9 +764,10 @@ namespace GUI
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(38, 121);
+            this.label31.Location = new System.Drawing.Point(51, 149);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(97, 16);
+            this.label31.Size = new System.Drawing.Size(119, 20);
             this.label31.TabIndex = 2;
             this.label31.Text = "Đổi mật khẩu";
             this.label31.Click += new System.EventHandler(this.label31_Click);
@@ -687,10 +785,12 @@ namespace GUI
             this.btn_DoiMatKhau.Image = global::GUI.Properties.Resources.IMG_DoiMatKhau;
             this.btn_DoiMatKhau.ImageSize = new System.Drawing.Size(136, 106);
             this.btn_DoiMatKhau.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DoiMatKhau.Location = new System.Drawing.Point(22, 12);
+            this.btn_DoiMatKhau.Location = new System.Drawing.Point(29, 15);
+            this.btn_DoiMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
-            this.btn_DoiMatKhau.Size = new System.Drawing.Size(129, 106);
+            this.btn_DoiMatKhau.Size = new System.Drawing.Size(172, 130);
             this.btn_DoiMatKhau.TabIndex = 3;
+            this.btn_DoiMatKhau.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
             // 
             // tabPage4
             // 
@@ -699,93 +799,64 @@ namespace GUI
             this.tabPage4.Controls.Add(this.groupBox15);
             this.tabPage4.Controls.Add(this.groupBox16);
             this.tabPage4.Location = new System.Drawing.Point(4, 44);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1338, 161);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Size = new System.Drawing.Size(1787, 209);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Trợ giúp";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
-            this.groupBox13.Location = new System.Drawing.Point(541, 6);
+            this.groupBox13.Location = new System.Drawing.Point(721, 7);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(170, 149);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox13.Size = new System.Drawing.Size(227, 183);
             this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             // 
             // groupBox14
             // 
-            this.groupBox14.Location = new System.Drawing.Point(364, 6);
+            this.groupBox14.Location = new System.Drawing.Point(485, 7);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(170, 149);
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox14.Size = new System.Drawing.Size(227, 183);
             this.groupBox14.TabIndex = 2;
             this.groupBox14.TabStop = false;
             // 
             // groupBox15
             // 
-            this.groupBox15.Location = new System.Drawing.Point(185, 6);
+            this.groupBox15.Location = new System.Drawing.Point(247, 7);
+            this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(170, 149);
+            this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox15.Size = new System.Drawing.Size(227, 183);
             this.groupBox15.TabIndex = 3;
             this.groupBox15.TabStop = false;
             // 
             // groupBox16
             // 
-            this.groupBox16.Location = new System.Drawing.Point(6, 6);
+            this.groupBox16.Location = new System.Drawing.Point(8, 7);
+            this.groupBox16.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(170, 149);
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox16.Size = new System.Drawing.Size(227, 183);
             this.groupBox16.TabIndex = 4;
             this.groupBox16.TabStop = false;
             // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(44, 121);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(78, 16);
-            this.label32.TabIndex = 2;
-            this.label32.Text = "Đặt phòng";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.label32);
-            this.groupBox11.Controls.Add(this.btn_DatPhong);
-            this.groupBox11.Location = new System.Drawing.Point(185, 6);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(170, 149);
-            this.groupBox11.TabIndex = 3;
-            this.groupBox11.TabStop = false;
-            // 
-            // btn_DatPhong
-            // 
-            this.btn_DatPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_DatPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DatPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DatPhong.ForeColor = System.Drawing.Color.White;
-            this.btn_DatPhong.Image = global::GUI.Properties.Resources.DatPhongNew;
-            this.btn_DatPhong.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_DatPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DatPhong.Location = new System.Drawing.Point(23, 12);
-            this.btn_DatPhong.Name = "btn_DatPhong";
-            this.btn_DatPhong.Size = new System.Drawing.Size(129, 106);
-            this.btn_DatPhong.TabIndex = 3;
-            this.btn_DatPhong.Click += new System.EventHandler(this.btn_DatPhong_Click);
-            // 
             // Frm_QuanLyKhachSan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1370, 702);
+            this.ClientSize = new System.Drawing.Size(1827, 864);
             this.Controls.Add(this.guna2TabControl1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel_ListRooms);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_QuanLyKhachSan";
             this.Text = "Quản lý khách sạn";
             this.Load += new System.EventHandler(this.Frm_QuanLyKhachSan_Load);
@@ -814,11 +885,11 @@ namespace GUI
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
 
         }

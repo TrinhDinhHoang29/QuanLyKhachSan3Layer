@@ -13,18 +13,33 @@ namespace BLL
    public class NhanVienBUS
     {
         private NhanVienDAL nv = new NhanVienDAL();
+        // lưu userName để có gì hiển thị lên giao diện
+        private static string userName = "";
+        private static string password = "";
 
-        private static int id;
-        private static string userName;
-        private static string pass;
-
-        public static int getId()
+        //
+        private static int MIN_PASSWORD_LENGTH = 3;
+        public static int getMIN_PASWORD()
         {
-            return id;
+            return NhanVienBUS.MIN_PASSWORD_LENGTH;
         }
-        public static void setId(int id)
+        public static void setUserName(string userName)
         {
-            id = id;
+            NhanVienBUS.userName = userName;
+        }
+        public static string getUserName()
+        {
+            return NhanVienBUS.userName;
+        }
+
+        public static void setPassword(string password)
+        {
+            NhanVienBUS.password = password;
+        }
+
+        public static string getPassword()
+        {
+            return NhanVienBUS.password;
         }
         public DataTable getDataAll ()
         {
@@ -71,5 +86,12 @@ namespace BLL
             // Đăng nhập thất bại
             return false;
         }
+        // Phương thức thay đổi mật khẩu cho người dùng với username cụ thể
+        public void changePassword(string username, string newPassword)
+        {
+            // Gọi phương thức updatePassword từ DAL để cập nhật mật khẩu trong cơ sở dữ liệu
+            nv.updatePassword(username, newPassword);
+        }
+
     }
 }

@@ -79,5 +79,15 @@ namespace DAL
             };
             return db.ExcuteSQL("sp_accounts_DeleteSoft_Id", para);
         }
+        public void updatePassword(string username, string password)
+        {
+            SqlParameter[] para = new SqlParameter[]
+            {
+                 new SqlParameter("@username", username),
+                 new SqlParameter("@password", password)
+            };
+
+            db.ExcuteSQL("sp_account_Update_Password", para);
+        }
     }
 }

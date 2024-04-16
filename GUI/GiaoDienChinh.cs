@@ -250,6 +250,34 @@ namespace GUI
             }
         }
 
+        private void btn_Thoat_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Cancel)
+            {
+                return;
+            }
+            this.Close();
+        }
+
+        private void btn_DangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn đăng xuất không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Cancel)
+            {
+                return;
+            }
+            Form frm_DangNhap = new Frm_DangNhap();
+            frm_DangNhap.Show();
+            this.Hide(); // Ẩn form hiện tại thay vì đóng nó.
+        }
+
+        private void btn_DoiMatKhau_Click(object sender, EventArgs e)
+        {
+            Frm_DoiMatKhau frm_DoiMatKhau = new Frm_DoiMatKhau();
+            frm_DoiMatKhau.Show();
+        }
+
 
     }
 }
