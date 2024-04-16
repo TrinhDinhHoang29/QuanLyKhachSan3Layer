@@ -42,7 +42,9 @@ namespace GUI
                 MessageBox.Show("Đăng nhập thành công!");
                 // Chuyển hướng đến giao diện chính
                 // Ví dụ: MainForm mainForm = new MainForm();
+
                 Form form = new Frm_QuanLyKhachSan();
+                
                 form.Show();
                 // mainForm.Show();
                 // this.Hide(); // ẩn form đăng nhập

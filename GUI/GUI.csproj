@@ -59,6 +59,12 @@
     <Compile Include="Frm_DangNhap.Designer.cs">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_PhieuDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PhieuDatPhong.Designer.cs">
+      <DependentUpon>Frm_PhieuDatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_QuanLyKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     <Compile Include="Frm_QuanLyTienIch.Designer.cs">
       <DependentUpon>Frm_QuanLyTienIch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Status.Designer.cs">
+      <DependentUpon>Frm_Status.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ThongKeDanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +112,9 @@
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PhieuDatPhong.resx">
+      <DependentUpon>Frm_PhieuDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_QuanLyKhachHang.resx">
       <DependentUpon>Frm_QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_QuanLyTienIch.resx">
       <DependentUpon>Frm_QuanLyTienIch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Status.resx">
+      <DependentUpon>Frm_Status.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ThongKeDanhThu.resx">
       <DependentUpon>Frm_ThongKeDanhThu.cs</DependentUpon>
@@ -193,6 +211,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatPhong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatPhongNew.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

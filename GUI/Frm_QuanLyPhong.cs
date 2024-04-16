@@ -16,6 +16,7 @@ namespace GUI
     public partial class Frm_QuanLyPhong : Form
     {
         private RoomsBUS roomBus = new RoomsBUS();
+        private StatusBUS statusBus = new StatusBUS();
         public Frm_QuanLyPhong()
         {
             InitializeComponent();
@@ -28,7 +29,19 @@ namespace GUI
                 ListViewItem item = new ListViewItem(row[0].ToString());
                 for (int i = 1; i < roomBus.getDataAll().Columns.Count; i++)
                 {
-                    item.SubItems.Add(row[i].ToString());
+                    if (i ==5)
+                    {   
+                            int statusId = Convert.ToInt32(row[i].ToString());
+                            DataTable tableStatus = statusBus.getDataById(statusId);
+                            foreach (DataRow rowStatus in tableStatus.Rows)
+                            {
+                                item.SubItems.Add(rowStatus[1].ToString());
+                            }
+                    }
+                    else
+                    {
+                        item.SubItems.Add(row[i].ToString());
+                    }
 
                 }
                 lstView_DanhSachPhong.Items.Add(item);
@@ -38,6 +51,7 @@ namespace GUI
         private void Frm_QuanLyPhong_Load(object sender, EventArgs e)
         {
             printListView();
+            printCBBoxStatus();
         }
 
         private void btn_ThemPhong_Click(object sender, EventArgs e)
@@ -46,9 +60,11 @@ namespace GUI
             string kieuPhong = cbBox_KieuPhong.Text;
             string kieuGiuong = cbBox_KieuGiuong.Text;
             float gia = float.Parse(txt_Gia.Text);
-            if(soPhong != "" && kieuGiuong != "" && kieuGiuong != "" && gia != 0)
+            string trangThai = cbBox_TrangThai.Text;
+            int statusId = statusBus.findIdByTitle(trangThai);
+            if (soPhong != "" && kieuGiuong != "" && kieuGiuong != "" && gia != 0)
             {
-                if (roomBus.insertData(soPhong, kieuPhong, kieuGiuong, gia) != 0)
+                if (roomBus.insertData(soPhong, kieuPhong, kieuGiuong, gia, statusId) != 0)
                 {
                     MessageBox.Show("Đã thêm thành công khách hàng !!!", "Thông báo");
                     txt_SoPhong.Text = "";
@@ -95,28 +111,35 @@ namespace GUI
             }
         }
 
-
-
-
         private void btn_SuaPhong_Click(object sender, EventArgs e)
         {
             string soPhong = txt_SoPhong.Text;
             string kieuPhong = cbBox_KieuPhong.Text;
             string kieuGiuong = cbBox_KieuGiuong.Text;
             float gia = float.Parse(txt_Gia.Text);
-            ListViewItem item = lstView_DanhSachPhong.SelectedItems[0];
-            int idRoom = Convert.ToInt32(item.SubItems[0].Text);
-            if (soPhong != "" && kieuPhong != "" && kieuGiuong != "" && gia != 0)
+            string trangThai = cbBox_TrangThai.Text;
+            int statusId = statusBus.findIdByTitle(trangThai);
+            try
             {
-                if (roomBus.updateData(idRoom, soPhong, kieuPhong, kieuGiuong, gia) != 0)
-                    MessageBox.Show("Update thành công", "Thông báo");
-                else
-                    MessageBox.Show("Update không thành công", "Thông báo");
-                printListView();
-                txt_SoPhong.Text = "";
-                txt_Gia.Text = "";
-                cbBox_KieuGiuong.Text = "";
-                cbBox_KieuPhong.Text = "";
+                ListViewItem item = lstView_DanhSachPhong.SelectedItems[0];
+                int idRoom = Convert.ToInt32(item.SubItems[0].Text);
+                if (soPhong != "" && kieuPhong != "" && kieuGiuong != "" && gia != 0)
+                {
+                    if (roomBus.updateData(idRoom, soPhong, kieuPhong, kieuGiuong, gia,statusId) != 0)
+                        MessageBox.Show("Update thành công", "Thông báo");
+                    else
+                        MessageBox.Show("Update không thành công", "Thông báo");
+                    printListView();
+                    txt_SoPhong.Text = "";
+                    txt_Gia.Text = "";
+                    cbBox_KieuGiuong.Text = "";
+                    cbBox_KieuPhong.Text = "";
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Update không thành công", "Thông báo");
+
             }
         }
 
@@ -129,7 +152,7 @@ namespace GUI
                 cbBox_KieuPhong.Text = item.SubItems[2].Text;
                 cbBox_KieuGiuong.Text = item.SubItems[3].Text;
                 txt_Gia.Text = item.SubItems[4].Text;
-
+                cbBox_TrangThai.Text = item.SubItems[5].Text;
             }
         }
 
@@ -152,6 +175,14 @@ namespace GUI
                     }
                     lstView_DanhSachPhong.Items.Add(item);
                 }
+            }
+        }
+
+        private void printCBBoxStatus()
+        {
+            foreach (DataRow row in statusBus.getDataAll().Rows)
+            {
+                cbBox_TrangThai.Items.Add(row[1].ToString());
             }
         }
     }

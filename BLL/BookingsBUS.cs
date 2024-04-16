@@ -13,6 +13,15 @@ namespace BLL
     {
         BookingsDAL bookings = new BookingsDAL();
 
+        public DataTable getDataAll()
+        {
+            return bookings.getDataAll();
+        }
+        public DataTable checkDate(int roomId,DateTime check_in_dateNew, DateTime check_out_dateNew)
+        {
+            return bookings.checkDate(roomId,check_in_dateNew, check_out_dateNew);
+        }
+
         public int deleteData(int id)
         {
             return bookings.deleteData(id);
@@ -21,5 +30,10 @@ namespace BLL
         {
             return bookings.selectByIdCustomer(id_Customers);
         }
+        public int getIdAndInsert(int customer_id, DateTime check_in_date, DateTime check_out_date, int account_id, float total_price)
+        {
+            return bookings.getIdAndInsert(customer_id, check_in_date, check_out_date, account_id, total_price);
+        }
+
     }
 }

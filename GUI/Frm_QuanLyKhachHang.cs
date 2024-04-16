@@ -55,9 +55,10 @@ namespace GUI
             string email = txt_Email.Text;
             if (tenKhachHang != "" && hoKhachHang != "" && diaChi != "" && soDienThoai != "" && email != "")
             {
-                if (khachHangBus.insertData(hoKhachHang, tenKhachHang, email, soDienThoai, diaChi) != 0)
+                int idKhachHang = khachHangBus.getIdAndInsert(hoKhachHang, tenKhachHang, email, soDienThoai, diaChi);
+                if (idKhachHang!=0)
                 {
-                    MessageBox.Show("Đã thêm thành công khách hàng !!!", "Thông báo");
+                    MessageBox.Show("Đã thêm thành công khách hàng !!! ", "Thông báo");
                     printListView();
                 }
                 else

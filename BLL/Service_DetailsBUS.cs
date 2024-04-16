@@ -26,5 +26,9 @@ namespace BLL
 
             return service.getDataByIdBookings(id);
         }
+        public int insertData(int booking_id, int service_id, int quantity)
+        {
+            return service.insertData(booking_id, service_id, quantity);
+        }
     }
 }

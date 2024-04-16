@@ -61,5 +61,27 @@ namespace DAL
             conn.Close();
             return row;
         }
+        public int GetParamsExcuteSQL(string procName, SqlParameter[] para)
+        {
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = procName;
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (para != null)
+                cmd.Parameters.AddRange(para);
+            cmd.Connection = conn;
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            conn.Open();
+            da.Fill(dt);
+            conn.Close();
+            int id = 0;
+            foreach(DataRow row in dt.Rows)
+            {
+                id = Convert.ToInt32( row[0].ToString());
+            }
+            return id;
+
+        }
     }
 }

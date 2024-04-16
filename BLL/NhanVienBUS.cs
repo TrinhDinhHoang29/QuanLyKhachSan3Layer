@@ -13,6 +13,19 @@ namespace BLL
    public class NhanVienBUS
     {
         private NhanVienDAL nv = new NhanVienDAL();
+
+        private static int id;
+        private static string userName;
+        private static string pass;
+
+        public static int getId()
+        {
+            return id;
+        }
+        public static void setId(int id)
+        {
+            id = id;
+        }
         public DataTable getDataAll ()
         {
             return nv.getDataAll();

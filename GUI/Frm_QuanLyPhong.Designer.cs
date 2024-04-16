@@ -30,7 +30,11 @@ namespace GUI
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbBox_TrangThai = new System.Windows.Forms.ComboBox();
+            this.cbBox_KieuGiuong = new System.Windows.Forms.ComboBox();
+            this.cbBox_KieuPhong = new System.Windows.Forms.ComboBox();
             this.txt_Gia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_SoPhong = new System.Windows.Forms.TextBox();
@@ -42,17 +46,16 @@ namespace GUI
             this.btn_ThemPhong = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TimKiemRooms = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_TimKiemRooms = new Guna.UI2.WinForms.Guna2TextBox();
             this.lstView_DanhSachPhong = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbBox_KieuPhong = new System.Windows.Forms.ComboBox();
-            this.cbBox_KieuGiuong = new System.Windows.Forms.ComboBox();
-            this.btn_TimKiemRooms = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_TimKiemRooms = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,9 +64,11 @@ namespace GUI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbBox_TrangThai);
             this.groupBox1.Controls.Add(this.cbBox_KieuGiuong);
             this.groupBox1.Controls.Add(this.cbBox_KieuPhong);
             this.groupBox1.Controls.Add(this.txt_Gia);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txt_SoPhong);
@@ -77,12 +82,56 @@ namespace GUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phòng";
             // 
+            // cbBox_TrangThai
+            // 
+            this.cbBox_TrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBox_TrangThai.FormattingEnabled = true;
+            this.cbBox_TrangThai.Location = new System.Drawing.Point(130, 179);
+            this.cbBox_TrangThai.Name = "cbBox_TrangThai";
+            this.cbBox_TrangThai.Size = new System.Drawing.Size(200, 26);
+            this.cbBox_TrangThai.TabIndex = 16;
+            // 
+            // cbBox_KieuGiuong
+            // 
+            this.cbBox_KieuGiuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBox_KieuGiuong.FormattingEnabled = true;
+            this.cbBox_KieuGiuong.Items.AddRange(new object[] {
+            "Single bed",
+            "Double bed"});
+            this.cbBox_KieuGiuong.Location = new System.Drawing.Point(130, 112);
+            this.cbBox_KieuGiuong.Name = "cbBox_KieuGiuong";
+            this.cbBox_KieuGiuong.Size = new System.Drawing.Size(200, 26);
+            this.cbBox_KieuGiuong.TabIndex = 15;
+            // 
+            // cbBox_KieuPhong
+            // 
+            this.cbBox_KieuPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBox_KieuPhong.FormattingEnabled = true;
+            this.cbBox_KieuPhong.Items.AddRange(new object[] {
+            "VIP",
+            "Normal"});
+            this.cbBox_KieuPhong.Location = new System.Drawing.Point(130, 75);
+            this.cbBox_KieuPhong.Name = "cbBox_KieuPhong";
+            this.cbBox_KieuPhong.Size = new System.Drawing.Size(200, 26);
+            this.cbBox_KieuPhong.TabIndex = 15;
+            // 
             // txt_Gia
             // 
             this.txt_Gia.Location = new System.Drawing.Point(130, 148);
             this.txt_Gia.Name = "txt_Gia";
             this.txt_Gia.Size = new System.Drawing.Size(200, 24);
             this.txt_Gia.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Location = new System.Drawing.Point(19, 184);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Trạng thái:";
             // 
             // label6
             // 
@@ -219,6 +268,41 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 21;
             // 
+            // btn_TimKiemRooms
+            // 
+            this.btn_TimKiemRooms.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemRooms.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemRooms.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiemRooms.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiemRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiemRooms.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiemRooms.Location = new System.Drawing.Point(545, 3);
+            this.btn_TimKiemRooms.Name = "btn_TimKiemRooms";
+            this.btn_TimKiemRooms.Size = new System.Drawing.Size(97, 36);
+            this.btn_TimKiemRooms.TabIndex = 22;
+            this.btn_TimKiemRooms.Text = "Tìm kiếm";
+            this.btn_TimKiemRooms.Click += new System.EventHandler(this.btn_TimKiemRooms_Click);
+            // 
+            // txt_TimKiemRooms
+            // 
+            this.txt_TimKiemRooms.BorderColor = System.Drawing.Color.Black;
+            this.txt_TimKiemRooms.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TimKiemRooms.DefaultText = "";
+            this.txt_TimKiemRooms.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_TimKiemRooms.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_TimKiemRooms.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemRooms.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemRooms.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemRooms.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TimKiemRooms.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemRooms.Location = new System.Drawing.Point(149, 3);
+            this.txt_TimKiemRooms.Name = "txt_TimKiemRooms";
+            this.txt_TimKiemRooms.PasswordChar = '\0';
+            this.txt_TimKiemRooms.PlaceholderText = "";
+            this.txt_TimKiemRooms.SelectedText = "";
+            this.txt_TimKiemRooms.Size = new System.Drawing.Size(390, 36);
+            this.txt_TimKiemRooms.TabIndex = 21;
+            // 
             // lstView_DanhSachPhong
             // 
             this.lstView_DanhSachPhong.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -226,7 +310,8 @@ namespace GUI
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader6});
             this.lstView_DanhSachPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstView_DanhSachPhong.FullRowSelect = true;
             this.lstView_DanhSachPhong.GridLines = true;
@@ -268,6 +353,10 @@ namespace GUI
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader5.Width = 203;
             // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Trạng thái";
+            // 
             // guna2ComboBox1
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
@@ -285,65 +374,6 @@ namespace GUI
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
             this.guna2ComboBox1.TabIndex = 0;
-            // 
-            // cbBox_KieuPhong
-            // 
-            this.cbBox_KieuPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBox_KieuPhong.FormattingEnabled = true;
-            this.cbBox_KieuPhong.Items.AddRange(new object[] {
-            "VIP",
-            "Normal"});
-            this.cbBox_KieuPhong.Location = new System.Drawing.Point(130, 75);
-            this.cbBox_KieuPhong.Name = "cbBox_KieuPhong";
-            this.cbBox_KieuPhong.Size = new System.Drawing.Size(200, 26);
-            this.cbBox_KieuPhong.TabIndex = 15;
-            // 
-            // cbBox_KieuGiuong
-            // 
-            this.cbBox_KieuGiuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBox_KieuGiuong.FormattingEnabled = true;
-            this.cbBox_KieuGiuong.Items.AddRange(new object[] {
-            "Single bed",
-            "Double bed"});
-            this.cbBox_KieuGiuong.Location = new System.Drawing.Point(130, 112);
-            this.cbBox_KieuGiuong.Name = "cbBox_KieuGiuong";
-            this.cbBox_KieuGiuong.Size = new System.Drawing.Size(200, 26);
-            this.cbBox_KieuGiuong.TabIndex = 15;
-            // 
-            // btn_TimKiemRooms
-            // 
-            this.btn_TimKiemRooms.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemRooms.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemRooms.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiemRooms.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiemRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiemRooms.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiemRooms.Location = new System.Drawing.Point(545, 3);
-            this.btn_TimKiemRooms.Name = "btn_TimKiemRooms";
-            this.btn_TimKiemRooms.Size = new System.Drawing.Size(97, 36);
-            this.btn_TimKiemRooms.TabIndex = 22;
-            this.btn_TimKiemRooms.Text = "Tìm kiếm";
-            this.btn_TimKiemRooms.Click += new System.EventHandler(this.btn_TimKiemRooms_Click);
-            // 
-            // txt_TimKiemRooms
-            // 
-            this.txt_TimKiemRooms.BorderColor = System.Drawing.Color.Black;
-            this.txt_TimKiemRooms.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_TimKiemRooms.DefaultText = "";
-            this.txt_TimKiemRooms.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_TimKiemRooms.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_TimKiemRooms.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TimKiemRooms.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TimKiemRooms.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemRooms.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_TimKiemRooms.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemRooms.Location = new System.Drawing.Point(149, 3);
-            this.txt_TimKiemRooms.Name = "txt_TimKiemRooms";
-            this.txt_TimKiemRooms.PasswordChar = '\0';
-            this.txt_TimKiemRooms.PlaceholderText = "";
-            this.txt_TimKiemRooms.SelectedText = "";
-            this.txt_TimKiemRooms.Size = new System.Drawing.Size(390, 36);
-            this.txt_TimKiemRooms.TabIndex = 21;
             // 
             // Frm_QuanLyPhong
             // 
@@ -393,5 +423,8 @@ namespace GUI
         private System.Windows.Forms.ComboBox cbBox_KieuGiuong;
         private Guna.UI2.WinForms.Guna2Button btn_TimKiemRooms;
         private Guna.UI2.WinForms.Guna2TextBox txt_TimKiemRooms;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ComboBox cbBox_TrangThai;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -16,13 +16,17 @@ namespace BLL
         {
             return room.getDataAll();
         }
-        public int insertData(string room_number, string room_type, string bed_type, float price_per_night)
+        public DataTable updateStatus()
         {
-            return room.insertData( room_number,  room_type,  bed_type,  price_per_night);
+            return room.updateStatus();
         }
-        public int updateData(int id,string room_number, string room_type, string bed_type, float price_per_night)
+        public int insertData(string room_number, string room_type, string bed_type, float price_per_night,int status_id)
         {
-            return room.updateData(id, room_number, room_type, bed_type, price_per_night);
+            return room.insertData( room_number,  room_type,  bed_type,  price_per_night,status_id);
+        }
+        public int updateData(int id,string room_number, string room_type, string bed_type, float price_per_night,int status_id)
+        {
+            return room.updateData(id, room_number, room_type, bed_type, price_per_night,status_id);
         }
         public DataTable getDataById(int id)
         {

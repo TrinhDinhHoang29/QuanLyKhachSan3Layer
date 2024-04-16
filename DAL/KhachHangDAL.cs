@@ -76,5 +76,17 @@ namespace DAL
             };
             return db.ExcuteSQL("sp_customer_DeleteSoft_Id", para);
         }
+        public int getIdAndInsert(string first_name, string last_name, string email, string phone, string address)
+        {
+            SqlParameter[] para = new SqlParameter[]
+           {
+                    new SqlParameter("@first_name",first_name),
+                    new SqlParameter("@last_name",last_name),
+                    new SqlParameter("@email",email),
+                    new SqlParameter("@phone",phone),
+                    new SqlParameter("@address",address),
+           };
+            return db.GetParamsExcuteSQL("sp_customer_getIdAndInsert", para);
+        }
     }
 }

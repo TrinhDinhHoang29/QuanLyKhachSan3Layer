@@ -11,6 +11,17 @@ namespace DAL
     {
         dbConnect db = new dbConnect();
 
+        public DataTable getDataAll()
+        {
+            return db.getDataTable("SELECT * FROM bookings");
+        }
+        public DataTable checkDate(int roomId, DateTime check_in_dateNew,DateTime check_out_dateNew)
+        {
+            string fomatDateCheckIn = check_in_dateNew.ToString("yyyy-MM-dd");
+            string fomatDateCheckOut = check_out_dateNew.ToString("yyyy-MM-dd");
+
+            return db.getDataTable($"select * from bookings,Booking_Details where Bookings.booking_id=Booking_Details.booking_id AND Booking_Details.room_id={roomId}  AND ( check_in_date >= '{check_in_dateNew}' and '{check_in_dateNew}' < check_out_date OR check_in_date>'{check_out_dateNew}' and '{check_out_dateNew}'<=check_out_date)");
+        }
         public int deleteData(int id)
         {
             SqlParameter[] para = new SqlParameter[]
@@ -22,6 +33,18 @@ namespace DAL
         public DataTable selectByIdCustomer(int id_Customer)
         {
             return db.getDataTable($"SELECT * FROM Bookings WHERE customer_id={id_Customer}");
+        }
+        public int getIdAndInsert(int customer_id,DateTime check_in_date,DateTime check_out_date,int account_id,float total_price)
+        {
+            SqlParameter[] para = new SqlParameter[]
+           {
+                    new SqlParameter("@customer_id",customer_id),
+                    new SqlParameter("@check_in_date",check_in_date),
+                    new SqlParameter("@check_out_date",check_out_date),
+                    new SqlParameter("@account_id",account_id),
+                    new SqlParameter("@total_price",total_price),
+           };
+            return db.GetParamsExcuteSQL("sp_bookings_getIdAndInsert", para);
         }
 
     }

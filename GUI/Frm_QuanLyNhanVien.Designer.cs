@@ -247,7 +247,7 @@ namespace GUI
             // 
             this.columnHeader2.Text = "Tên đăng nhập";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 239;
+            this.columnHeader2.Width = 222;
             // 
             // columnHeader3
             // 
