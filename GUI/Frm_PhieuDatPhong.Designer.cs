@@ -41,7 +41,6 @@ namespace GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_DatPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_XemTongTien = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XacNhanDatPhong = new Guna.UI2.WinForms.Guna2Button();
             this.date_CheckOut = new System.Windows.Forms.DateTimePicker();
             this.date_CheckIn = new System.Windows.Forms.DateTimePicker();
@@ -81,7 +80,6 @@ namespace GUI
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btn_DatPhong);
-            this.groupBox1.Controls.Add(this.btn_XemTongTien);
             this.groupBox1.Controls.Add(this.btn_XacNhanDatPhong);
             this.groupBox1.Controls.Add(this.date_CheckOut);
             this.groupBox1.Controls.Add(this.date_CheckIn);
@@ -120,6 +118,7 @@ namespace GUI
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
             this.txt_SoDienThoai.Size = new System.Drawing.Size(200, 24);
             this.txt_SoDienThoai.TabIndex = 30;
+            this.txt_SoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SoDienThoai_KeyPress);
             // 
             // txt_Email
             // 
@@ -208,22 +207,6 @@ namespace GUI
             this.btn_DatPhong.Size = new System.Drawing.Size(259, 184);
             this.btn_DatPhong.TabIndex = 22;
             // 
-            // btn_XemTongTien
-            // 
-            this.btn_XemTongTien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_XemTongTien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_XemTongTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_XemTongTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_XemTongTien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XemTongTien.ForeColor = System.Drawing.Color.White;
-            this.btn_XemTongTien.ImageSize = new System.Drawing.Size(39, 20);
-            this.btn_XemTongTien.Location = new System.Drawing.Point(1035, 133);
-            this.btn_XemTongTien.Name = "btn_XemTongTien";
-            this.btn_XemTongTien.Size = new System.Drawing.Size(137, 20);
-            this.btn_XemTongTien.TabIndex = 21;
-            this.btn_XemTongTien.Text = "Xem tổng tiền";
-            this.btn_XemTongTien.Click += new System.EventHandler(this.btn_XemTongTien_Click);
-            // 
             // btn_XacNhanDatPhong
             // 
             this.btn_XacNhanDatPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -294,7 +277,7 @@ namespace GUI
             this.txt_TongTien.Enabled = false;
             this.txt_TongTien.Location = new System.Drawing.Point(820, 133);
             this.txt_TongTien.Name = "txt_TongTien";
-            this.txt_TongTien.Size = new System.Drawing.Size(209, 24);
+            this.txt_TongTien.Size = new System.Drawing.Size(351, 24);
             this.txt_TongTien.TabIndex = 12;
             // 
             // txt_SoPhong
@@ -421,7 +404,7 @@ namespace GUI
             // columnHeader15
             // 
             this.columnHeader15.Text = "Tổng tiền";
-            this.columnHeader15.Width = 102;
+            this.columnHeader15.Width = 111;
             // 
             // Frm_PhieuDatPhong
             // 
@@ -463,7 +446,6 @@ namespace GUI
         private System.Windows.Forms.TextBox txt_TongTien;
         private System.Windows.Forms.TextBox txt_SoPhong;
         private Guna.UI2.WinForms.Guna2Button btn_XacNhanDatPhong;
-        private Guna.UI2.WinForms.Guna2Button btn_XemTongTien;
         private System.Windows.Forms.DateTimePicker date_CheckIn;
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.ColumnHeader columnHeader14;

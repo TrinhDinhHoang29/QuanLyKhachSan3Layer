@@ -118,20 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="hotelicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hotelicon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IMG_Thoat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_Thoat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_ThongKeDanhThu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_ThongKeDanhThu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5027881_business_chart_finance_graph_money_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5027881_business_chart_finance_graph_money_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DatPhong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DatPhong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_DangXuat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_DangXuat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_QuanLyNhanVien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_QuanLyNhanVien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,34 +148,55 @@
   <data name="IMG_QuanLyKhachHang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_QuanLyKhachHang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_LoaiPhong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_LoaiPhong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IMG_QuanLyRoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_QuanLyRoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_DangXuat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_DangXuat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cancel_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_DoiMatKhau" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_DoiMatKhau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bookingNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookingNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_QuanLyDichVu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_QuanLyDichVu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hotelicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotelicon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_LoaiPhong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_LoaiPhong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dichVuNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dichVuNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_SapXep" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_SapXep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_DangXuat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_DangXuat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5027835_analytics_chart_graph_statistics_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5027835_analytics_chart_graph_statistics_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_ThongKeHoaDon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_ThongKeHoaDon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="paymentNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logOutNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logOutNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_DoiMatKhau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_DoiMatKhau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DatPhongNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DatPhongNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_SapXep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_SapXep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="outNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -16,6 +16,22 @@ namespace BLL
         {
             return room.getDataAll();
         }
+        public DataTable getDataTrong()
+        {
+            return room.getDataTrong();
+        }
+        public DataTable getDataCoKhach()
+        {
+            return room.getDataCoKhach();
+        }
+        public DataTable getDataBaoTri()
+        {
+            return room.getDataBaoTri();
+        }
+        public DataTable getDataKhacBaoTri()
+        {
+            return room.getDataKhacBaoTri();
+        }
         public DataTable updateStatus()
         {
             return room.updateStatus();

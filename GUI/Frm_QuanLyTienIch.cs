@@ -40,11 +40,11 @@ namespace GUI
         private void btn_ThemDichVu_Click(object sender, EventArgs e)
         {
             string tenDichVu = txt_TenDichVu.Text;
-            float giaDichVu = float.Parse(txt_GiaDichVu.Text);
+            string giaDichVu = txt_GiaDichVu.Text;
         
             if (tenDichVu != "")
             {
-                if (serviceBus.insertData(tenDichVu, giaDichVu) != 0)
+                if (serviceBus.insertData(tenDichVu, float.Parse(giaDichVu)) != 0)
                 {
                     MessageBox.Show("Đã thêm thành công dịch vụ !!!", "Thông báo");
                     txt_TenDichVu.Text = "";
@@ -90,20 +90,24 @@ namespace GUI
 
         private void btn_SuaDichVu_Click(object sender, EventArgs e)
         {
-            string tenDichVu = txt_TenDichVu.Text;
-            float giaDichVu = float.Parse(txt_GiaDichVu.Text);
-            ListViewItem item = lstView_DanhSachDichVu.SelectedItems[0];
-            int idService = Convert.ToInt32(item.SubItems[0].Text);
-            if (tenDichVu != "")
+            if (lstView_DanhSachDichVu.SelectedItems.Count > 0)
             {
-                if (serviceBus.updateData(idService, tenDichVu, giaDichVu) != 0)
-                    MessageBox.Show("Update thành công", "Thông báo");
-                else
-                    MessageBox.Show("Update không thành công", "Thông báo");
-                printListView();
-                txt_TenDichVu.Text = "";
-                txt_GiaDichVu.Text = "";
+                string tenDichVu = txt_TenDichVu.Text;
+                string giaDichVu = txt_GiaDichVu.Text;
 
+                ListViewItem item = lstView_DanhSachDichVu.SelectedItems[0];
+                string idService = item.SubItems[0].Text;
+                if (tenDichVu != "")
+                {
+                    if (serviceBus.updateData(Convert.ToInt32(idService), tenDichVu, float.Parse(giaDichVu)) != 0)
+                        MessageBox.Show("Update thành công", "Thông báo");
+                    else
+                        MessageBox.Show("Update không thành công", "Thông báo");
+                    printListView();
+                    txt_TenDichVu.Text = "";
+                    txt_GiaDichVu.Text = "";
+
+                }
             }
         }
 
@@ -137,6 +141,12 @@ namespace GUI
                     lstView_DanhSachDichVu.Items.Add(item);
                 }
             }
+        }
+
+        private void txt_GiaDichVu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

@@ -30,6 +30,7 @@ namespace GUI
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TimKiemKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.lstView_DanhSachKhachHang = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -55,7 +56,6 @@ namespace GUI
             this.txt_HoKhachHang = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_TimKiemKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -74,6 +74,21 @@ namespace GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_TimKiemKhachHang
+            // 
+            this.btn_TimKiemKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiemKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiemKhachHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiemKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiemKhachHang.Location = new System.Drawing.Point(545, 3);
+            this.btn_TimKiemKhachHang.Name = "btn_TimKiemKhachHang";
+            this.btn_TimKiemKhachHang.Size = new System.Drawing.Size(97, 36);
+            this.btn_TimKiemKhachHang.TabIndex = 18;
+            this.btn_TimKiemKhachHang.Text = "Tìm kiếm";
+            this.btn_TimKiemKhachHang.Click += new System.EventHandler(this.btn_TimKiemKhachHang_Click);
             // 
             // lstView_DanhSachKhachHang
             // 
@@ -282,6 +297,8 @@ namespace GUI
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
             this.txt_SoDienThoai.Size = new System.Drawing.Size(200, 24);
             this.txt_SoDienThoai.TabIndex = 11;
+            this.txt_SoDienThoai.TextChanged += new System.EventHandler(this.txt_SoDienThoai_TextChanged);
+            this.txt_SoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SoDienThoai_KeyPress);
             // 
             // txt_Email
             // 
@@ -351,21 +368,6 @@ namespace GUI
             this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Họ: ";
-            // 
-            // btn_TimKiemKhachHang
-            // 
-            this.btn_TimKiemKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiemKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiemKhachHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiemKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiemKhachHang.Location = new System.Drawing.Point(545, 3);
-            this.btn_TimKiemKhachHang.Name = "btn_TimKiemKhachHang";
-            this.btn_TimKiemKhachHang.Size = new System.Drawing.Size(97, 36);
-            this.btn_TimKiemKhachHang.TabIndex = 18;
-            this.btn_TimKiemKhachHang.Text = "Tìm kiếm";
-            this.btn_TimKiemKhachHang.Click += new System.EventHandler(this.btn_TimKiemKhachHang_Click);
             // 
             // Frm_QuanLyKhachHang
             // 

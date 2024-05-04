@@ -82,6 +82,7 @@ namespace GUI
                 txt_NewPassword.PasswordChar = '*';
                 txt_ConfirmNewPassword.PasswordChar = '*';
             }
+
         }
     }
 }

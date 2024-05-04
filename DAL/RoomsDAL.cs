@@ -16,11 +16,27 @@ namespace DAL
 
             return db.getDataTable("SELECT room_id,room_number,room_type,bed_type,price_per_night,status_id FROM Rooms WHERE deleted = 0");
         }
+        public DataTable getDataTrong()
+        {
+            return db.getDataTable("SELECT room_id,room_number,room_type,bed_type,price_per_night,status_id FROM Rooms WHERE deleted = 0 and status_id=1");
+        }
+        public DataTable getDataCoKhach()
+        {
+            return db.getDataTable("SELECT room_id,room_number,room_type,bed_type,price_per_night,status_id FROM Rooms WHERE deleted = 0 and status_id=2");
+        }
+        public DataTable getDataBaoTri()
+        {
+            return db.getDataTable("SELECT room_id,room_number,room_type,bed_type,price_per_night,status_id FROM Rooms WHERE deleted = 0 and status_id=6");
+        }
+        public DataTable getDataKhacBaoTri()
+        {
+            return db.getDataTable("SELECT room_id,room_number,room_type,bed_type,price_per_night,status_id FROM Rooms WHERE deleted = 0 and status_id != 6");
+        }
         public DataTable updateStatus()
         {
             DateTime currentDate = DateTime.Now;
             string curentDateFomat = currentDate.ToString("yyyy-MM-dd");
-            string sql = $" select Rooms.room_id,Rooms.room_number,Rooms.room_type,Rooms.bed_type,price_per_night,status_id from Bookings , Booking_Details,Rooms where Rooms.room_id = Booking_Details.room_id and Booking_Details.booking_id=Bookings.booking_id AND  check_in_date >= '{curentDateFomat}' and '{curentDateFomat}' < check_out_date";
+            string sql = $" select Rooms.room_id,Rooms.room_number,Rooms.room_type,Rooms.bed_type,price_per_night,status_id from Bookings , Booking_Details,Rooms where bookings.Booking_status!='Cancel' and Rooms.room_id = Booking_Details.room_id and Booking_Details.booking_id=Bookings.booking_id AND  check_in_date >= '{curentDateFomat}' and '{curentDateFomat}' < check_out_date";
             return db.getDataTable(sql);
         }
         public DataTable getDataById(int id)

@@ -122,20 +122,23 @@ namespace GUI
             string diaChi = txt_DiaChi.Text;
             string soDienThoai = txt_SoDienThoai.Text;
             string email = txt_Email.Text;
-            ListViewItem item = lstView_DanhSachKhachHang.SelectedItems[0];
-            int idKhachHang = Convert.ToInt32(item.SubItems[0].Text);
-            if (tenKhachHang != "" && hoKhachHang != "" && diaChi != "" && soDienThoai != "" && email != "")
+            if (lstView_DanhSachKhachHang.SelectedItems.Count > 0)
             {
-                if (khachHangBus.updateData(idKhachHang, hoKhachHang, tenKhachHang, diaChi, soDienThoai, email) != 0)
-                    MessageBox.Show("Update thành công", "Thông báo");
-                else
-                    MessageBox.Show("Update không thành công", "Thông báo");
-                printListView();
-                 txt_TenKhachHang.Text="";
-                txt_HoKhachHang.Text="";
-                txt_DiaChi.Text="";
-                txt_SoDienThoai.Text="";
-                txt_Email.Text="";
+                ListViewItem item = lstView_DanhSachKhachHang.SelectedItems[0];
+                int idKhachHang = Convert.ToInt32(item.SubItems[0].Text);
+                if (tenKhachHang != "" && hoKhachHang != "" && diaChi != "" && soDienThoai != "" && email != "")
+                {
+                    if (khachHangBus.updateData(idKhachHang, hoKhachHang, tenKhachHang, diaChi, soDienThoai, email) != 0)
+                        MessageBox.Show("Update thành công", "Thông báo");
+                    else
+                        MessageBox.Show("Update không thành công", "Thông báo");
+                    printListView();
+                    txt_TenKhachHang.Text = "";
+                    txt_HoKhachHang.Text = "";
+                    txt_DiaChi.Text = "";
+                    txt_SoDienThoai.Text = "";
+                    txt_Email.Text = "";
+                }
             }
         }
 
@@ -159,6 +162,17 @@ namespace GUI
                         lstView_DanhSachKhachHang.Items.Add(item);
                     }
                 }
+        }
+
+        private void txt_SoDienThoai_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_SoDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

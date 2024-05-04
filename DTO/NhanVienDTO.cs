@@ -11,7 +11,7 @@ namespace DTO
         public int account_id { get; set; }
         public string username { get; set; }
         public string password_hash { get; set; }
-        public string role { get; set; }
+        public string role_id { get; set; }
 
 
     }

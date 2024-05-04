@@ -22,6 +22,7 @@ namespace GUI
         }
         NhanVienDTO obj = new NhanVienDTO();// value object
         NhanVienBUS bus = new NhanVienBUS();// Business logic layer
+        RolesBUS rolesBus = new RolesBUS();
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -42,12 +43,12 @@ namespace GUI
                 MessageBox.Show("Đăng nhập thành công!");
                 // Chuyển hướng đến giao diện chính
                 // Ví dụ: MainForm mainForm = new MainForm();
-
-                Form form = new Frm_QuanLyKhachSan();
-                
+                Form form = new Frm_QuanLyKhachSan(username);
+                BLL.NhanVienBUS.setUserName(username);
+                BLL.NhanVienBUS.setPassword(password);
                 form.Show();
-                // mainForm.Show();
-                // this.Hide(); // ẩn form đăng nhập
+                //mainForm.Show();
+                //this.Hide(); // ẩn form đăng nhập
                 this.Hide();
             }
             else

@@ -26,13 +26,13 @@ namespace DAL
                 return db.getData("sp_account_Select_Id", para);
                    
         }
-        public int insertData(string username,string password_hash,string role)
+        public int insertData(string username,string password_hash,int role_id)
         {
                 SqlParameter[] para = new SqlParameter[]
                 {
                     new SqlParameter("@username",username),
                     new SqlParameter("@password_hash",password_hash),
-                    new SqlParameter("@role",role)
+                    new SqlParameter("@role_id",role_id)
                 };
                 return db.ExcuteSQL("sp_acounts_Insert",para);   
         }
@@ -44,14 +44,14 @@ namespace DAL
             };
             return db.ExcuteSQL("sp_acounts_Delete_Id", para);
         }
-        public int updateData(int id,string username,string password,string role)
+        public int updateData(int id,string username,string password,int role_id)
         {
             SqlParameter[] para = new SqlParameter[]
             {
                 new SqlParameter("@id",id),
                 new SqlParameter("@username",username),
                 new SqlParameter("@password",password),
-                new SqlParameter("@role",role)
+                new SqlParameter("@role_id",role_id)
             };
             return db.ExcuteSQL("sp_accounts_Update_Id", para); 
         }

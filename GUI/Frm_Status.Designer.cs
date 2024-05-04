@@ -30,14 +30,15 @@ namespace GUI
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_TimKiemTrangThai = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_TimKiemTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lstView_DanhSachTrangThai = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_TimKiemTrangThai = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_TimKiemTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_MoTaTrangThai = new System.Windows.Forms.TextBox();
             this.txt_TenTrangThai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,10 +46,11 @@ namespace GUI
             this.btn_SuaTT = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XoaTT = new Guna.UI2.WinForms.Guna2Button();
             this.btn_ThemTT = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_MoTaTrangThai = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +65,41 @@ namespace GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 22;
+            // 
+            // lstView_DanhSachTrangThai
+            // 
+            this.lstView_DanhSachTrangThai.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lstView_DanhSachTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstView_DanhSachTrangThai.FullRowSelect = true;
+            this.lstView_DanhSachTrangThai.GridLines = true;
+            this.lstView_DanhSachTrangThai.HideSelection = false;
+            this.lstView_DanhSachTrangThai.Location = new System.Drawing.Point(4, 45);
+            this.lstView_DanhSachTrangThai.Name = "lstView_DanhSachTrangThai";
+            this.lstView_DanhSachTrangThai.Size = new System.Drawing.Size(638, 451);
+            this.lstView_DanhSachTrangThai.TabIndex = 23;
+            this.lstView_DanhSachTrangThai.UseCompatibleStateImageBehavior = false;
+            this.lstView_DanhSachTrangThai.View = System.Windows.Forms.View.Details;
+            this.lstView_DanhSachTrangThai.SelectedIndexChanged += new System.EventHandler(this.lstView_DanhSachTrangThai_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã trạng thái";
+            this.columnHeader1.Width = 104;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên trạng thái";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 166;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Mô tả";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 365;
             // 
             // btn_TimKiemTrangThai
             // 
@@ -117,41 +154,6 @@ namespace GUI
             this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
             this.guna2ComboBox1.TabIndex = 0;
             // 
-            // lstView_DanhSachTrangThai
-            // 
-            this.lstView_DanhSachTrangThai.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lstView_DanhSachTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstView_DanhSachTrangThai.FullRowSelect = true;
-            this.lstView_DanhSachTrangThai.GridLines = true;
-            this.lstView_DanhSachTrangThai.HideSelection = false;
-            this.lstView_DanhSachTrangThai.Location = new System.Drawing.Point(4, 45);
-            this.lstView_DanhSachTrangThai.Name = "lstView_DanhSachTrangThai";
-            this.lstView_DanhSachTrangThai.Size = new System.Drawing.Size(638, 451);
-            this.lstView_DanhSachTrangThai.TabIndex = 23;
-            this.lstView_DanhSachTrangThai.UseCompatibleStateImageBehavior = false;
-            this.lstView_DanhSachTrangThai.View = System.Windows.Forms.View.Details;
-            this.lstView_DanhSachTrangThai.SelectedIndexChanged += new System.EventHandler(this.lstView_DanhSachTrangThai_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Mã trạng thái";
-            this.columnHeader1.Width = 104;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tên trạng thái";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 166;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Mô tả";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 365;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_MoTaTrangThai);
@@ -165,6 +167,13 @@ namespace GUI
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông trạng thái phòng";
+            // 
+            // txt_MoTaTrangThai
+            // 
+            this.txt_MoTaTrangThai.Location = new System.Drawing.Point(130, 75);
+            this.txt_MoTaTrangThai.Name = "txt_MoTaTrangThai";
+            this.txt_MoTaTrangThai.Size = new System.Drawing.Size(200, 24);
+            this.txt_MoTaTrangThai.TabIndex = 13;
             // 
             // txt_TenTrangThai
             // 
@@ -258,12 +267,15 @@ namespace GUI
             this.btn_ThemTT.Text = "Thêm";
             this.btn_ThemTT.Click += new System.EventHandler(this.btn_ThemTT_Click);
             // 
-            // txt_MoTaTrangThai
+            // pictureBox1
             // 
-            this.txt_MoTaTrangThai.Location = new System.Drawing.Point(130, 75);
-            this.txt_MoTaTrangThai.Name = "txt_MoTaTrangThai";
-            this.txt_MoTaTrangThai.Size = new System.Drawing.Size(200, 24);
-            this.txt_MoTaTrangThai.TabIndex = 13;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.StatusNew;
+            this.pictureBox1.Location = new System.Drawing.Point(87, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Status
             // 
@@ -271,6 +283,7 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1060, 504);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel1);
@@ -281,6 +294,7 @@ namespace GUI
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,5 +318,6 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2Button btn_XoaTT;
         private Guna.UI2.WinForms.Guna2Button btn_ThemTT;
         private System.Windows.Forms.TextBox txt_MoTaTrangThai;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

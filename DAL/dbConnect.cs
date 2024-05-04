@@ -13,7 +13,7 @@ namespace DAL
         private SqlConnection conn;
         public dbConnect()
         {
-            conn = new SqlConnection("Data Source=pcnoname\\SQLEXPRESS;Initial Catalog=QLKS; Integrated Security = True; ");
+            conn = new SqlConnection("Data Source=LAPTOP-QK799FFN\\SQLEXPRESS;Initial Catalog=QLKS; Integrated Security = True; ");
         }
         public DataTable getDataTable(String strSQL)
         {
@@ -50,16 +50,36 @@ namespace DAL
         }
         public int ExcuteSQL(string procName , SqlParameter[] para)
         {
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = procName;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Connection = conn;
-            if (para != null)
-                cmd.Parameters.AddRange(para);
-            conn.Open();
-            int row = cmd.ExecuteNonQuery();
-            conn.Close();
-            return row;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = procName;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = conn;
+                if (para != null)
+                    cmd.Parameters.AddRange(para);
+                conn.Open();
+                int row = cmd.ExecuteNonQuery();
+                return row;
+            }
+            catch (Exception ex)
+            {
+                return 0; // Hoặc giá trị khác để biểu thị lỗi
+            }
+            finally
+            {
+                conn.Close();
+            }
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.CommandText = procName;
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Connection = conn;
+            //if (para != null)
+            //    cmd.Parameters.AddRange(para);
+            //conn.Open();
+            //int row = cmd.ExecuteNonQuery();
+            //conn.Close();
+            //return row;
         }
         public int GetParamsExcuteSQL(string procName, SqlParameter[] para)
         {

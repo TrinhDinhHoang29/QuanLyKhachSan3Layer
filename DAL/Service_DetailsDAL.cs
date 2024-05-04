@@ -20,6 +20,12 @@ namespace DAL
         };
             return db.ExcuteSQL("sp_serviceDetails_Delete_id", para);
         }
+        public DataTable getDataByBookingId(int booking_id)
+        {
+            return db.getDataTable($"select * from Service_details,Services where Service_details.Service_id = Services.Service_id  and booking_id = {booking_id}");
+        }
+
+
         public DataTable getDataById(int id)
         {
 

@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_QuanLyPhong));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbBox_TrangThai = new System.Windows.Forms.ComboBox();
             this.cbBox_KieuGiuong = new System.Windows.Forms.ComboBox();
@@ -121,6 +122,7 @@ namespace GUI
             this.txt_Gia.Name = "txt_Gia";
             this.txt_Gia.Size = new System.Drawing.Size(200, 24);
             this.txt_Gia.TabIndex = 10;
+            this.txt_Gia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Gia_KeyPress);
             // 
             // label1
             // 
@@ -161,6 +163,7 @@ namespace GUI
             this.txt_SoPhong.Name = "txt_SoPhong";
             this.txt_SoPhong.Size = new System.Drawing.Size(200, 24);
             this.txt_SoPhong.TabIndex = 13;
+            this.txt_SoPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Gia_KeyPress);
             // 
             // label4
             // 
@@ -247,7 +250,7 @@ namespace GUI
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.IMG_QuanLyRoom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(109, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 116);

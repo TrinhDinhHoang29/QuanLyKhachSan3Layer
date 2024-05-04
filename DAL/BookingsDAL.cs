@@ -20,7 +20,7 @@ namespace DAL
             string fomatDateCheckIn = check_in_dateNew.ToString("yyyy-MM-dd");
             string fomatDateCheckOut = check_out_dateNew.ToString("yyyy-MM-dd");
 
-            return db.getDataTable($"select * from bookings,Booking_Details where Bookings.booking_id=Booking_Details.booking_id AND Booking_Details.room_id={roomId}  AND ( check_in_date >= '{check_in_dateNew}' and '{check_in_dateNew}' < check_out_date OR check_in_date>'{check_out_dateNew}' and '{check_out_dateNew}'<=check_out_date)");
+            return db.getDataTable($"select * from bookings,Booking_Details where bookings.Booking_status!='Cancel' and Bookings.booking_id=Booking_Details.booking_id AND Booking_Details.room_id={roomId}  AND ( check_in_date >= '{check_in_dateNew}' and '{check_in_dateNew}' < check_out_date OR check_in_date>'{check_out_dateNew}' and '{check_out_dateNew}'<=check_out_date)");
         }
         public int deleteData(int id)
         {
@@ -45,6 +45,15 @@ namespace DAL
                     new SqlParameter("@total_price",total_price),
            };
             return db.GetParamsExcuteSQL("sp_bookings_getIdAndInsert", para);
+        }
+        public int updateStatusById(int booking_id,string booking_status)
+        {
+            SqlParameter[] para = new SqlParameter[]
+          {
+                    new SqlParameter("@booking_id",booking_id),
+                    new SqlParameter("@booking_status",booking_status),    
+          };
+            return db.ExcuteSQL("sp_bookings_UpdateStatusById", para);
         }
 
     }

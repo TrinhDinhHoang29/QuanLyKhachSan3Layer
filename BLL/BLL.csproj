@@ -46,6 +46,7 @@
     <Compile Include="KhachHangBUS.cs" />
     <Compile Include="NhanVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolesBUS.cs" />
     <Compile Include="RoomsBUS.cs" />
     <Compile Include="ServiceBUS.cs" />
     <Compile Include="Service_DetailsBUS.cs" />

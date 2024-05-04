@@ -17,6 +17,10 @@ namespace BLL
         {
             return service.deleteData(id);
         }
+        public DataTable getDataByBookingId(int booking_id)
+        {
+            return service.getDataByBookingId(booking_id);
+        }
         public DataTable getDataById(int id)
         {
             return service.getDataById(id);

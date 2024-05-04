@@ -21,5 +21,10 @@ namespace BLL
         {
             return bookingDetailsDal.insertData(booking_id, room_id, price);
         }
+        public DataTable getDataByBookingId(int booking_id)
+        {
+            return bookingDetailsDal.getDataByBookingId(booking_id);
+        }
+
     }
 }

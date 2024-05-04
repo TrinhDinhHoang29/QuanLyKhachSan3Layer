@@ -34,6 +34,10 @@ namespace BLL
         {
             return bookings.getIdAndInsert(customer_id, check_in_date, check_out_date, account_id, total_price);
         }
+        public int updateStatusById(int booking_id, string booking_status)
+        {
+            return bookings.updateStatusById(booking_id, booking_status);
+        }
 
     }
 }

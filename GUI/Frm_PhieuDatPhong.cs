@@ -20,12 +20,19 @@ namespace GUI
         private ServiceBUS serviceBus = new ServiceBUS();
         private KhachHangBUS khachHangBus = new KhachHangBUS();
         private BookingsBUS bookingsBus = new BookingsBUS();
+        private NhanVienBUS nhanVienBus = new NhanVienBUS();
         private Booking_DetailsBUS booking_DetailsBus = new Booking_DetailsBUS();
-        public Frm_PhieuDatPhong()
+        private string userName;
+
+        public Frm_PhieuDatPhong(string userName)
         {
             InitializeComponent();
+            this.userName = userName;
         }
-
+        private DataRow accounts()
+        {
+            return nhanVienBus.getDataAllByUserName(this.userName).Rows[0];
+        }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -33,7 +40,7 @@ namespace GUI
         private void printListViewRooms() // Hàm xuất ra trên listView 
         {
             lstView_DanhSachPhong.Items.Clear();
-            foreach (DataRow row in roomBus.getDataAll().Rows)
+            foreach (DataRow row in roomBus.getDataKhacBaoTri().Rows)
             {
                 ListViewItem item = new ListViewItem(row[0].ToString());
                 for (int i = 1; i < roomBus.getDataAll().Columns.Count; i++)
@@ -56,8 +63,6 @@ namespace GUI
                 lstView_DanhSachPhong.Items.Add(item);
             }
         }
-
-
         private void printListViewBookings() // Hàm xuất ra trên listView 
         {
             lstView_Bookings.Items.Clear();
@@ -66,27 +71,32 @@ namespace GUI
                 ListViewItem item = new ListViewItem(row[0].ToString());
                 for (int i = 1; i < bookingsBus.getDataAll().Columns.Count; i++)
                 {
-                    //if (i == 5)
-                    //{
-                    //    int statusId = Convert.ToInt32(row[i].ToString());
-                    //    DataTable tableStatus = statusBus.getDataById(statusId);
-                    //    foreach (DataRow rowStatus in tableStatus.Rows)
-                    //    {
-                    //        item.SubItems.Add(rowStatus[1].ToString());
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    item.SubItems.Add(row[i].ToString());
-                    //}
-                      item.SubItems.Add(row[i].ToString());
+                    if (i == 1)
+                    {
+                        int customerId = Convert.ToInt32(row[i].ToString());
+                        DataTable tableCustomer = khachHangBus.getDataById(customerId);
+                        foreach (DataRow rowCustomer in tableCustomer.Rows)
+                        {
+                            item.SubItems.Add($"{rowCustomer[1].ToString()} {rowCustomer[2].ToString()}");
+                        }
+                    }else if (i==4)
+                    {
+                        int accountId = Convert.ToInt32(row[i].ToString());
+                        DataTable tableAccount = nhanVienBus.getDataById(accountId);
+                        foreach (DataRow rowAccount in tableAccount.Rows)
+                        {
+                            item.SubItems.Add($"{rowAccount[1].ToString()}");
+                        }
+                    }
+                    else
+                    {
+                        item.SubItems.Add(row[i].ToString());
+                    }
 
                 }
                 lstView_Bookings.Items.Add(item);
             }
         }
-
-
         private void Frm_PhieuDatPhong_Load(object sender, EventArgs e)
         {
             printListViewRooms();
@@ -99,7 +109,9 @@ namespace GUI
                 string listNameRoom = "";
                 foreach (ListViewItem item in lstView_DanhSachPhong.SelectedItems)
                 {
-                    listNameRoom += $"{item.SubItems[1].Text},";
+                    listNameRoom += $"{item.SubItems[1].Text} ";
+                    printTotalPriceRoom();
+
                 }
                 txt_SoPhong.Text = listNameRoom;
             }
@@ -108,15 +120,13 @@ namespace GUI
                 txt_SoPhong.Text = "";
             }
         }
-
         private void btn_XemTongTien_Click(object sender, EventArgs e)
         {
-            DateTime fromDate = date_CheckIn.Value;
-            DateTime toDate = date_CheckOut.Value;
-            // Tính toán số ngày giữa hai giá trị DateTime
-            TimeSpan difference = toDate.Subtract(fromDate);
+            string sdateCheckIn = date_CheckIn.Value.ToString("MM/dd/yyyy"), sdateCheckOut = date_CheckOut.Value.ToString("MM/dd/yyyy");
+            DateTime dateCheckIn = DateTime.Parse(sdateCheckIn), dateCheckOut = DateTime.Parse(sdateCheckOut);
+            TimeSpan difference = dateCheckOut.Subtract(dateCheckIn);
             // Lấy số ngày dưới dạng số nguyên
-            int numberOfDays = (int)difference.TotalDays+1;
+            int numberOfDays = (int)difference.TotalDays;
             //select lstView Roooms start
             float totalPriceRooms = 0;
             foreach (ListViewItem item in lstView_DanhSachPhong.SelectedItems)
@@ -129,6 +139,7 @@ namespace GUI
             }
             else
             {
+                date_CheckIn.Value = date_CheckOut.Value;
                 return;
             }
 
@@ -154,30 +165,38 @@ namespace GUI
         }
         private void btn_XacNhanDatPhong_Click(object sender, EventArgs e)
         {
-
-
             string hoKhachHang = txt_HoKhachHang.Text;
             string tenKhachHang = txt_TenKhachHang.Text;
             string emailKhachHang = txt_Email.Text;
             string phoneKhachHang = txt_SoDienThoai.Text;
             string diaChiKhachHang = txt_DiaChi.Text;
-            DateTime dateCheckIn = date_CheckIn.Value,dateCheckOut = date_CheckOut.Value;
+            string sdateCheckIn = date_CheckIn.Value.ToString("MM/dd/yyyy"), sdateCheckOut = date_CheckOut.Value.ToString("MM/dd/yyyy");
+            DateTime dateCheckIn = DateTime.Parse(sdateCheckIn), dateCheckOut= DateTime.Parse(sdateCheckOut);
+            TimeSpan difference = dateCheckOut.Subtract(dateCheckIn);
+            // Lấy số ngày dưới dạng số nguyên
+            int numberOfDays = (int)difference.TotalDays;
+            if (numberOfDays<1)
+            {
+                MessageBox.Show("Ngày không hợp lệ!!","Thông báo");
+                return;
+            }
             if (checkDate(dateCheckIn, dateCheckOut)==false)
             {
                 MessageBox.Show("Ngày này đã có khách đặt !!","Thông báo");
                 return;
             }
+            
             if (hoKhachHang != "" && tenKhachHang != "" && emailKhachHang != "" && phoneKhachHang != "" && diaChiKhachHang != "" && txt_TongTien.Text != "")
             {
-                float tongTien = float.Parse(txt_TongTien.Text);
+                float tongTien = float.Parse(txt_TongTien.Text.Replace(" VND", "").Replace(",", ""));
                 try
                 {
                     int idKhachHang = khachHangBus.getIdAndInsert(hoKhachHang, tenKhachHang, emailKhachHang, phoneKhachHang, diaChiKhachHang);
-                    int idBookings = bookingsBus.getIdAndInsert(idKhachHang, dateCheckIn, dateCheckOut, 16, tongTien);
+                    int idBookings = bookingsBus.getIdAndInsert(idKhachHang, dateCheckIn, dateCheckOut,int.Parse( accounts()[0].ToString()), tongTien);
                     foreach (ListViewItem item in lstView_DanhSachPhong.SelectedItems)
                     {
                         int idRooms = Convert.ToInt32(item.SubItems[0].Text);
-                        float priceRoom = float.Parse(item.SubItems[4].Text);
+                        float priceRoom = float.Parse(item.SubItems[4].Text.Replace(" VND", "").Replace(",", ""));
                         booking_DetailsBus.insertData(idBookings, idRooms, priceRoom);
                     }
                     MessageBox.Show("Đặt phòng thành công !!");
@@ -196,7 +215,6 @@ namespace GUI
                 MessageBox.Show("Vui lòng nhập đủ thông tin !!");
             }
         }
-
         private void updateStatus()
         {
            DataTable roomsStatus=roomBus.updateStatus();
@@ -214,11 +232,6 @@ namespace GUI
                         roomBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 2);
                         coHieu = true;
                     }
-                    else if (row[5].ToString() == "6")
-                    {
-                        coHieu = true;
-                        continue;
-                    }
                     //else
                     //{
                     //    int roomId = Convert.ToInt32(row[0].ToString());
@@ -226,36 +239,53 @@ namespace GUI
                     //    roomBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 1);
                     //}
                 }
+                if (row[5].ToString() == "6")
+                {
+                    coHieu = true;
+                    continue;
+                }
                 if (coHieu == false)
                 {
-                    int roomId = Convert.ToInt32(row[0].ToString());
+                        int roomId = Convert.ToInt32(row[0].ToString());
                         float roomPrice = float.Parse(row[4].ToString());
                         roomBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 1);
                 }
             }
         }
-
-        private void date_CheckOut_ValueChanged(object sender, EventArgs e)
+        private void printTotalPriceRoom()
         {
-            DateTime fromDate = date_CheckIn.Value;
-            DateTime toDate = date_CheckOut.Value;
-            // Tính toán số ngày giữa hai giá trị DateTime
-            TimeSpan difference = toDate.Subtract(fromDate);
+            string sdateCheckIn = date_CheckIn.Value.ToString("MM/dd/yyyy"), sdateCheckOut = date_CheckOut.Value.ToString("MM/dd/yyyy");
+            DateTime dateCheckIn = DateTime.Parse(sdateCheckIn), dateCheckOut = DateTime.Parse(sdateCheckOut);
+            TimeSpan difference = dateCheckOut.Subtract(dateCheckIn);
             // Lấy số ngày dưới dạng số nguyên
-            int numberOfDays = (int)difference.TotalDays + 1;
+            int numberOfDays = (int)difference.TotalDays;
             //select lstView Roooms start
             float totalPriceRooms = 0;
             foreach (ListViewItem item in lstView_DanhSachPhong.SelectedItems)
             {
                 totalPriceRooms += float.Parse(item.SubItems[4].Text);
             }
-            if (numberOfDays > 0)
+            if (numberOfDays >= 0)
             {
-                txt_TongTien.Text = (totalPriceRooms * numberOfDays).ToString();
+                txt_TongTien.Text = (totalPriceRooms * numberOfDays).ToString("#,##0.00 VND");
             }
             else
             {
+
+                date_CheckOut.Value = date_CheckIn.Value;
                 return;
+            }
+        }
+        private void date_CheckOut_ValueChanged(object sender, EventArgs e)
+        {
+            printTotalPriceRoom();
+        }
+
+        private void txt_SoDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

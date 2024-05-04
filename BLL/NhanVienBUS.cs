@@ -13,6 +13,7 @@ namespace BLL
    public class NhanVienBUS
     {
         private NhanVienDAL nv = new NhanVienDAL();
+        private NhanVienDTO nhanVienDTO = new NhanVienDTO();
         // lưu userName để có gì hiển thị lên giao diện
         private static string userName = "";
         private static string password = "";
@@ -45,13 +46,17 @@ namespace BLL
         {
             return nv.getDataAll();
         }
-        public int insertData(string username,string password,string role)
+        public DataTable getDataAllByUserName(string userName)
         {
-            return nv.insertData(username, password, role);
+            return nv.getDataByUsername(userName);
         }
-        public int updateData(int id,string username,string password,string role)
+        public int insertData(string username,string password,int role_id)
         {
-            return nv.updateData(id, username, password, role);
+            return nv.insertData(username, password, role_id);
+        }
+        public int updateData(int id,string username,string password,int role_id)
+        {
+            return nv.updateData(id, username, password, role_id);
         }
         public DataTable getDataById(int id)
         {
@@ -79,6 +84,7 @@ namespace BLL
                 if (password == storedPassword)
                 {
                     // Đăng nhập thành công
+                    nhanVienDTO.role_id = "anh hoang";
                     return true;
                 }
             }

@@ -29,14 +29,14 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_QuanLyNhanVien));
             this.txt_MatKhau = new System.Windows.Forms.TextBox();
             this.txt_TenDangNhap = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rad_User = new System.Windows.Forms.RadioButton();
-            this.rad_Admin = new System.Windows.Forms.RadioButton();
+            this.cbBox_Roles = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_XoaNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XoaTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
@@ -106,8 +106,7 @@ namespace GUI
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rad_User);
-            this.groupBox1.Controls.Add(this.rad_Admin);
+            this.groupBox1.Controls.Add(this.cbBox_Roles);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
@@ -122,28 +121,20 @@ namespace GUI
             this.groupBox1.Text = "Thông tin tài khoản";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // rad_User
+            // cbBox_Roles
             // 
-            this.rad_User.AutoSize = true;
-            this.rad_User.Location = new System.Drawing.Point(262, 118);
-            this.rad_User.Name = "rad_User";
-            this.rad_User.Size = new System.Drawing.Size(62, 22);
-            this.rad_User.TabIndex = 11;
-            this.rad_User.TabStop = true;
-            this.rad_User.Text = "User";
-            this.rad_User.UseVisualStyleBackColor = true;
-            // 
-            // rad_Admin
-            // 
-            this.rad_Admin.AutoSize = true;
-            this.rad_Admin.Location = new System.Drawing.Point(170, 118);
-            this.rad_Admin.Name = "rad_Admin";
-            this.rad_Admin.Size = new System.Drawing.Size(72, 22);
-            this.rad_Admin.TabIndex = 10;
-            this.rad_Admin.TabStop = true;
-            this.rad_Admin.Text = "Admin";
-            this.rad_Admin.UseVisualStyleBackColor = true;
-            this.rad_Admin.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.cbBox_Roles.BackColor = System.Drawing.Color.Transparent;
+            this.cbBox_Roles.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbBox_Roles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBox_Roles.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbBox_Roles.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbBox_Roles.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBox_Roles.ForeColor = System.Drawing.Color.Black;
+            this.cbBox_Roles.ItemHeight = 30;
+            this.cbBox_Roles.Location = new System.Drawing.Point(158, 118);
+            this.cbBox_Roles.Name = "cbBox_Roles";
+            this.cbBox_Roles.Size = new System.Drawing.Size(202, 36);
+            this.cbBox_Roles.TabIndex = 12;
             // 
             // groupBox2
             // 
@@ -316,7 +307,7 @@ namespace GUI
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.IMG_QuanLyNhanVien;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(109, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 116);
@@ -368,7 +359,6 @@ namespace GUI
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.RadioButton rad_User;
-        private System.Windows.Forms.RadioButton rad_Admin;
+        private Guna.UI2.WinForms.Guna2ComboBox cbBox_Roles;
     }
 }

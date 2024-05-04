@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_QuanLyTienIch));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_SuaDichVu = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XoaDichVu = new Guna.UI2.WinForms.Guna2Button();
@@ -38,19 +39,19 @@ namespace GUI
             this.label5 = new System.Windows.Forms.Label();
             this.txt_GiaDichVu = new System.Windows.Forms.TextBox();
             this.txt_TenDichVu = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TimKiemDichVu = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_TimKiemDV = new Guna.UI2.WinForms.Guna2TextBox();
             this.lstView_DanhSachDichVu = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btn_TimKiemDichVu = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_TimKiemDV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -156,6 +157,7 @@ namespace GUI
             this.txt_GiaDichVu.Name = "txt_GiaDichVu";
             this.txt_GiaDichVu.Size = new System.Drawing.Size(200, 24);
             this.txt_GiaDichVu.TabIndex = 8;
+            this.txt_GiaDichVu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_GiaDichVu_KeyPress);
             // 
             // txt_TenDichVu
             // 
@@ -163,16 +165,6 @@ namespace GUI
             this.txt_TenDichVu.Name = "txt_TenDichVu";
             this.txt_TenDichVu.Size = new System.Drawing.Size(200, 24);
             this.txt_TenDichVu.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.IMG_QuanLyDichVu;
-            this.pictureBox1.Location = new System.Drawing.Point(112, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -186,6 +178,41 @@ namespace GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 19;
+            // 
+            // btn_TimKiemDichVu
+            // 
+            this.btn_TimKiemDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiemDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiemDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiemDichVu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiemDichVu.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiemDichVu.Location = new System.Drawing.Point(545, 3);
+            this.btn_TimKiemDichVu.Name = "btn_TimKiemDichVu";
+            this.btn_TimKiemDichVu.Size = new System.Drawing.Size(97, 36);
+            this.btn_TimKiemDichVu.TabIndex = 22;
+            this.btn_TimKiemDichVu.Text = "Tìm kiếm";
+            this.btn_TimKiemDichVu.Click += new System.EventHandler(this.btn_TimKiemDichVu_Click);
+            // 
+            // txt_TimKiemDV
+            // 
+            this.txt_TimKiemDV.BorderColor = System.Drawing.Color.Black;
+            this.txt_TimKiemDV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TimKiemDV.DefaultText = "";
+            this.txt_TimKiemDV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_TimKiemDV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_TimKiemDV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemDV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemDV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemDV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TimKiemDV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemDV.Location = new System.Drawing.Point(149, 3);
+            this.txt_TimKiemDV.Name = "txt_TimKiemDV";
+            this.txt_TimKiemDV.PasswordChar = '\0';
+            this.txt_TimKiemDV.PlaceholderText = "";
+            this.txt_TimKiemDV.SelectedText = "";
+            this.txt_TimKiemDV.Size = new System.Drawing.Size(390, 36);
+            this.txt_TimKiemDV.TabIndex = 21;
             // 
             // lstView_DanhSachDichVu
             // 
@@ -240,40 +267,15 @@ namespace GUI
             this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
             this.guna2ComboBox1.TabIndex = 0;
             // 
-            // btn_TimKiemDichVu
+            // pictureBox1
             // 
-            this.btn_TimKiemDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiemDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiemDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiemDichVu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiemDichVu.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiemDichVu.Location = new System.Drawing.Point(545, 3);
-            this.btn_TimKiemDichVu.Name = "btn_TimKiemDichVu";
-            this.btn_TimKiemDichVu.Size = new System.Drawing.Size(97, 36);
-            this.btn_TimKiemDichVu.TabIndex = 22;
-            this.btn_TimKiemDichVu.Text = "Tìm kiếm";
-            this.btn_TimKiemDichVu.Click += new System.EventHandler(this.btn_TimKiemDichVu_Click);
-            // 
-            // txt_TimKiemDV
-            // 
-            this.txt_TimKiemDV.BorderColor = System.Drawing.Color.Black;
-            this.txt_TimKiemDV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_TimKiemDV.DefaultText = "";
-            this.txt_TimKiemDV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_TimKiemDV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_TimKiemDV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TimKiemDV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TimKiemDV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemDV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_TimKiemDV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemDV.Location = new System.Drawing.Point(149, 3);
-            this.txt_TimKiemDV.Name = "txt_TimKiemDV";
-            this.txt_TimKiemDV.PasswordChar = '\0';
-            this.txt_TimKiemDV.PlaceholderText = "";
-            this.txt_TimKiemDV.SelectedText = "";
-            this.txt_TimKiemDV.Size = new System.Drawing.Size(390, 36);
-            this.txt_TimKiemDV.TabIndex = 21;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(97, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_QuanLyTienIch
             // 
@@ -281,18 +283,18 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1060, 504);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Frm_QuanLyTienIch";
             this.Text = "Frm_QuanLyTienIch";
             this.Load += new System.EventHandler(this.Frm_QuanLyTienIch_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,7 +310,6 @@ namespace GUI
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_GiaDichVu;
         private System.Windows.Forms.TextBox txt_TenDichVu;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListView lstView_DanhSachDichVu;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -317,5 +318,6 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Button btn_TimKiemDichVu;
         private Guna.UI2.WinForms.Guna2TextBox txt_TimKiemDV;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
