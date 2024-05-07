@@ -17,6 +17,7 @@ namespace GUI
         NhanVienBUS nv = new NhanVienBUS();
         RoomsBUS roomsBus = new RoomsBUS();
         RolesBUS roleBus = new RolesBUS();
+        BookingsBUS bookingsBus = new BookingsBUS();
         private string userName;
         public Frm_QuanLyKhachSan(string userName)
         {
@@ -257,15 +258,25 @@ namespace GUI
             button.Location = new System.Drawing.Point(toaDoX, toaDoY);
             button.Size = new System.Drawing.Size(200, 100);
             // Thiết lập nội dung của button
-            button.Text = $"\t {tenPhong}\t \n \t{date}\t";
+            button.Text = $"\t{tenPhong} \t";
             button.Font = new System.Drawing.Font(button.Font, System.Drawing.FontStyle.Bold);
             button.ForeColor = System.Drawing.Color.White;
-            button.Font = new System.Drawing.Font(button.Font.FontFamily, 12, System.Drawing.FontStyle.Bold);
+            button.Font = new System.Drawing.Font(button.Font.FontFamily, 11, System.Drawing.FontStyle.Bold);
             if (id == 1)
             {
                 button.BackColor = System.Drawing.Color.Green;
-            }else if (id==2)
+                button.Click += room_click1;
+            }else if (id == 2)
+            {
+                DataRow bookingRow = bookingsBus.getDataByIdRoomAndCurrentDate(tenPhong).Rows[0];
                 button.BackColor = System.Drawing.Color.Maroon;
+                button.Text += $"\n\t{bookingRow[2].ToString()}\n\t{bookingRow[3].ToString()}\t";
+
+                button.Click += room_click;
+
+
+
+            }
             else
                 button.BackColor = System.Drawing.Color.DarkOrange;
 
@@ -274,6 +285,19 @@ namespace GUI
             // Thêm button vào Form
             this.Controls.Add(button);
             return button;
+        }
+        public void room_click(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            DataRow bookingRow = bookingsBus.getDataByIdRoomAndCurrentDate(int.Parse(button.Text.Split(' ')[0]).ToString()).Rows[0];
+            Form hoaDon = new Frm_HoaDon(bookingRow[1].ToString());
+            hoaDon.Show();
+        }
+        public void room_click1(object sender, EventArgs e)
+        {
+
+            Form phieuDatPhong = new Frm_PhieuDatPhong(userName);
+            phieuDatPhong.Show();
         }
         public Button buttonPagination(int toaDoX, int toaDoY, int text)
         {
@@ -363,7 +387,7 @@ namespace GUI
                     {
                         int roomId = Convert.ToInt32(row[0].ToString());
                         float roomPrice = float.Parse(row[4].ToString());
-                        roomsBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 2);
+                        roomsBus.updateDataNew(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 2);
 
                         coHieu = true;
                     }
@@ -377,7 +401,7 @@ namespace GUI
                 {
                     int roomId = Convert.ToInt32(row[0].ToString());
                     float roomPrice = float.Parse(row[4].ToString());
-                    roomsBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 1);
+                    roomsBus.updateDataNew(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 1);
                 }
             }
         }

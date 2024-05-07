@@ -40,29 +40,41 @@ namespace GUI
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_QuanLiTrangThai = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.btn_QuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_QuanLyDichVu = new Guna.UI2.WinForms.Guna2Button();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.btn_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.btn_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label30 = new System.Windows.Forms.Label();
+            this.btn_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label29 = new System.Windows.Forms.Label();
+            this.btn_ThongKeDanhThu = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
             this.label35 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.btn_DangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.label34 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.btn_ThanhToan = new Guna.UI2.WinForms.Guna2Button();
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.btn_DatPhong = new Guna.UI2.WinForms.Guna2Button();
             this.label32 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.btn_DoiMatKhau = new Guna.UI2.WinForms.Guna2Button();
             this.label31 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -70,18 +82,6 @@ namespace GUI
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btn_QuanLiTrangThai = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyDichVu = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyKhachHang = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_QuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_ThongKeHoaDon = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_ThongKeDanhThu = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_DangXuat = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_ThanhToan = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_DatPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_DoiMatKhau = new Guna.UI2.WinForms.Guna2Button();
             this.panel3.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -262,6 +262,27 @@ namespace GUI
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản lí quyền";
             // 
+            // btn_QuanLiTrangThai
+            // 
+            this.btn_QuanLiTrangThai.BackColor = System.Drawing.Color.White;
+            this.btn_QuanLiTrangThai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLiTrangThai.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLiTrangThai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLiTrangThai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLiTrangThai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLiTrangThai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLiTrangThai.FillColor = System.Drawing.Color.White;
+            this.btn_QuanLiTrangThai.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLiTrangThai.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLiTrangThai.Image = global::GUI.Properties.Resources.StatusNew;
+            this.btn_QuanLiTrangThai.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLiTrangThai.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLiTrangThai.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLiTrangThai.Name = "btn_QuanLiTrangThai";
+            this.btn_QuanLiTrangThai.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLiTrangThai.TabIndex = 1;
+            this.btn_QuanLiTrangThai.Click += new System.EventHandler(this.btn_QuanLiTrangThai_Click);
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label28);
@@ -282,6 +303,27 @@ namespace GUI
             this.label28.TabIndex = 1;
             this.label28.Text = "Quản lí phòng";
             // 
+            // btn_QuanLyPhong
+            // 
+            this.btn_QuanLyPhong.BackColor = System.Drawing.Color.White;
+            this.btn_QuanLyPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyPhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyPhong.FillColor = System.Drawing.Color.White;
+            this.btn_QuanLyPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyPhong.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyPhong.Image = global::GUI.Properties.Resources.RoomNew;
+            this.btn_QuanLyPhong.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyPhong.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLyPhong.Name = "btn_QuanLyPhong";
+            this.btn_QuanLyPhong.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyPhong.TabIndex = 1;
+            this.btn_QuanLyPhong.Click += new System.EventHandler(this.btn_QuanLyPhong_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btn_QuanLyDichVu);
@@ -291,6 +333,27 @@ namespace GUI
             this.groupBox3.Size = new System.Drawing.Size(170, 149);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
+            // 
+            // btn_QuanLyDichVu
+            // 
+            this.btn_QuanLyDichVu.BackColor = System.Drawing.Color.White;
+            this.btn_QuanLyDichVu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyDichVu.FillColor = System.Drawing.Color.White;
+            this.btn_QuanLyDichVu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyDichVu.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyDichVu.Image = global::GUI.Properties.Resources.dichVuNew;
+            this.btn_QuanLyDichVu.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyDichVu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyDichVu.Location = new System.Drawing.Point(15, 19);
+            this.btn_QuanLyDichVu.Name = "btn_QuanLyDichVu";
+            this.btn_QuanLyDichVu.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyDichVu.TabIndex = 1;
+            this.btn_QuanLyDichVu.Click += new System.EventHandler(this.btn_QuanLyDichVu_Click);
             // 
             // label27
             // 
@@ -322,6 +385,27 @@ namespace GUI
             this.label26.TabIndex = 1;
             this.label26.Text = "Quản lí khách hàng";
             // 
+            // btn_QuanLyKhachHang
+            // 
+            this.btn_QuanLyKhachHang.BackColor = System.Drawing.Color.White;
+            this.btn_QuanLyKhachHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyKhachHang.FillColor = System.Drawing.Color.White;
+            this.btn_QuanLyKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
+            this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyKhachHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(23, 19);
+            this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
+            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyKhachHang.TabIndex = 1;
+            this.btn_QuanLyKhachHang.Click += new System.EventHandler(this.btn_QuanLyKhachHang_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label25);
@@ -341,6 +425,27 @@ namespace GUI
             this.label25.Size = new System.Drawing.Size(126, 16);
             this.label25.TabIndex = 1;
             this.label25.Text = "Quản lí nhân viên";
+            // 
+            // btn_QuanLyNhanVien
+            // 
+            this.btn_QuanLyNhanVien.BackColor = System.Drawing.Color.White;
+            this.btn_QuanLyNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_QuanLyNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QuanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_QuanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_QuanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_QuanLyNhanVien.FillColor = System.Drawing.Color.White;
+            this.btn_QuanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_QuanLyNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.Users;
+            this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_QuanLyNhanVien.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(20, 19);
+            this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
+            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(129, 106);
+            this.btn_QuanLyNhanVien.TabIndex = 1;
+            this.btn_QuanLyNhanVien.Click += new System.EventHandler(this.btn_QuanLyNhanVien_Click);
             // 
             // tabPage2
             // 
@@ -374,6 +479,25 @@ namespace GUI
             this.label30.TabIndex = 2;
             this.label30.Text = "Thống kê hóa đơn";
             // 
+            // btn_ThongKeHoaDon
+            // 
+            this.btn_ThongKeHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_ThongKeHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ThongKeHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThongKeHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThongKeHoaDon.FillColor = System.Drawing.Color.White;
+            this.btn_ThongKeHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ThongKeHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources._5027835_analytics_chart_graph_statistics_icon;
+            this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_ThongKeHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(22, 12);
+            this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
+            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(129, 106);
+            this.btn_ThongKeHoaDon.TabIndex = 3;
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label29);
@@ -393,6 +517,26 @@ namespace GUI
             this.label29.Size = new System.Drawing.Size(135, 16);
             this.label29.TabIndex = 2;
             this.label29.Text = "Thống kê danh thu";
+            // 
+            // btn_ThongKeDanhThu
+            // 
+            this.btn_ThongKeDanhThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_ThongKeDanhThu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ThongKeDanhThu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeDanhThu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThongKeDanhThu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThongKeDanhThu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThongKeDanhThu.FillColor = System.Drawing.Color.White;
+            this.btn_ThongKeDanhThu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ThongKeDanhThu.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKeDanhThu.Image = global::GUI.Properties.Resources._5027881_business_chart_finance_graph_money_icon;
+            this.btn_ThongKeDanhThu.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_ThongKeDanhThu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_ThongKeDanhThu.Location = new System.Drawing.Point(22, 12);
+            this.btn_ThongKeDanhThu.Name = "btn_ThongKeDanhThu";
+            this.btn_ThongKeDanhThu.Size = new System.Drawing.Size(129, 106);
+            this.btn_ThongKeDanhThu.TabIndex = 3;
+            this.btn_ThongKeDanhThu.Click += new System.EventHandler(this.btn_ThongKeDanhThu_Click);
             // 
             // tabPage3
             // 
@@ -419,6 +563,27 @@ namespace GUI
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
+            // btn_Thoat
+            // 
+            this.btn_Thoat.BackColor = System.Drawing.Color.White;
+            this.btn_Thoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Thoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Thoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Thoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Thoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Thoat.FillColor = System.Drawing.Color.White;
+            this.btn_Thoat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Thoat.ForeColor = System.Drawing.Color.White;
+            this.btn_Thoat.Image = global::GUI.Properties.Resources.outNew;
+            this.btn_Thoat.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_Thoat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_Thoat.Location = new System.Drawing.Point(22, 12);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(129, 106);
+            this.btn_Thoat.TabIndex = 2;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
+            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -438,6 +603,27 @@ namespace GUI
             this.groupBox9.Size = new System.Drawing.Size(170, 149);
             this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
+            // 
+            // btn_DangXuat
+            // 
+            this.btn_DangXuat.BackColor = System.Drawing.Color.White;
+            this.btn_DangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_DangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DangXuat.FillColor = System.Drawing.Color.White;
+            this.btn_DangXuat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
+            this.btn_DangXuat.Image = global::GUI.Properties.Resources.logOutNew;
+            this.btn_DangXuat.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_DangXuat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_DangXuat.Location = new System.Drawing.Point(19, 12);
+            this.btn_DangXuat.Name = "btn_DangXuat";
+            this.btn_DangXuat.Size = new System.Drawing.Size(129, 106);
+            this.btn_DangXuat.TabIndex = 2;
+            this.btn_DangXuat.Click += new System.EventHandler(this.btn_DangXuat_Click);
             // 
             // label34
             // 
@@ -459,6 +645,27 @@ namespace GUI
             this.groupBox10.TabIndex = 2;
             this.groupBox10.TabStop = false;
             // 
+            // btn_ThanhToan
+            // 
+            this.btn_ThanhToan.BackColor = System.Drawing.Color.White;
+            this.btn_ThanhToan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_ThanhToan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThanhToan.FillColor = System.Drawing.Color.White;
+            this.btn_ThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btn_ThanhToan.Image = global::GUI.Properties.Resources.paymentNew;
+            this.btn_ThanhToan.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_ThanhToan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_ThanhToan.Location = new System.Drawing.Point(15, 12);
+            this.btn_ThanhToan.Name = "btn_ThanhToan";
+            this.btn_ThanhToan.Size = new System.Drawing.Size(129, 106);
+            this.btn_ThanhToan.TabIndex = 2;
+            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
+            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -479,6 +686,27 @@ namespace GUI
             this.groupBox11.TabIndex = 3;
             this.groupBox11.TabStop = false;
             // 
+            // btn_DatPhong
+            // 
+            this.btn_DatPhong.BackColor = System.Drawing.Color.White;
+            this.btn_DatPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_DatPhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DatPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatPhong.FillColor = System.Drawing.Color.White;
+            this.btn_DatPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DatPhong.ForeColor = System.Drawing.Color.White;
+            this.btn_DatPhong.Image = global::GUI.Properties.Resources.bookingNew;
+            this.btn_DatPhong.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_DatPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_DatPhong.Location = new System.Drawing.Point(17, 12);
+            this.btn_DatPhong.Name = "btn_DatPhong";
+            this.btn_DatPhong.Size = new System.Drawing.Size(129, 106);
+            this.btn_DatPhong.TabIndex = 2;
+            this.btn_DatPhong.Click += new System.EventHandler(this.btn_DatPhong_Click);
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -498,6 +726,27 @@ namespace GUI
             this.groupBox12.Size = new System.Drawing.Size(170, 149);
             this.groupBox12.TabIndex = 4;
             this.groupBox12.TabStop = false;
+            // 
+            // btn_DoiMatKhau
+            // 
+            this.btn_DoiMatKhau.BackColor = System.Drawing.Color.White;
+            this.btn_DoiMatKhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_DoiMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DoiMatKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DoiMatKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DoiMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DoiMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DoiMatKhau.FillColor = System.Drawing.Color.White;
+            this.btn_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DoiMatKhau.ForeColor = System.Drawing.Color.White;
+            this.btn_DoiMatKhau.Image = global::GUI.Properties.Resources.password;
+            this.btn_DoiMatKhau.ImageSize = new System.Drawing.Size(136, 106);
+            this.btn_DoiMatKhau.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_DoiMatKhau.Location = new System.Drawing.Point(18, 12);
+            this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
+            this.btn_DoiMatKhau.Size = new System.Drawing.Size(129, 106);
+            this.btn_DoiMatKhau.TabIndex = 2;
+            this.btn_DoiMatKhau.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
             // 
             // label31
             // 
@@ -557,255 +806,6 @@ namespace GUI
             this.groupBox16.TabIndex = 4;
             this.groupBox16.TabStop = false;
             // 
-            // btn_QuanLiTrangThai
-            // 
-            this.btn_QuanLiTrangThai.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLiTrangThai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLiTrangThai.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLiTrangThai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLiTrangThai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLiTrangThai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLiTrangThai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLiTrangThai.FillColor = System.Drawing.Color.White;
-            this.btn_QuanLiTrangThai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLiTrangThai.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLiTrangThai.Image = global::GUI.Properties.Resources.StatusNew;
-            this.btn_QuanLiTrangThai.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLiTrangThai.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLiTrangThai.Location = new System.Drawing.Point(23, 19);
-            this.btn_QuanLiTrangThai.Name = "btn_QuanLiTrangThai";
-            this.btn_QuanLiTrangThai.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLiTrangThai.TabIndex = 1;
-            this.btn_QuanLiTrangThai.Click += new System.EventHandler(this.btn_QuanLiTrangThai_Click);
-            // 
-            // btn_QuanLyPhong
-            // 
-            this.btn_QuanLyPhong.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyPhong.FillColor = System.Drawing.Color.White;
-            this.btn_QuanLyPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyPhong.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyPhong.Image = global::GUI.Properties.Resources.RoomNew;
-            this.btn_QuanLyPhong.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyPhong.Location = new System.Drawing.Point(23, 19);
-            this.btn_QuanLyPhong.Name = "btn_QuanLyPhong";
-            this.btn_QuanLyPhong.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyPhong.TabIndex = 1;
-            this.btn_QuanLyPhong.Click += new System.EventHandler(this.btn_QuanLyPhong_Click);
-            // 
-            // btn_QuanLyDichVu
-            // 
-            this.btn_QuanLyDichVu.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyDichVu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyDichVu.FillColor = System.Drawing.Color.White;
-            this.btn_QuanLyDichVu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyDichVu.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyDichVu.Image = global::GUI.Properties.Resources.dichVuNew;
-            this.btn_QuanLyDichVu.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyDichVu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyDichVu.Location = new System.Drawing.Point(15, 19);
-            this.btn_QuanLyDichVu.Name = "btn_QuanLyDichVu";
-            this.btn_QuanLyDichVu.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyDichVu.TabIndex = 1;
-            this.btn_QuanLyDichVu.Click += new System.EventHandler(this.btn_QuanLyDichVu_Click);
-            // 
-            // btn_QuanLyKhachHang
-            // 
-            this.btn_QuanLyKhachHang.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyKhachHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyKhachHang.FillColor = System.Drawing.Color.White;
-            this.btn_QuanLyKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyKhachHang.Image = global::GUI.Properties.Resources.IMG_QuanLyKhachHang;
-            this.btn_QuanLyKhachHang.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyKhachHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyKhachHang.Location = new System.Drawing.Point(23, 19);
-            this.btn_QuanLyKhachHang.Name = "btn_QuanLyKhachHang";
-            this.btn_QuanLyKhachHang.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyKhachHang.TabIndex = 1;
-            this.btn_QuanLyKhachHang.Click += new System.EventHandler(this.btn_QuanLyKhachHang_Click);
-            // 
-            // btn_QuanLyNhanVien
-            // 
-            this.btn_QuanLyNhanVien.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_QuanLyNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QuanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_QuanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_QuanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_QuanLyNhanVien.FillColor = System.Drawing.Color.White;
-            this.btn_QuanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_QuanLyNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_QuanLyNhanVien.Image = global::GUI.Properties.Resources.Users;
-            this.btn_QuanLyNhanVien.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_QuanLyNhanVien.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_QuanLyNhanVien.Location = new System.Drawing.Point(20, 19);
-            this.btn_QuanLyNhanVien.Name = "btn_QuanLyNhanVien";
-            this.btn_QuanLyNhanVien.Size = new System.Drawing.Size(129, 106);
-            this.btn_QuanLyNhanVien.TabIndex = 1;
-            this.btn_QuanLyNhanVien.Click += new System.EventHandler(this.btn_QuanLyNhanVien_Click);
-            // 
-            // btn_ThongKeHoaDon
-            // 
-            this.btn_ThongKeHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ThongKeHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThongKeHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThongKeHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThongKeHoaDon.FillColor = System.Drawing.Color.White;
-            this.btn_ThongKeHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ThongKeHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKeHoaDon.Image = global::GUI.Properties.Resources._5027835_analytics_chart_graph_statistics_icon;
-            this.btn_ThongKeHoaDon.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_ThongKeHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ThongKeHoaDon.Location = new System.Drawing.Point(22, 12);
-            this.btn_ThongKeHoaDon.Name = "btn_ThongKeHoaDon";
-            this.btn_ThongKeHoaDon.Size = new System.Drawing.Size(129, 106);
-            this.btn_ThongKeHoaDon.TabIndex = 3;
-            // 
-            // btn_ThongKeDanhThu
-            // 
-            this.btn_ThongKeDanhThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ThongKeDanhThu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThongKeDanhThu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeDanhThu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThongKeDanhThu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThongKeDanhThu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThongKeDanhThu.FillColor = System.Drawing.Color.White;
-            this.btn_ThongKeDanhThu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ThongKeDanhThu.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKeDanhThu.Image = global::GUI.Properties.Resources._5027881_business_chart_finance_graph_money_icon;
-            this.btn_ThongKeDanhThu.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_ThongKeDanhThu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ThongKeDanhThu.Location = new System.Drawing.Point(22, 12);
-            this.btn_ThongKeDanhThu.Name = "btn_ThongKeDanhThu";
-            this.btn_ThongKeDanhThu.Size = new System.Drawing.Size(129, 106);
-            this.btn_ThongKeDanhThu.TabIndex = 3;
-            this.btn_ThongKeDanhThu.Click += new System.EventHandler(this.btn_ThongKeDanhThu_Click);
-            // 
-            // btn_Thoat
-            // 
-            this.btn_Thoat.BackColor = System.Drawing.Color.White;
-            this.btn_Thoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Thoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Thoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Thoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Thoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Thoat.FillColor = System.Drawing.Color.White;
-            this.btn_Thoat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Thoat.ForeColor = System.Drawing.Color.White;
-            this.btn_Thoat.Image = global::GUI.Properties.Resources.outNew;
-            this.btn_Thoat.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_Thoat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Thoat.Location = new System.Drawing.Point(22, 12);
-            this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(129, 106);
-            this.btn_Thoat.TabIndex = 2;
-            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
-            // 
-            // btn_DangXuat
-            // 
-            this.btn_DangXuat.BackColor = System.Drawing.Color.White;
-            this.btn_DangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_DangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DangXuat.FillColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Image = global::GUI.Properties.Resources.logOutNew;
-            this.btn_DangXuat.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_DangXuat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DangXuat.Location = new System.Drawing.Point(19, 12);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(129, 106);
-            this.btn_DangXuat.TabIndex = 2;
-            this.btn_DangXuat.Click += new System.EventHandler(this.btn_DangXuat_Click);
-            // 
-            // btn_ThanhToan
-            // 
-            this.btn_ThanhToan.BackColor = System.Drawing.Color.White;
-            this.btn_ThanhToan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ThanhToan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThanhToan.FillColor = System.Drawing.Color.White;
-            this.btn_ThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btn_ThanhToan.Image = global::GUI.Properties.Resources.paymentNew;
-            this.btn_ThanhToan.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_ThanhToan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ThanhToan.Location = new System.Drawing.Point(15, 12);
-            this.btn_ThanhToan.Name = "btn_ThanhToan";
-            this.btn_ThanhToan.Size = new System.Drawing.Size(129, 106);
-            this.btn_ThanhToan.TabIndex = 2;
-            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
-            // 
-            // btn_DatPhong
-            // 
-            this.btn_DatPhong.BackColor = System.Drawing.Color.White;
-            this.btn_DatPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_DatPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DatPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatPhong.FillColor = System.Drawing.Color.White;
-            this.btn_DatPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DatPhong.ForeColor = System.Drawing.Color.White;
-            this.btn_DatPhong.Image = global::GUI.Properties.Resources.bookingNew;
-            this.btn_DatPhong.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_DatPhong.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DatPhong.Location = new System.Drawing.Point(17, 12);
-            this.btn_DatPhong.Name = "btn_DatPhong";
-            this.btn_DatPhong.Size = new System.Drawing.Size(129, 106);
-            this.btn_DatPhong.TabIndex = 2;
-            this.btn_DatPhong.Click += new System.EventHandler(this.btn_DatPhong_Click);
-            // 
-            // btn_DoiMatKhau
-            // 
-            this.btn_DoiMatKhau.BackColor = System.Drawing.Color.White;
-            this.btn_DoiMatKhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_DoiMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DoiMatKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DoiMatKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DoiMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DoiMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DoiMatKhau.FillColor = System.Drawing.Color.White;
-            this.btn_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DoiMatKhau.ForeColor = System.Drawing.Color.White;
-            this.btn_DoiMatKhau.Image = global::GUI.Properties.Resources.password;
-            this.btn_DoiMatKhau.ImageSize = new System.Drawing.Size(136, 106);
-            this.btn_DoiMatKhau.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_DoiMatKhau.Location = new System.Drawing.Point(18, 12);
-            this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
-            this.btn_DoiMatKhau.Size = new System.Drawing.Size(129, 106);
-            this.btn_DoiMatKhau.TabIndex = 2;
-            this.btn_DoiMatKhau.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
-            // 
             // Frm_QuanLyKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -816,6 +816,7 @@ namespace GUI
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel_ListRooms);
             this.Name = "Frm_QuanLyKhachSan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách sạn";
             this.Load += new System.EventHandler(this.Frm_QuanLyKhachSan_Load);
             this.panel3.ResumeLayout(false);

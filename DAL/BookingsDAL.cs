@@ -55,6 +55,18 @@ namespace DAL
           };
             return db.ExcuteSQL("sp_bookings_UpdateStatusById", para);
         }
+        public DataTable getDataById(int id)
+        {
+            return db.getDataTable($"SELECT * FROM Bookings WHERE booking_id = {id}");
+        }
 
+        public DataTable getDataByIdRoomAndCurrentDate(string room_number)
+        {
+            SqlParameter[] para = new SqlParameter[]
+          {
+                    new SqlParameter("@room_number",room_number),
+          };
+            return db.getData("getDataByRoomNumberAndCurrentDate", para);
+        }
     }
 }

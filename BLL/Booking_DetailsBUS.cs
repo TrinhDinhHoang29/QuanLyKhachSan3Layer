@@ -25,6 +25,11 @@ namespace BLL
         {
             return bookingDetailsDal.getDataByBookingId(booking_id);
         }
+        public int updateQuantity(int booking_id, int service_id, int quantity)
+        {
+            return bookingDetailsDal.updateQuantity(booking_id, service_id, quantity);
+        }
+
 
     }
 }

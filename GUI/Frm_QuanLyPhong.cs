@@ -64,11 +64,19 @@ namespace GUI
             int statusId = statusBus.findIdByTitle(trangThai);
             if (soPhong != "" && kieuGiuong != "" && kieuGiuong != "" && gia != "")
             {
-                
-                   if(roomBus.insertData(soPhong, kieuPhong, kieuGiuong, float.Parse(gia), statusId)!=0)
+                if (statusId != 2)
+                {
+                    if (roomBus.insertData(soPhong, kieuPhong, kieuGiuong, float.Parse(gia), statusId) != 0)
                         MessageBox.Show("Đã thêm thành công  !!!", "Thông báo");
-                   else
-                        MessageBox.Show("Đã thêm không thành công  !!!", "Thông báo");
+                    else
+                        MessageBox.Show("Thêm không thành công  !!!", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm không thành công  !!!", "Thông báo");
+
+                }
+
                     txt_SoPhong.Text = "";
                     txt_Gia.Text = "";
                     cbBox_KieuGiuong.Text = "";
@@ -180,6 +188,7 @@ namespace GUI
         {
             foreach (DataRow row in statusBus.getDataAll().Rows)
             {
+             
                 cbBox_TrangThai.Items.Add(row[1].ToString());
             }
         }

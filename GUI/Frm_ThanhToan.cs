@@ -151,20 +151,37 @@ namespace GUI
 
         private void btn_ThemDichVu_Click(object sender, EventArgs e)
         {
-            if (lstView_Bookings.SelectedItems.Count > 0 && lstView_DanhSachDichVu.SelectedItems.Count>0)
+            if (lstView_Bookings.SelectedItems.Count > 0 && lstView_DanhSachDichVu.SelectedItems.Count > 0)
             {
                 ListViewItem itemBooking = lstView_Bookings.SelectedItems[0];
                 int booking_id = int.Parse(itemBooking.SubItems[0].Text);
                 ListViewItem itemService = lstView_DanhSachDichVu.SelectedItems[0];
                 int service_id = int.Parse(itemService.SubItems[0].Text);
-                int soLuong = int.Parse(txt_Quantity.Text);
-                string status = itemBooking.SubItems[6].Text;
-                try
+                if (txt_Quantity.Text != "")
                 {
-                    if (status != "Paid" && status != "Cancel")
+                    int soLuong = int.Parse(txt_Quantity.Text);
+                    if (soLuong > 0)
                     {
-                        serviceDetailBus.insertData(booking_id, service_id, soLuong);
-                        MessageBox.Show("Thêm dịch vụ thành công ", "Thông báo");
+                        string status = itemBooking.SubItems[6].Text;
+                        try
+                        {
+                            if (status != "Paid" && status != "Cancel")
+                            {
+                                serviceDetailBus.insertData(booking_id, service_id, soLuong);
+                                MessageBox.Show("Thêm dịch vụ thành công ", "Thông báo");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Thêm dịch vụ thất bại", "Thông báo");
+
+                            }
+
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Thêm dịch vụ thất bại", "Thông báo");
+
+                        }
                     }
                     else
                     {
@@ -172,14 +189,13 @@ namespace GUI
 
                     }
 
+
                 }
-                catch
+                else
                 {
                     MessageBox.Show("Thêm dịch vụ thất bại", "Thông báo");
 
                 }
-
-
             }
         }
         private void btn_ThanhToan_Click(object sender, EventArgs e)
@@ -189,42 +205,9 @@ namespace GUI
                 ListViewItem itemBooking = lstView_Bookings.SelectedItems[0];
                 if (itemBooking.SubItems[6].Text != "Cancel")
                 {
-                    int booking_id = int.Parse(itemBooking.SubItems[0].Text);
-                    string tongTienPhong = "0";
-                    string hoaDon = "----------------------------------------Hóa đơn----------------------------------------\n";
-                    hoaDon += $"\n\tTên khách hàng: {itemBooking.SubItems[1].Text}\n";
-                    hoaDon += $"\n\tNgày ở: {itemBooking.SubItems[2].Text} - {itemBooking.SubItems[3].Text}\n";
-                    hoaDon += $"\n----------------------------------Thông tin phòng----------------------------------\n";
-                    hoaDon += $"\n\t Số phòng\\Loại phòng\\Loại giường\\Gía Phòng\n";
-
-                    foreach (DataRow rowBookingDetail in booking_DetailsBus.getDataByBookingId(booking_id).Rows)
-                    {
-                        hoaDon += $"\n\t{rowBookingDetail[5].ToString()}\\{rowBookingDetail[6].ToString()}\\{rowBookingDetail[7].ToString()}\\{rowBookingDetail[8].ToString()} VND \n";
-                        tongTienPhong = rowBookingDetail[3].ToString();
-                    }
-                    hoaDon += $"\n\n\t\t\t\tTổng tiền phòng: {tongTienPhong} VND\n";
-
-                    hoaDon += "\n----------------------------------------Dịch vụ----------------------------------------\n";
-                    float tongTienDichVu = 0;
-                    foreach (DataRow rowServiceDetail in serviceDetailBus.getDataByBookingId(booking_id).Rows)
-                    {
-                        hoaDon += $"\n\tTên dịch vụ: {rowServiceDetail[5].ToString()}\n";
-                        hoaDon += $"\n\tSố lượng: {rowServiceDetail[3].ToString()}\n";
-                        hoaDon += $"\n\tGía dịch vụ: {rowServiceDetail[6].ToString()} VND\n ";
-                        tongTienDichVu += float.Parse(rowServiceDetail[3].ToString()) * float.Parse(rowServiceDetail[6].ToString());
-                    }
-                    hoaDon += $"\n\n\t\t\t\tTổng tiền dịch vụ: {tongTienDichVu} VND\n";
-                    float tongTien = float.Parse(tongTienPhong) + tongTienDichVu;
-                    hoaDon += "\n---------------------------------------------------------------------------------------\n";
-                    hoaDon += $"\t\t\tTổng tiền: {tongTien} VND\n";
-                    hoaDon += "\n---------------------------------------------------------------------------------------\n";
-                    DialogResult result = MessageBox.Show(hoaDon, "Bill", MessageBoxButtons.YesNo);
-                    
-                    if (result == DialogResult.Yes)
-                    {
-                        bookingsBus.updateStatusById(booking_id, "Paid");
-                        printListViewBookings();
-                    }
+                    string maHoaDon = itemBooking.SubItems[0].Text;             
+                    Form bill = new Frm_HoaDon(maHoaDon);
+                    bill.Show();
                 }
                 else
                 {

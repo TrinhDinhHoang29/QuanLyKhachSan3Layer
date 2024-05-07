@@ -245,7 +245,7 @@ namespace GUI
             this.btn_ThanhToan.Name = "btn_ThanhToan";
             this.btn_ThanhToan.Size = new System.Drawing.Size(150, 39);
             this.btn_ThanhToan.TabIndex = 46;
-            this.btn_ThanhToan.Text = "Thanh toán";
+            this.btn_ThanhToan.Text = "Xem hóa đơn";
             this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
             // 
             // btn_Cancel
@@ -260,7 +260,7 @@ namespace GUI
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(157, 39);
             this.btn_Cancel.TabIndex = 46;
-            this.btn_Cancel.Text = "Hủy";
+            this.btn_Cancel.Text = "Hủy hóa đơn";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_ThemDichVu
@@ -275,7 +275,7 @@ namespace GUI
             this.btn_ThemDichVu.Name = "btn_ThemDichVu";
             this.btn_ThemDichVu.Size = new System.Drawing.Size(147, 39);
             this.btn_ThemDichVu.TabIndex = 46;
-            this.btn_ThemDichVu.Text = "Thêm";
+            this.btn_ThemDichVu.Text = "Thêm dịch vụ";
             this.btn_ThemDichVu.Click += new System.EventHandler(this.btn_ThemDichVu_Click);
             // 
             // txt_GiaDichVu

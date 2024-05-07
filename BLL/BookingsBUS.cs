@@ -38,6 +38,13 @@ namespace BLL
         {
             return bookings.updateStatusById(booking_id, booking_status);
         }
-
+        public DataTable getDataById(int id)
+        {
+            return bookings.getDataById(id);
+        }
+        public DataTable getDataByIdRoomAndCurrentDate(string room_number)
+        {
+            return bookings.getDataByIdRoomAndCurrentDate(room_number);
+        }
     }
 }

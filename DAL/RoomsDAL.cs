@@ -36,7 +36,7 @@ namespace DAL
         {
             DateTime currentDate = DateTime.Now;
             string curentDateFomat = currentDate.ToString("yyyy-MM-dd");
-            string sql = $" select Rooms.room_id,Rooms.room_number,Rooms.room_type,Rooms.bed_type,price_per_night,status_id from Bookings , Booking_Details,Rooms where bookings.Booking_status!='Cancel' and Rooms.room_id = Booking_Details.room_id and Booking_Details.booking_id=Bookings.booking_id AND  check_in_date >= '{curentDateFomat}' and '{curentDateFomat}' < check_out_date";
+            string sql = $" select Rooms.room_id,Rooms.room_number,Rooms.room_type,Rooms.bed_type,price_per_night,status_id from Bookings , Booking_Details,Rooms where bookings.Booking_status!='Cancel' and Rooms.room_id = Booking_Details.room_id and Booking_Details.booking_id=Bookings.booking_id AND  check_in_date <= '{curentDateFomat}' and '{curentDateFomat}' < check_out_date";
             return db.getDataTable(sql);
         }
         public DataTable getDataById(int id)
@@ -83,6 +83,20 @@ namespace DAL
 
             };
             return db.ExcuteSQL("sp_room_Update_Id", para);
+        }
+        public int updateDataNew(int id, string room_number, string room_type, string bed_type, float price_per_night, int status_id)
+        {
+            SqlParameter[] para = new SqlParameter[]
+            {
+                    new SqlParameter("@room_id",id),
+                    new SqlParameter("@room_number",room_number),
+                    new SqlParameter("@room_type",room_type),
+                    new SqlParameter("@bed_type",bed_type),
+                    new SqlParameter("@price_per_night",price_per_night),
+                    new SqlParameter("@status_id",status_id)
+
+            };
+            return db.ExcuteSQL("sp_room_Update_Id_New", para);
         }
         public DataTable selectLike(string numberRoom)
         {

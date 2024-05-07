@@ -31,6 +31,18 @@ namespace DAL
             };
             return db.ExcuteSQL("sp_booking_details_Insert", para);
         }
+        public int updateQuantity(int booking_id,int service_id,int quantity)
+        {
+            SqlParameter[] para = new SqlParameter[]
+           {
+                    new SqlParameter("@booking_id",booking_id),
+                    new SqlParameter("@service_id",service_id),
+                    new SqlParameter("@quantity",quantity),
+
+           };
+            return db.ExcuteSQL("sp_service_details_update_quantity", para);
+
+        }
 
 
     }

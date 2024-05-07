@@ -56,6 +56,9 @@ namespace BLL
         {
             return room.deleteDataSoft(id);
         }
-
+        public int updateDataNew(int id, string room_number, string room_type, string bed_type, float price_per_night, int status_id)
+        {
+            return room.updateDataNew(id, room_number, room_type, bed_type, price_per_night, status_id);
+        }
     }
 }
