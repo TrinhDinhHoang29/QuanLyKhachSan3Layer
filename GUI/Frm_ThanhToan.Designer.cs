@@ -75,9 +75,10 @@ namespace GUI
             this.lstView_Bookings.FullRowSelect = true;
             this.lstView_Bookings.GridLines = true;
             this.lstView_Bookings.HideSelection = false;
-            this.lstView_Bookings.Location = new System.Drawing.Point(524, 16);
+            this.lstView_Bookings.Location = new System.Drawing.Point(699, 20);
+            this.lstView_Bookings.Margin = new System.Windows.Forms.Padding(4);
             this.lstView_Bookings.Name = "lstView_Bookings";
-            this.lstView_Bookings.Size = new System.Drawing.Size(757, 231);
+            this.lstView_Bookings.Size = new System.Drawing.Size(1008, 283);
             this.lstView_Bookings.TabIndex = 5;
             this.lstView_Bookings.UseCompatibleStateImageBehavior = false;
             this.lstView_Bookings.View = System.Windows.Forms.View.Details;
@@ -130,9 +131,10 @@ namespace GUI
             this.lstView_DanhSachDichVu.FullRowSelect = true;
             this.lstView_DanhSachDichVu.GridLines = true;
             this.lstView_DanhSachDichVu.HideSelection = false;
-            this.lstView_DanhSachDichVu.Location = new System.Drawing.Point(524, 259);
+            this.lstView_DanhSachDichVu.Location = new System.Drawing.Point(699, 319);
+            this.lstView_DanhSachDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.lstView_DanhSachDichVu.Name = "lstView_DanhSachDichVu";
-            this.lstView_DanhSachDichVu.Size = new System.Drawing.Size(757, 233);
+            this.lstView_DanhSachDichVu.Size = new System.Drawing.Size(1008, 286);
             this.lstView_DanhSachDichVu.TabIndex = 6;
             this.lstView_DanhSachDichVu.UseCompatibleStateImageBehavior = false;
             this.lstView_DanhSachDichVu.View = System.Windows.Forms.View.Details;
@@ -158,9 +160,10 @@ namespace GUI
             // txt_HoKhachHang
             // 
             this.txt_HoKhachHang.Enabled = false;
-            this.txt_HoKhachHang.Location = new System.Drawing.Point(149, 143);
+            this.txt_HoKhachHang.Location = new System.Drawing.Point(199, 176);
+            this.txt_HoKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.txt_HoKhachHang.Name = "txt_HoKhachHang";
-            this.txt_HoKhachHang.Size = new System.Drawing.Size(352, 20);
+            this.txt_HoKhachHang.Size = new System.Drawing.Size(468, 22);
             this.txt_HoKhachHang.TabIndex = 37;
             // 
             // label3
@@ -168,9 +171,10 @@ namespace GUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(-11, 143);
+            this.label3.Location = new System.Drawing.Point(-15, 176);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 16);
+            this.label3.Size = new System.Drawing.Size(178, 20);
             this.label3.TabIndex = 34;
             this.label3.Text = "Họ tên khách hàng: ";
             // 
@@ -178,18 +182,20 @@ namespace GUI
             // 
             this.date_CheckOut.Enabled = false;
             this.date_CheckOut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_CheckOut.Location = new System.Drawing.Point(145, 202);
+            this.date_CheckOut.Location = new System.Drawing.Point(193, 249);
+            this.date_CheckOut.Margin = new System.Windows.Forms.Padding(4);
             this.date_CheckOut.Name = "date_CheckOut";
-            this.date_CheckOut.Size = new System.Drawing.Size(354, 20);
+            this.date_CheckOut.Size = new System.Drawing.Size(471, 22);
             this.date_CheckOut.TabIndex = 44;
             // 
             // date_CheckIn
             // 
             this.date_CheckIn.Enabled = false;
             this.date_CheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_CheckIn.Location = new System.Drawing.Point(146, 169);
+            this.date_CheckIn.Location = new System.Drawing.Point(195, 208);
+            this.date_CheckIn.Margin = new System.Windows.Forms.Padding(4);
             this.date_CheckIn.Name = "date_CheckIn";
-            this.date_CheckIn.Size = new System.Drawing.Size(354, 20);
+            this.date_CheckIn.Size = new System.Drawing.Size(471, 22);
             this.date_CheckIn.TabIndex = 45;
             // 
             // label10
@@ -197,9 +203,10 @@ namespace GUI
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label10.Location = new System.Drawing.Point(41, 253);
+            this.label10.Location = new System.Drawing.Point(55, 311);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 16);
+            this.label10.Size = new System.Drawing.Size(112, 20);
             this.label10.TabIndex = 38;
             this.label10.Text = "Tên dịch vụ:";
             // 
@@ -208,9 +215,10 @@ namespace GUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(18, 204);
+            this.label4.Location = new System.Drawing.Point(24, 251);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 16);
+            this.label4.Size = new System.Drawing.Size(138, 20);
             this.label4.TabIndex = 39;
             this.label4.Text = "Ngày checkout:";
             // 
@@ -219,18 +227,20 @@ namespace GUI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label9.Location = new System.Drawing.Point(27, 167);
+            this.label9.Location = new System.Drawing.Point(36, 206);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 16);
+            this.label9.Size = new System.Drawing.Size(127, 20);
             this.label9.TabIndex = 40;
             this.label9.Text = "Ngày checkin:";
             // 
             // txt_TenDichVu
             // 
             this.txt_TenDichVu.Enabled = false;
-            this.txt_TenDichVu.Location = new System.Drawing.Point(149, 253);
+            this.txt_TenDichVu.Location = new System.Drawing.Point(199, 311);
+            this.txt_TenDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenDichVu.Name = "txt_TenDichVu";
-            this.txt_TenDichVu.Size = new System.Drawing.Size(352, 20);
+            this.txt_TenDichVu.Size = new System.Drawing.Size(468, 22);
             this.txt_TenDichVu.TabIndex = 42;
             // 
             // btn_ThanhToan
@@ -241,9 +251,10 @@ namespace GUI
             this.btn_ThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_ThanhToan.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btn_ThanhToan.Location = new System.Drawing.Point(35, 356);
+            this.btn_ThanhToan.Location = new System.Drawing.Point(47, 438);
+            this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThanhToan.Name = "btn_ThanhToan";
-            this.btn_ThanhToan.Size = new System.Drawing.Size(150, 39);
+            this.btn_ThanhToan.Size = new System.Drawing.Size(200, 48);
             this.btn_ThanhToan.TabIndex = 46;
             this.btn_ThanhToan.Text = "Xem hóa đơn";
             this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
@@ -256,9 +267,10 @@ namespace GUI
             this.btn_Cancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.White;
-            this.btn_Cancel.Location = new System.Drawing.Point(191, 356);
+            this.btn_Cancel.Location = new System.Drawing.Point(255, 438);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(157, 39);
+            this.btn_Cancel.Size = new System.Drawing.Size(209, 48);
             this.btn_Cancel.TabIndex = 46;
             this.btn_Cancel.Text = "Hủy hóa đơn";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -271,9 +283,10 @@ namespace GUI
             this.btn_ThemDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_ThemDichVu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThemDichVu.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemDichVu.Location = new System.Drawing.Point(354, 356);
+            this.btn_ThemDichVu.Location = new System.Drawing.Point(472, 438);
+            this.btn_ThemDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemDichVu.Name = "btn_ThemDichVu";
-            this.btn_ThemDichVu.Size = new System.Drawing.Size(147, 39);
+            this.btn_ThemDichVu.Size = new System.Drawing.Size(196, 48);
             this.btn_ThemDichVu.TabIndex = 46;
             this.btn_ThemDichVu.Text = "Thêm dịch vụ";
             this.btn_ThemDichVu.Click += new System.EventHandler(this.btn_ThemDichVu_Click);
@@ -281,9 +294,10 @@ namespace GUI
             // txt_GiaDichVu
             // 
             this.txt_GiaDichVu.Enabled = false;
-            this.txt_GiaDichVu.Location = new System.Drawing.Point(150, 307);
+            this.txt_GiaDichVu.Location = new System.Drawing.Point(200, 378);
+            this.txt_GiaDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.txt_GiaDichVu.Name = "txt_GiaDichVu";
-            this.txt_GiaDichVu.Size = new System.Drawing.Size(351, 20);
+            this.txt_GiaDichVu.Size = new System.Drawing.Size(467, 22);
             this.txt_GiaDichVu.TabIndex = 42;
             this.txt_GiaDichVu.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -292,9 +306,10 @@ namespace GUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(39, 308);
+            this.label5.Location = new System.Drawing.Point(52, 379);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 16);
+            this.label5.Size = new System.Drawing.Size(110, 20);
             this.label5.TabIndex = 38;
             this.label5.Text = "Gía dịch vụ:";
             // 
@@ -303,17 +318,19 @@ namespace GUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(115, 49);
+            this.label1.Location = new System.Drawing.Point(153, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 33);
+            this.label1.Size = new System.Drawing.Size(348, 42);
             this.label1.TabIndex = 34;
             this.label1.Text = "Thông tin  hóa đơn";
             // 
             // txt_Quantity
             // 
-            this.txt_Quantity.Location = new System.Drawing.Point(149, 279);
+            this.txt_Quantity.Location = new System.Drawing.Point(199, 343);
+            this.txt_Quantity.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Quantity.Name = "txt_Quantity";
-            this.txt_Quantity.Size = new System.Drawing.Size(352, 20);
+            this.txt_Quantity.Size = new System.Drawing.Size(468, 22);
             this.txt_Quantity.TabIndex = 42;
             this.txt_Quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Quantity_KeyPress);
             this.txt_Quantity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Quantity_KeyUp);
@@ -323,9 +340,10 @@ namespace GUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label6.Location = new System.Drawing.Point(55, 280);
+            this.label6.Location = new System.Drawing.Point(73, 345);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 16);
+            this.label6.Size = new System.Drawing.Size(88, 20);
             this.label6.TabIndex = 38;
             this.label6.Text = "Số lượng:";
             // 
@@ -334,26 +352,29 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(-11, 231);
+            this.label2.Location = new System.Drawing.Point(-15, 284);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 16);
+            this.label2.Size = new System.Drawing.Size(172, 20);
             this.label2.TabIndex = 34;
             this.label2.Text = "Trạng thái hóa đơn:";
             // 
             // txt_booking_status
             // 
             this.txt_booking_status.Enabled = false;
-            this.txt_booking_status.Location = new System.Drawing.Point(146, 227);
+            this.txt_booking_status.Location = new System.Drawing.Point(195, 279);
+            this.txt_booking_status.Margin = new System.Windows.Forms.Padding(4);
             this.txt_booking_status.Name = "txt_booking_status";
-            this.txt_booking_status.Size = new System.Drawing.Size(352, 20);
+            this.txt_booking_status.Size = new System.Drawing.Size(468, 22);
             this.txt_booking_status.TabIndex = 37;
             // 
             // Frm_ThanhToan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1293, 504);
+            this.ClientSize = new System.Drawing.Size(1724, 620);
             this.Controls.Add(this.btn_ThemDichVu);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_ThanhToan);
@@ -374,7 +395,10 @@ namespace GUI
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstView_DanhSachDichVu);
             this.Controls.Add(this.lstView_Bookings);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimizeBox = false;
             this.Name = "Frm_ThanhToan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ThanhToan";
             this.Load += new System.EventHandler(this.Frm_ThanhToan_Load);
             this.ResumeLayout(false);

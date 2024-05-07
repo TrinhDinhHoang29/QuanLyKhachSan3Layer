@@ -61,9 +61,10 @@ namespace GUI
             this.chkBox_Accounts_Permission.CheckedState.BorderRadius = 0;
             this.chkBox_Accounts_Permission.CheckedState.BorderThickness = 0;
             this.chkBox_Accounts_Permission.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkBox_Accounts_Permission.Location = new System.Drawing.Point(32, 52);
+            this.chkBox_Accounts_Permission.Location = new System.Drawing.Point(43, 64);
+            this.chkBox_Accounts_Permission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBox_Accounts_Permission.Name = "chkBox_Accounts_Permission";
-            this.chkBox_Accounts_Permission.Size = new System.Drawing.Size(174, 24);
+            this.chkBox_Accounts_Permission.Size = new System.Drawing.Size(218, 29);
             this.chkBox_Accounts_Permission.TabIndex = 1;
             this.chkBox_Accounts_Permission.Text = "Accounts permission";
             this.chkBox_Accounts_Permission.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -81,9 +82,10 @@ namespace GUI
             this.chkBox_Customers_Permission.CheckedState.BorderRadius = 0;
             this.chkBox_Customers_Permission.CheckedState.BorderThickness = 0;
             this.chkBox_Customers_Permission.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkBox_Customers_Permission.Location = new System.Drawing.Point(32, 88);
+            this.chkBox_Customers_Permission.Location = new System.Drawing.Point(43, 108);
+            this.chkBox_Customers_Permission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBox_Customers_Permission.Name = "chkBox_Customers_Permission";
-            this.chkBox_Customers_Permission.Size = new System.Drawing.Size(184, 24);
+            this.chkBox_Customers_Permission.Size = new System.Drawing.Size(230, 29);
             this.chkBox_Customers_Permission.TabIndex = 1;
             this.chkBox_Customers_Permission.Text = "Customers permission";
             this.chkBox_Customers_Permission.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -101,9 +103,10 @@ namespace GUI
             this.chkBox_Services_Permission.CheckedState.BorderRadius = 0;
             this.chkBox_Services_Permission.CheckedState.BorderThickness = 0;
             this.chkBox_Services_Permission.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkBox_Services_Permission.Location = new System.Drawing.Point(32, 128);
+            this.chkBox_Services_Permission.Location = new System.Drawing.Point(43, 158);
+            this.chkBox_Services_Permission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBox_Services_Permission.Name = "chkBox_Services_Permission";
-            this.chkBox_Services_Permission.Size = new System.Drawing.Size(166, 24);
+            this.chkBox_Services_Permission.Size = new System.Drawing.Size(208, 29);
             this.chkBox_Services_Permission.TabIndex = 1;
             this.chkBox_Services_Permission.Text = "Services permission";
             this.chkBox_Services_Permission.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -121,9 +124,10 @@ namespace GUI
             this.chkBox_Rooms_Permission.CheckedState.BorderRadius = 0;
             this.chkBox_Rooms_Permission.CheckedState.BorderThickness = 0;
             this.chkBox_Rooms_Permission.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkBox_Rooms_Permission.Location = new System.Drawing.Point(32, 167);
+            this.chkBox_Rooms_Permission.Location = new System.Drawing.Point(43, 206);
+            this.chkBox_Rooms_Permission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBox_Rooms_Permission.Name = "chkBox_Rooms_Permission";
-            this.chkBox_Rooms_Permission.Size = new System.Drawing.Size(158, 24);
+            this.chkBox_Rooms_Permission.Size = new System.Drawing.Size(197, 29);
             this.chkBox_Rooms_Permission.TabIndex = 1;
             this.chkBox_Rooms_Permission.Text = "Rooms permission";
             this.chkBox_Rooms_Permission.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -141,9 +145,10 @@ namespace GUI
             this.chkBox_Management_Permission.CheckedState.BorderRadius = 0;
             this.chkBox_Management_Permission.CheckedState.BorderThickness = 0;
             this.chkBox_Management_Permission.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkBox_Management_Permission.Location = new System.Drawing.Point(32, 205);
+            this.chkBox_Management_Permission.Location = new System.Drawing.Point(43, 252);
+            this.chkBox_Management_Permission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBox_Management_Permission.Name = "chkBox_Management_Permission";
-            this.chkBox_Management_Permission.Size = new System.Drawing.Size(202, 24);
+            this.chkBox_Management_Permission.Size = new System.Drawing.Size(254, 29);
             this.chkBox_Management_Permission.TabIndex = 1;
             this.chkBox_Management_Permission.Text = "Management permission";
             this.chkBox_Management_Permission.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -162,9 +167,10 @@ namespace GUI
             this.grpBox_Permission.Controls.Add(this.chkBox_Rooms_Permission);
             this.grpBox_Permission.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox_Permission.ForeColor = System.Drawing.Color.Black;
-            this.grpBox_Permission.Location = new System.Drawing.Point(560, 156);
+            this.grpBox_Permission.Location = new System.Drawing.Point(747, 192);
+            this.grpBox_Permission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpBox_Permission.Name = "grpBox_Permission";
-            this.grpBox_Permission.Size = new System.Drawing.Size(257, 260);
+            this.grpBox_Permission.Size = new System.Drawing.Size(343, 320);
             this.grpBox_Permission.TabIndex = 2;
             this.grpBox_Permission.Text = "Permissions";
             // 
@@ -179,9 +185,10 @@ namespace GUI
             this.lstView_DanhSachRole.GridLines = true;
             this.lstView_DanhSachRole.HideSelection = false;
             this.lstView_DanhSachRole.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lstView_DanhSachRole.Location = new System.Drawing.Point(9, 156);
+            this.lstView_DanhSachRole.Location = new System.Drawing.Point(12, 192);
+            this.lstView_DanhSachRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstView_DanhSachRole.Name = "lstView_DanhSachRole";
-            this.lstView_DanhSachRole.Size = new System.Drawing.Size(545, 260);
+            this.lstView_DanhSachRole.Size = new System.Drawing.Size(725, 319);
             this.lstView_DanhSachRole.TabIndex = 24;
             this.lstView_DanhSachRole.UseCompatibleStateImageBehavior = false;
             this.lstView_DanhSachRole.View = System.Windows.Forms.View.Details;
@@ -210,25 +217,29 @@ namespace GUI
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 121);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(537, 149);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin vai trò";
             // 
             // txt_MoTaVaiTro
             // 
-            this.txt_MoTaVaiTro.Location = new System.Drawing.Point(130, 75);
+            this.txt_MoTaVaiTro.Location = new System.Drawing.Point(173, 92);
+            this.txt_MoTaVaiTro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_MoTaVaiTro.Name = "txt_MoTaVaiTro";
-            this.txt_MoTaVaiTro.Size = new System.Drawing.Size(200, 24);
+            this.txt_MoTaVaiTro.Size = new System.Drawing.Size(265, 29);
             this.txt_MoTaVaiTro.TabIndex = 13;
             // 
             // txt_TenVaiTro
             // 
-            this.txt_TenVaiTro.Location = new System.Drawing.Point(130, 43);
+            this.txt_TenVaiTro.Location = new System.Drawing.Point(173, 53);
+            this.txt_TenVaiTro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TenVaiTro.Name = "txt_TenVaiTro";
-            this.txt_TenVaiTro.Size = new System.Drawing.Size(200, 24);
+            this.txt_TenVaiTro.Size = new System.Drawing.Size(265, 29);
             this.txt_TenVaiTro.TabIndex = 13;
             // 
             // label4
@@ -236,9 +247,10 @@ namespace GUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(6, 80);
+            this.label4.Location = new System.Drawing.Point(8, 98);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 16);
+            this.label4.Size = new System.Drawing.Size(121, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mô tả vai trò:";
             // 
@@ -247,9 +259,10 @@ namespace GUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(17, 48);
+            this.label3.Location = new System.Drawing.Point(23, 59);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 16);
+            this.label3.Size = new System.Drawing.Size(105, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Tên vai trò:";
             // 
@@ -259,9 +272,11 @@ namespace GUI
             this.groupBox2.Controls.Add(this.btn_XoaTT);
             this.groupBox2.Controls.Add(this.btn_ThemTT);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(421, 12);
+            this.groupBox2.Location = new System.Drawing.Point(561, 15);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(396, 121);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(528, 149);
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -275,9 +290,10 @@ namespace GUI
             this.btn_SuaTT.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_SuaTT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SuaTT.ForeColor = System.Drawing.Color.White;
-            this.btn_SuaTT.Location = new System.Drawing.Point(262, 33);
+            this.btn_SuaTT.Location = new System.Drawing.Point(349, 41);
+            this.btn_SuaTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_SuaTT.Name = "btn_SuaTT";
-            this.btn_SuaTT.Size = new System.Drawing.Size(98, 45);
+            this.btn_SuaTT.Size = new System.Drawing.Size(131, 55);
             this.btn_SuaTT.TabIndex = 16;
             this.btn_SuaTT.Text = "Sửa";
             this.btn_SuaTT.Click += new System.EventHandler(this.btn_SuaTT_Click);
@@ -291,9 +307,10 @@ namespace GUI
             this.btn_XoaTT.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_XoaTT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaTT.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaTT.Location = new System.Drawing.Point(158, 33);
+            this.btn_XoaTT.Location = new System.Drawing.Point(211, 41);
+            this.btn_XoaTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_XoaTT.Name = "btn_XoaTT";
-            this.btn_XoaTT.Size = new System.Drawing.Size(98, 45);
+            this.btn_XoaTT.Size = new System.Drawing.Size(131, 55);
             this.btn_XoaTT.TabIndex = 17;
             this.btn_XoaTT.Text = "Xóa";
             this.btn_XoaTT.Click += new System.EventHandler(this.btn_XoaTT_Click);
@@ -307,24 +324,29 @@ namespace GUI
             this.btn_ThemTT.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_ThemTT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThemTT.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemTT.Location = new System.Drawing.Point(54, 33);
+            this.btn_ThemTT.Location = new System.Drawing.Point(72, 41);
+            this.btn_ThemTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ThemTT.Name = "btn_ThemTT";
-            this.btn_ThemTT.Size = new System.Drawing.Size(98, 45);
+            this.btn_ThemTT.Size = new System.Drawing.Size(131, 55);
             this.btn_ThemTT.TabIndex = 18;
             this.btn_ThemTT.Text = "Thêm";
             this.btn_ThemTT.Click += new System.EventHandler(this.btn_ThemTT_Click);
             // 
             // Frm_Roles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(829, 426);
+            this.ClientSize = new System.Drawing.Size(1105, 524);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lstView_DanhSachRole);
             this.Controls.Add(this.grpBox_Permission);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimizeBox = false;
             this.Name = "Frm_Roles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Roles";
             this.Load += new System.EventHandler(this.Frm_Roles_Load);
             this.grpBox_Permission.ResumeLayout(false);

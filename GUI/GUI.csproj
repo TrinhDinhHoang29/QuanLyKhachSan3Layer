@@ -119,11 +119,17 @@
     <Compile Include="Frm_ThanhToan.Designer.cs">
       <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_ThongKeDanhThu.cs">
+    <Compile Include="Frm_ThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_ThongKeDanhThu.Designer.cs">
-      <DependentUpon>Frm_ThongKeDanhThu.cs</DependentUpon>
+    <Compile Include="Frm_ThongKeDoanhThu.Designer.cs">
+      <DependentUpon>Frm_ThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThongKePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongKePhong.Designer.cs">
+      <DependentUpon>Frm_ThongKePhong.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoDienChinh.cs">
       <SubType>Form</SubType>
@@ -166,8 +172,11 @@
     <EmbeddedResource Include="Frm_ThanhToan.resx">
       <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_ThongKeDanhThu.resx">
-      <DependentUpon>Frm_ThongKeDanhThu.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_ThongKeDoanhThu.resx">
+      <DependentUpon>Frm_ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThongKePhong.resx">
+      <DependentUpon>Frm_ThongKePhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDienChinh.resx">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>

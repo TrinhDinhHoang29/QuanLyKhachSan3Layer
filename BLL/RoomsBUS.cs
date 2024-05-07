@@ -60,5 +60,14 @@ namespace BLL
         {
             return room.updateDataNew(id, room_number, room_type, bed_type, price_per_night, status_id);
         }
+        public DataTable GetNumberOfRoomsOfEachRoomStatus()
+        {
+            return room.GetNumberOfRoomsOfEachRoomStatus();
+        }
+        public DataTable GetRoomTypeBedTypeCounts()
+        {
+            return room.GetRoomTypeBedTypeCounts();
+        }
+
     }
 }

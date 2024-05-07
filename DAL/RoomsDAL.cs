@@ -114,5 +114,13 @@ namespace DAL
             };
             return db.ExcuteSQL("sp_rooms_DeleteSoft_Id", para);
         }
+        public DataTable GetNumberOfRoomsOfEachRoomStatus()
+        {
+            return db.getData("GetRoomsStatusCounts", null);
+        }
+        public DataTable GetRoomTypeBedTypeCounts()
+        {
+            return db.getData("GetRoomTypeBedTypeCounts", null);
+        }
     }
 }

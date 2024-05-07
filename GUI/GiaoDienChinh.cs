@@ -128,7 +128,7 @@ namespace GUI
 
         private void btn_ThongKeDanhThu_Click(object sender, EventArgs e)
         {
-            Form frm_ThongKeDanhThu = new Frm_ThongKeDanhThu();
+            Form frm_ThongKeDanhThu = new Frm_ThongKeDoanhThu();
             frm_ThongKeDanhThu.Show();
         }
 
@@ -408,12 +408,24 @@ namespace GUI
 
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
-
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Cancel)
+            {
+                return;
+            }
+            this.Close();
         }
 
         private void btn_DangXuat_Click(object sender, EventArgs e)
         {
-
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn đăng xuất không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Cancel)
+            {
+                return;
+            }
+            Form frm_DangNhap = new Frm_DangNhap();
+            frm_DangNhap.Show();
+            this.Hide(); // Ẩn form hiện tại thay vì đóng nó.
         }
 
         private void btn_DoiMatKhau_Click(object sender, EventArgs e)
@@ -510,6 +522,12 @@ namespace GUI
             //button.Size = new Size(80, 30); // Kích thước của nút button
             //e.Graphics.FillRectangle(new SolidBrush(button.BackColor), e.Bounds);
             //e.Graphics.DrawString(button.Text, button.Font, Brushes.Black, e.Bounds, new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+        }
+
+        private void btn_ThongKeHoaDon_Click(object sender, EventArgs e)
+        {
+            Frm_ThongKePhong frm_ThongKePhong = new Frm_ThongKePhong();
+            frm_ThongKePhong.Show();
         }
     }
 }

@@ -61,14 +61,14 @@ namespace GUI
             // 
             this.txt_MatKhau.Location = new System.Drawing.Point(158, 79);
             this.txt_MatKhau.Name = "txt_MatKhau";
-            this.txt_MatKhau.Size = new System.Drawing.Size(200, 24);
+            this.txt_MatKhau.Size = new System.Drawing.Size(200, 29);
             this.txt_MatKhau.TabIndex = 8;
             // 
             // txt_TenDangNhap
             // 
             this.txt_TenDangNhap.Location = new System.Drawing.Point(158, 44);
             this.txt_TenDangNhap.Name = "txt_TenDangNhap";
-            this.txt_TenDangNhap.Size = new System.Drawing.Size(200, 24);
+            this.txt_TenDangNhap.Size = new System.Drawing.Size(200, 29);
             this.txt_TenDangNhap.TabIndex = 9;
             // 
             // label6
@@ -78,7 +78,7 @@ namespace GUI
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label6.Location = new System.Drawing.Point(43, 118);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 16);
+            this.label6.Size = new System.Drawing.Size(133, 20);
             this.label6.TabIndex = 4;
             this.label6.Text = "Loại tài khoản:";
             // 
@@ -89,7 +89,7 @@ namespace GUI
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label5.Location = new System.Drawing.Point(74, 81);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 16);
+            this.label5.Size = new System.Drawing.Size(97, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Mật khẩu: ";
             // 
@@ -100,7 +100,7 @@ namespace GUI
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label4.Location = new System.Drawing.Point(28, 44);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 16);
+            this.label4.Size = new System.Drawing.Size(150, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Tên đăng nhập:  ";
             // 
@@ -280,6 +280,7 @@ namespace GUI
             this.txt_TimKiemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_TimKiemNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TimKiemNV.Location = new System.Drawing.Point(138, 3);
+            this.txt_TimKiemNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_TimKiemNV.Name = "txt_TimKiemNV";
             this.txt_TimKiemNV.PasswordChar = '\0';
             this.txt_TimKiemNV.PlaceholderText = "";
@@ -317,8 +318,9 @@ namespace GUI
             // 
             // Frm_QuanLyNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1060, 504);
             this.Controls.Add(this.panel1);
@@ -326,7 +328,9 @@ namespace GUI
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeBox = false;
             this.Name = "Frm_QuanLyNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_QuanLyNhanVien";
             this.Load += new System.EventHandler(this.Frm_QuanLyNhanVien_Load);
             this.groupBox1.ResumeLayout(false);

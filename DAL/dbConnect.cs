@@ -13,7 +13,7 @@ namespace DAL
         private SqlConnection conn;
         public dbConnect()
         {
-            conn = new SqlConnection("Data Source=LAPTOP-QK799FFN\\SQLEXPRESS;Initial Catalog=QLKS; Integrated Security = True; ");
+            conn = new SqlConnection("Data Source=pcnoname\\SQLEXPRESS;Initial Catalog=QLKS; Integrated Security = True;");
         }
         public DataTable getDataTable(String strSQL)
         {

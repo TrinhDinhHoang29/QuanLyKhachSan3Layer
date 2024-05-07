@@ -46,5 +46,17 @@ namespace BLL
         {
             return bookings.getDataByIdRoomAndCurrentDate(room_number);
         }
+        public DataTable GetBookingDataForChart()
+        {
+            return bookings.GetBookingDataForChart();
+        }
+        public DataTable GetBookingDataForChartByYear()
+        {
+            return bookings.GetBookingDataForChartByYear();
+        }
+        public DataTable GetMonthlyBookingDataForYear(int year)
+        {
+            return bookings.GetMonthlyBookingDataForYear(year);
+        }
     }
 }

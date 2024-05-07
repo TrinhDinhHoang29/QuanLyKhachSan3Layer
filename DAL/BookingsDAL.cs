@@ -68,5 +68,28 @@ namespace DAL
           };
             return db.getData("getDataByRoomNumberAndCurrentDate", para);
         }
+        public DataTable GetBookingDataForChart()
+        {
+            string query = "SELECT MONTH(check_in_date) AS [Month], SUM(total_price) AS [TotalRevenue] " +
+                              "FROM Bookings " +
+                              "GROUP BY MONTH(check_in_date)";
+            return db.getDataTable(query);
+        }
+        public DataTable GetBookingDataForChartByYear()
+        {
+            string query = "SELECT YEAR(check_in_date) AS [Year], SUM(total_price) AS [TotalRevenue] " +
+                               "FROM Bookings " +
+                               "GROUP BY YEAR(check_in_date)";
+
+            return db.getDataTable(query);
+        }
+        public DataTable GetMonthlyBookingDataForYear(int year)
+        {
+            string query = "SELECT MONTH(check_in_date) AS [Month], SUM(total_price) AS [TotalRevenue] " +
+                              "FROM Bookings " +
+                              "Where " + year + " = Year(check_in_date)" +
+                              "GROUP BY MONTH(check_in_date) ";
+            return db.getDataTable(query);
+        }
     }
 }
