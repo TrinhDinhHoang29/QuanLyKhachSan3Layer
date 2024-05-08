@@ -43,6 +43,10 @@ namespace GUI
                         {
                             item.SubItems.Add($"{rowCustomer[1].ToString()} {rowCustomer[2].ToString()}");
                         }
+                        if (tableCustomer.Rows.Count < 1)
+                        {
+                            item.SubItems.Add("Đã xóa");
+                        }
                     }
                     else if (i == 4)
                     {
@@ -59,7 +63,7 @@ namespace GUI
                     }
 
                 }
-                if(item.SubItems[6].Text=="Cancel")
+                if (item.SubItems[6].Text == "Cancel")
                     lstView_Bookings.Items.Add(item).BackColor = Color.Gray;
                 else if (item.SubItems[6].Text == "Unpaid")
                     lstView_Bookings.Items.Add(item).BackColor = Color.DarkRed;

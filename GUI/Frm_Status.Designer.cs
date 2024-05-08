@@ -61,10 +61,9 @@ namespace GUI
             this.panel1.Controls.Add(this.btn_TimKiemTrangThai);
             this.panel1.Controls.Add(this.txt_TimKiemTrangThai);
             this.panel1.Controls.Add(this.guna2ComboBox1);
-            this.panel1.Location = new System.Drawing.Point(537, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(403, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(874, 625);
+            this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 22;
             // 
             // lstView_DanhSachTrangThai
@@ -77,10 +76,9 @@ namespace GUI
             this.lstView_DanhSachTrangThai.FullRowSelect = true;
             this.lstView_DanhSachTrangThai.GridLines = true;
             this.lstView_DanhSachTrangThai.HideSelection = false;
-            this.lstView_DanhSachTrangThai.Location = new System.Drawing.Point(5, 55);
-            this.lstView_DanhSachTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstView_DanhSachTrangThai.Location = new System.Drawing.Point(4, 45);
             this.lstView_DanhSachTrangThai.Name = "lstView_DanhSachTrangThai";
-            this.lstView_DanhSachTrangThai.Size = new System.Drawing.Size(849, 554);
+            this.lstView_DanhSachTrangThai.Size = new System.Drawing.Size(638, 451);
             this.lstView_DanhSachTrangThai.TabIndex = 23;
             this.lstView_DanhSachTrangThai.UseCompatibleStateImageBehavior = false;
             this.lstView_DanhSachTrangThai.View = System.Windows.Forms.View.Details;
@@ -111,10 +109,9 @@ namespace GUI
             this.btn_TimKiemTrangThai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_TimKiemTrangThai.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TimKiemTrangThai.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiemTrangThai.Location = new System.Drawing.Point(727, 4);
-            this.btn_TimKiemTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_TimKiemTrangThai.Location = new System.Drawing.Point(545, 3);
             this.btn_TimKiemTrangThai.Name = "btn_TimKiemTrangThai";
-            this.btn_TimKiemTrangThai.Size = new System.Drawing.Size(129, 44);
+            this.btn_TimKiemTrangThai.Size = new System.Drawing.Size(97, 36);
             this.btn_TimKiemTrangThai.TabIndex = 22;
             this.btn_TimKiemTrangThai.Text = "Tìm kiếm";
             this.btn_TimKiemTrangThai.Click += new System.EventHandler(this.btn_TimKiemTrangThai_Click);
@@ -131,13 +128,13 @@ namespace GUI
             this.txt_TimKiemTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TimKiemTrangThai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_TimKiemTrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TimKiemTrangThai.Location = new System.Drawing.Point(199, 4);
-            this.txt_TimKiemTrangThai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_TimKiemTrangThai.Location = new System.Drawing.Point(149, 3);
+            this.txt_TimKiemTrangThai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_TimKiemTrangThai.Name = "txt_TimKiemTrangThai";
             this.txt_TimKiemTrangThai.PasswordChar = '\0';
             this.txt_TimKiemTrangThai.PlaceholderText = "";
             this.txt_TimKiemTrangThai.SelectedText = "";
-            this.txt_TimKiemTrangThai.Size = new System.Drawing.Size(520, 44);
+            this.txt_TimKiemTrangThai.Size = new System.Drawing.Size(390, 36);
             this.txt_TimKiemTrangThai.TabIndex = 21;
             // 
             // guna2ComboBox1
@@ -153,10 +150,9 @@ namespace GUI
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Items.AddRange(new object[] {
             "Tất cã"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(4, 4);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(185, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
             this.guna2ComboBox1.TabIndex = 0;
             // 
             // groupBox1
@@ -166,29 +162,25 @@ namespace GUI
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 236);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(2, 192);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(480, 149);
+            this.groupBox1.Size = new System.Drawing.Size(360, 121);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông trạng thái phòng";
             // 
             // txt_MoTaTrangThai
             // 
-            this.txt_MoTaTrangThai.Location = new System.Drawing.Point(173, 92);
-            this.txt_MoTaTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_MoTaTrangThai.Location = new System.Drawing.Point(130, 75);
             this.txt_MoTaTrangThai.Name = "txt_MoTaTrangThai";
-            this.txt_MoTaTrangThai.Size = new System.Drawing.Size(265, 29);
+            this.txt_MoTaTrangThai.Size = new System.Drawing.Size(200, 24);
             this.txt_MoTaTrangThai.TabIndex = 13;
             // 
             // txt_TenTrangThai
             // 
-            this.txt_TenTrangThai.Location = new System.Drawing.Point(173, 53);
-            this.txt_TenTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_TenTrangThai.Location = new System.Drawing.Point(130, 43);
             this.txt_TenTrangThai.Name = "txt_TenTrangThai";
-            this.txt_TenTrangThai.Size = new System.Drawing.Size(265, 29);
+            this.txt_TenTrangThai.Size = new System.Drawing.Size(200, 24);
             this.txt_TenTrangThai.TabIndex = 13;
             // 
             // label4
@@ -196,10 +188,9 @@ namespace GUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(8, 98);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(6, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 20);
+            this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mô tả trạng thái:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -209,10 +200,9 @@ namespace GUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(23, 59);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(17, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 20);
+            this.label3.Size = new System.Drawing.Size(107, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Tên trạng thái:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -223,11 +213,9 @@ namespace GUI
             this.groupBox2.Controls.Add(this.btn_XoaTT);
             this.groupBox2.Controls.Add(this.btn_ThemTT);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 393);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(2, 319);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(535, 123);
+            this.groupBox2.Size = new System.Drawing.Size(401, 100);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -241,10 +229,9 @@ namespace GUI
             this.btn_SuaTT.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_SuaTT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SuaTT.ForeColor = System.Drawing.Color.White;
-            this.btn_SuaTT.Location = new System.Drawing.Point(349, 41);
-            this.btn_SuaTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_SuaTT.Location = new System.Drawing.Point(262, 33);
             this.btn_SuaTT.Name = "btn_SuaTT";
-            this.btn_SuaTT.Size = new System.Drawing.Size(131, 55);
+            this.btn_SuaTT.Size = new System.Drawing.Size(98, 45);
             this.btn_SuaTT.TabIndex = 16;
             this.btn_SuaTT.Text = "Sửa";
             this.btn_SuaTT.Click += new System.EventHandler(this.btn_SuaTT_Click);
@@ -258,10 +245,9 @@ namespace GUI
             this.btn_XoaTT.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_XoaTT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaTT.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaTT.Location = new System.Drawing.Point(211, 41);
-            this.btn_XoaTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_XoaTT.Location = new System.Drawing.Point(158, 33);
             this.btn_XoaTT.Name = "btn_XoaTT";
-            this.btn_XoaTT.Size = new System.Drawing.Size(131, 55);
+            this.btn_XoaTT.Size = new System.Drawing.Size(98, 45);
             this.btn_XoaTT.TabIndex = 17;
             this.btn_XoaTT.Text = "Xóa";
             this.btn_XoaTT.Click += new System.EventHandler(this.btn_XoaTT_Click);
@@ -275,10 +261,9 @@ namespace GUI
             this.btn_ThemTT.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_ThemTT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThemTT.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemTT.Location = new System.Drawing.Point(72, 41);
-            this.btn_ThemTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ThemTT.Location = new System.Drawing.Point(54, 33);
             this.btn_ThemTT.Name = "btn_ThemTT";
-            this.btn_ThemTT.Size = new System.Drawing.Size(131, 55);
+            this.btn_ThemTT.Size = new System.Drawing.Size(98, 45);
             this.btn_ThemTT.TabIndex = 18;
             this.btn_ThemTT.Text = "Thêm";
             this.btn_ThemTT.Click += new System.EventHandler(this.btn_ThemTT_Click);
@@ -286,26 +271,24 @@ namespace GUI
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.StatusNew;
-            this.pictureBox1.Location = new System.Drawing.Point(116, 39);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
             // Frm_Status
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(221)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1413, 620);
+            this.ClientSize = new System.Drawing.Size(1066, 504);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MinimizeBox = false;
             this.Name = "Frm_Status";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

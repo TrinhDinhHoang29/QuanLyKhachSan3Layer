@@ -258,27 +258,32 @@ namespace GUI
             button.Location = new System.Drawing.Point(toaDoX, toaDoY);
             button.Size = new System.Drawing.Size(200, 100);
             // Thiết lập nội dung của button
-            button.Text = $"\t{tenPhong} \t";
+            button.Text = $"\tPhòng: {tenPhong} \t";
             button.Font = new System.Drawing.Font(button.Font, System.Drawing.FontStyle.Bold);
             button.ForeColor = System.Drawing.Color.White;
-            button.Font = new System.Drawing.Font(button.Font.FontFamily, 11, System.Drawing.FontStyle.Bold);
+            button.Font = new System.Drawing.Font(button.Font.FontFamily, 9, System.Drawing.FontStyle.Bold);
             if (id == 1)
             {
                 button.BackColor = System.Drawing.Color.Green;
+                button.Text += "\n\n\t(Phòng trống)";
                 button.Click += room_click1;
             }else if (id == 2)
             {
                 DataRow bookingRow = bookingsBus.getDataByIdRoomAndCurrentDate(tenPhong).Rows[0];
                 button.BackColor = System.Drawing.Color.Maroon;
-                button.Text += $"\n\t{bookingRow[2].ToString()}\n\t{bookingRow[3].ToString()}\t";
-
+                button.Text += $"\nIn: {bookingRow[2].ToString()}\nOut: {bookingRow[3].ToString()}";
+                if (bookingRow[4].ToString() == "Paid")
+                    button.Text += "\n\n\t(Đã thanh toán)";
+                else
+                    button.Text += "\n\n\t(Chưa thanh toán)";
                 button.Click += room_click;
-
-
-
             }
             else
+            {
+                button.Text += "\n\n\t(Phòng bảo trì)";
                 button.BackColor = System.Drawing.Color.DarkOrange;
+
+            }
 
 
             // Đăng ký sự kiện Click cho button
@@ -289,7 +294,7 @@ namespace GUI
         public void room_click(object sender, EventArgs e)
         {
             Button button = sender as Button;
-            DataRow bookingRow = bookingsBus.getDataByIdRoomAndCurrentDate(int.Parse(button.Text.Split(' ')[0]).ToString()).Rows[0];
+            DataRow bookingRow = bookingsBus.getDataByIdRoomAndCurrentDate(int.Parse(button.Text.Split(' ')[1]).ToString()).Rows[0];
             Form hoaDon = new Frm_HoaDon(bookingRow[1].ToString());
             hoaDon.Show();
         }
@@ -313,12 +318,13 @@ namespace GUI
             button.Font = new System.Drawing.Font(button.Font, System.Drawing.FontStyle.Bold);
             button.ForeColor = System.Drawing.Color.White;
             button.Font = new System.Drawing.Font(button.Font.FontFamily, 10, System.Drawing.FontStyle.Bold);
-            button.BackColor = System.Drawing.Color.Green;
+            button.BackColor = System.Drawing.Color.Gray;
             button.Click += click_pagination;
             // Đăng ký sự kiện Click cho button
             // Thêm button vào Form
             this.Controls.Add(button);
             return button;
+
         }
         private void click_pagination(object sender, EventArgs e)
         {
