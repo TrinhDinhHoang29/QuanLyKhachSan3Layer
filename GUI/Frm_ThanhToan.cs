@@ -26,10 +26,10 @@ namespace GUI
             InitializeComponent();
         }
        
-        private void printListViewBookings() // Hàm xuất ra trên listView 
+        private void printListViewBookings(DataTable bookings) // Hàm xuất ra trên listView 
         {
             lstView_Bookings.Items.Clear();
-            foreach (DataRow row in bookingsBus.getDataAll().Rows)
+            foreach (DataRow row in bookings.Rows)
             {
                 ListViewItem item = new ListViewItem(row[0].ToString());
                 
@@ -38,20 +38,17 @@ namespace GUI
                     if (i == 1)
                     {
                         int customerId = Convert.ToInt32(row[i].ToString());
-                        DataTable tableCustomer = khachHangBus.getDataById(customerId);
+                        DataTable tableCustomer = khachHangBus.getDataByIdDeleted(customerId);
                         foreach (DataRow rowCustomer in tableCustomer.Rows)
                         {
                             item.SubItems.Add($"{rowCustomer[1].ToString()} {rowCustomer[2].ToString()}");
                         }
-                        if (tableCustomer.Rows.Count < 1)
-                        {
-                            item.SubItems.Add("Đã xóa");
-                        }
+                  
                     }
                     else if (i == 4)
                     {
                         int accountId = Convert.ToInt32(row[i].ToString());
-                        DataTable tableAccount = nhanVienBus.getDataById(accountId);
+                        DataTable tableAccount = nhanVienBus.getDataFullById(accountId);
                         foreach (DataRow rowAccount in tableAccount.Rows)
                         {
                             item.SubItems.Add($"{rowAccount[1].ToString()}");
@@ -90,8 +87,10 @@ namespace GUI
 
         private void Frm_ThanhToan_Load(object sender, EventArgs e)
         {
-            printListViewBookings();
+            cbBox_DonViLoc.Text = "Tất cả";
+            printListViewBookings(bookingsBus.getDataAll());
             printListView();
+            printListViewRooms();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -113,6 +112,20 @@ namespace GUI
                 date_CheckIn.Value = DateTime.Parse(item.SubItems[2].Text);
                 date_CheckOut.Value = DateTime.Parse(item.SubItems[3].Text);
                 txt_booking_status.Text = item.SubItems[6].Text;
+                dateTime_checkInChuyenPhong.Value = DateTime.Parse(item.SubItems[2].Text);
+                dateTime_checkOutChuyenPhong.Value = DateTime.Parse(item.SubItems[3].Text);
+                txt_TenKHChuyenPhong.Text = item.SubItems[1].Text;
+                txt_TrangThaiChuyenPhong.Text = item.SubItems[6].Text;
+                DataTable data = booking_DetailsBus.getDataAllByBookingId(int.Parse(item.SubItems[0].Text));
+                data.Columns.Add("combined_id_price", typeof(string));
+
+                cbo_ListRoom.DisplayMember = "room_number";
+                foreach (DataRow row in data.Rows)
+                {
+                    row["combined_id_price"] = row["room_id"] + "-" + row["price"];
+                }
+                cbo_ListRoom.DataSource = data;
+                cbo_ListRoom.ValueMember = "combined_id_price";
             }
         }
 
@@ -130,25 +143,33 @@ namespace GUI
         {
             if (lstView_Bookings.SelectedItems.Count > 0)
             {
-                ListViewItem item = lstView_Bookings.SelectedItems[0];
-                int booking_id = int.Parse( item.SubItems[0].Text);
-                string status = item.SubItems[6].Text;
-                try
+                DialogResult result = MessageBox.Show("Nhấn yes để xoá hoá đơn !!","Thông báo",MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
                 {
-                    if (status != "Cancel" && status != "Paid") {
-                        bookingsBus.updateStatusById(booking_id, "Cancel");
-                        printListViewBookings();
-                        MessageBox.Show("Hủy hóa đơn thành công", "Thông báo");
+                    ListViewItem item = lstView_Bookings.SelectedItems[0];
+                    int booking_id = int.Parse(item.SubItems[0].Text);
+                    string status = item.SubItems[6].Text;
+                    try
+                    {
+                        if (status != "Cancel" && status != "Paid")
+                        {
+                            bookingsBus.updateStatusById(booking_id, "Cancel");
+                            printListViewBookings(bookingsBus.getDataAll());
+                            MessageBox.Show("Hủy hóa đơn thành công", "Thông báo");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Hủy hóa đơn thất bại", "Thông báo");
+                        }
                     }
-                    else
+                    catch
                     {
                         MessageBox.Show("Hủy hóa đơn thất bại", "Thông báo");
                     }
+
+
                 }
-                catch
-                {
-                    MessageBox.Show("Hủy hóa đơn thất bại", "Thông báo");
-                }
+              
                 
             }
         }
@@ -231,6 +252,157 @@ namespace GUI
             {
                 e.Handled = true;
             }
+        }
+
+        private void chk_LocTheoTen_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_LocTheoTen.Checked == true)
+            {
+                txt_LocTheoTen.Enabled = true;
+            }
+            else
+            {
+                txt_LocTheoTen.Enabled = false;
+
+            }
+        }
+        private void printListViewRooms() // Hàm xuất ra trên listView 
+        {
+            lstView_DanhSachPhong.Items.Clear();
+            foreach (DataRow row in roomBus.getDataKhacBaoTri().Rows)
+            {
+                ListViewItem item = new ListViewItem(row[0].ToString());
+                for (int i = 1; i < roomBus.getDataAll().Columns.Count; i++)
+                {
+                    if (i == 5)
+                    {
+                        int statusId = Convert.ToInt32(row[i].ToString());
+                        DataTable tableStatus = statusBus.getDataById(statusId);
+                        foreach (DataRow rowStatus in tableStatus.Rows)
+                        {
+                            item.SubItems.Add(rowStatus[1].ToString());
+                        }
+                    }
+                    else
+                    {
+                        item.SubItems.Add(row[i].ToString());
+                    }
+
+                }
+                lstView_DanhSachPhong.Items.Add(item);
+            }
+        }
+        private void btn_Loc_Click(object sender, EventArgs e)
+        {
+            if (cbBox_DonViLoc.Text == "Tất cả"&& chk_LocTheoTen.Checked == false)
+            {
+                printListViewBookings(bookingsBus.getDataAll());
+            }
+            else if (chk_LocTheoTen.Checked == true && cbBox_DonViLoc.Text == "Tất cả") 
+            {
+                printListViewBookings(bookingsBus.getBookingsByFullNameCustomer(txt_LocTheoTen.Text));
+            }else if (cbBox_DonViLoc.Text == "Khách đang ở" && chk_LocTheoTen.Checked == false)
+            {
+                printListViewBookings(bookingsBus.getBookingsCurrentDate());
+
+            }
+            else if(cbBox_DonViLoc.Text == "Khách đang ở" && chk_LocTheoTen.Checked == true)
+            {
+                printListViewBookings(bookingsBus.getBookingsCurrentDateByFullNameCustomer(txt_LocTheoTen.Text));
+            }else if (cbBox_DonViLoc.Text == "Chưa thanh toán" && chk_LocTheoTen.Checked == false)
+            {
+                printListViewBookings(bookingsBus.getBookingsByStatus("Unpaid"));
+
+            }
+            else if (cbBox_DonViLoc.Text == "Chưa thanh toán" && chk_LocTheoTen.Checked == true)
+            {
+                printListViewBookings(bookingsBus.getBookingsByStatusAndFullName("Unpaid",txt_LocTheoTen.Text));
+            }
+            else if (cbBox_DonViLoc.Text == "Đã thanh toán" && chk_LocTheoTen.Checked == false)
+            {
+                printListViewBookings(bookingsBus.getBookingsByStatus("Paid"));
+            }
+            else if (cbBox_DonViLoc.Text == "Đã thanh toán" && chk_LocTheoTen.Checked == true)
+            {
+                printListViewBookings(bookingsBus.getBookingsByStatusAndFullName("Paid", txt_LocTheoTen.Text));
+            }
+            else if (cbBox_DonViLoc.Text == "Đã đặt trước" && chk_LocTheoTen.Checked == false)
+            {
+                printListViewBookings(bookingsBus.getBookingsAfterCheckin());
+
+            }
+            else if (cbBox_DonViLoc.Text == "Đã đặt trước" && chk_LocTheoTen.Checked == true)
+            {
+                printListViewBookings(bookingsBus.getBookingsAfterCheckinByFullName(txt_LocTheoTen.Text));
+
+            }
+
+
+        }
+
+        private void lstView_DanhSachPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstView_DanhSachPhong.SelectedItems.Count > 0)
+            {
+                txt_PhongMuonChuyen.Text = lstView_DanhSachPhong.SelectedItems[0].SubItems[1].Text;
+            }
+        }
+
+        private bool checkDate(DateTime date_checkIn, DateTime date_checkOut)
+        {
+            if (lstView_DanhSachPhong.SelectedItems.Count > 0)
+            {
+                foreach (ListViewItem item in lstView_DanhSachPhong.SelectedItems)
+                {
+                    int idRooms = Convert.ToInt32(item.SubItems[0].Text);
+                    if (bookingsBus.checkDate(idRooms, date_checkIn, date_checkOut).Rows.Count > 0)
+                    {
+                        return false;
+                    }
+
+                }
+
+                return true;
+            }
+            return false;
+        }
+
+        private void btn_ChuyenPhong_Click(object sender, EventArgs e)
+        {
+            if (checkDate(dateTime_checkInChuyenPhong.Value, dateTime_checkOutChuyenPhong.Value) == true)
+            {
+                if (lstView_Bookings.SelectedItems.Count > 0)
+                {
+                    try
+                    {
+                        int idRoomChange = int.Parse(lstView_DanhSachPhong.SelectedItems[0].SubItems[0].Text);
+                        int idRoomCurrent = int.Parse(cbo_ListRoom.SelectedValue.ToString().Split('-')[0].ToString());
+                        string sdateCheckIn = dateTime_checkInChuyenPhong.Value.ToString("MM/dd/yyyy"), sdateCheckOut = dateTime_checkOutChuyenPhong.Value.ToString("MM/dd/yyyy");
+                        DateTime dateCheckIn = DateTime.Parse(sdateCheckIn), dateCheckOut = DateTime.Parse(sdateCheckOut);
+                        TimeSpan difference = dateCheckOut.Subtract(dateCheckIn);
+                        int numberOfDays = (int)difference.TotalDays;
+                        float priceNew = numberOfDays * float.Parse(lstView_DanhSachPhong.SelectedItems[0].SubItems[4].Text);
+                        float price = float.Parse(lstView_DanhSachPhong.SelectedItems[0].SubItems[4].Text);
+                        float priceOld = float.Parse(cbo_ListRoom.SelectedValue.ToString().Split('-')[1].ToString()) * numberOfDays;
+                        booking_DetailsBus.changeRoomByIdBookingAndRoomId(int.Parse(lstView_Bookings.SelectedItems[0].SubItems[0].Text), idRoomCurrent, idRoomChange,price,priceOld,priceNew);
+                        MessageBox.Show("Đổi phòng thành công !!", "Thông báo");
+                        printListViewBookings(bookingsBus.getDataAll());
+                        printListViewRooms();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Đổi phòng không thành công !!", "Thông báo");
+
+                    }
+
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Phòng này đã có khách !!");
+            }
+           
         }
     }
 }

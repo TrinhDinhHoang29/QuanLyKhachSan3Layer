@@ -442,6 +442,7 @@ namespace GUI
 
         private void btn_TatCaPhong_Click(object sender, EventArgs e)
         {
+            updateStatus();
             DataTable dt = roomsBus.getDataAll();
             int tongTrang = dt.Rows.Count;
             float divide = tongTrang / 12f;
@@ -459,6 +460,8 @@ namespace GUI
 
         private void btn_PhongTrong_Click(object sender, EventArgs e)
         {
+            updateStatus();
+
             DataTable dt = roomsBus.getDataTrong();
             panel_ListRooms.BringToFront();
             int tongTrang = dt.Rows.Count;
@@ -477,6 +480,9 @@ namespace GUI
 
         private void btn_CoKhach_Click(object sender, EventArgs e)
         {
+            updateStatus();
+
+
             DataTable dt = roomsBus.getDataCoKhach();
             panel_ListRooms.BringToFront();
             int tongTrang = dt.Rows.Count;
@@ -495,6 +501,8 @@ namespace GUI
 
         private void btn_BaoTri_Click(object sender, EventArgs e)
         {
+            updateStatus();
+
             DataTable dt = roomsBus.getDataBaoTri();
             panel_ListRooms.BringToFront();
             int tongTrang = dt.Rows.Count;

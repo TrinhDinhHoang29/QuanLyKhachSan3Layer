@@ -296,5 +296,8 @@
   <ItemGroup>
     <None Include="Resources\outNew.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4550883_glass_loupe_magnifier_magnifying_search_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

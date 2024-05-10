@@ -72,7 +72,7 @@ namespace GUI
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(161, 25);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(189, 25);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(181, 38);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -82,7 +82,7 @@ namespace GUI
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(126, 125);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(146, 125);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(267, 38);
             this.guna2HtmlLabel2.TabIndex = 0;
@@ -173,7 +173,7 @@ namespace GUI
             this.lstView_DanhSachBooking.FullRowSelect = true;
             this.lstView_DanhSachBooking.GridLines = true;
             this.lstView_DanhSachBooking.HideSelection = false;
-            this.lstView_DanhSachBooking.Location = new System.Drawing.Point(45, 276);
+            this.lstView_DanhSachBooking.Location = new System.Drawing.Point(42, 276);
             this.lstView_DanhSachBooking.Name = "lstView_DanhSachBooking";
             this.lstView_DanhSachBooking.Size = new System.Drawing.Size(475, 88);
             this.lstView_DanhSachBooking.TabIndex = 7;
@@ -218,7 +218,7 @@ namespace GUI
             // 
             this.lb_TenKhachHang.AutoSize = true;
             this.lb_TenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_TenKhachHang.Location = new System.Drawing.Point(399, 187);
+            this.lb_TenKhachHang.Location = new System.Drawing.Point(386, 187);
             this.lb_TenKhachHang.Name = "lb_TenKhachHang";
             this.lb_TenKhachHang.Size = new System.Drawing.Size(121, 18);
             this.lb_TenKhachHang.TabIndex = 1;
@@ -239,7 +239,7 @@ namespace GUI
             this.lstView_TienIch.GridLines = true;
             this.lstView_TienIch.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstView_TienIch.HideSelection = false;
-            this.lstView_TienIch.Location = new System.Drawing.Point(45, 431);
+            this.lstView_TienIch.Location = new System.Drawing.Point(42, 431);
             this.lstView_TienIch.Name = "lstView_TienIch";
             this.lstView_TienIch.Size = new System.Drawing.Size(475, 88);
             this.lstView_TienIch.TabIndex = 7;
@@ -412,6 +412,7 @@ namespace GUI
             this.txt_quantity.Size = new System.Drawing.Size(81, 36);
             this.txt_quantity.TabIndex = 48;
             this.txt_quantity.TextChanged += new System.EventHandler(this.txt_quantity_TextChanged);
+            this.txt_quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_quantity_KeyPress);
             // 
             // btn_close
             // 

@@ -98,6 +98,9 @@ namespace BLL
             // Gọi phương thức updatePassword từ DAL để cập nhật mật khẩu trong cơ sở dữ liệu
             nv.updatePassword(username, newPassword);
         }
-
+        public DataTable getDataFullById(int id)
+        {
+            return nv.getDataFullById(id);
+        }
     }
 }

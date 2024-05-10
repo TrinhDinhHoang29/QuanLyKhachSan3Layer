@@ -64,21 +64,27 @@ namespace GUI
 
         private void btn_XoaDichVu_Click(object sender, EventArgs e)
         {
+
             if (lstView_DanhSachDichVu.SelectedItems.Count > 0)
             {
-                ListViewItem Item = lstView_DanhSachDichVu.SelectedItems[0];
-                int idPhong = Convert.ToInt32(Item.SubItems[0].Text);
-                if (serviceBus.deleteDataSoft(idPhong) != 0)
+                DialogResult result = MessageBox.Show("Bạn có chất muốn xoá ", "Thông báo", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo");
-                    printListView();
-                    txt_TenDichVu.Text = "";
-                    txt_GiaDichVu.Text = "";
+                    ListViewItem Item = lstView_DanhSachDichVu.SelectedItems[0];
+                    int idPhong = Convert.ToInt32(Item.SubItems[0].Text);
+                    if (serviceBus.deleteDataSoft(idPhong) != 0)
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo");
+                        printListView();
+                        txt_TenDichVu.Text = "";
+                        txt_GiaDichVu.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thành công", "Thông báo");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa không thành công", "Thông báo");
-                }
+                
 
             }
             else

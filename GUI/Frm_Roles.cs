@@ -174,10 +174,15 @@ namespace GUI
         {
             if (lstView_DanhSachRole.SelectedItems.Count > 0)
             {
-                ListViewItem item = lstView_DanhSachRole.SelectedItems[0];
-                rolesBus.deleteSoftRole(int.Parse(item.SubItems[0].Text));
-                printListView();
-                MessageBox.Show("Xóa thành công !!", "Thông báo");
+                DialogResult result = MessageBox.Show("Bạn có chất muốn xoá !!", "Thông báo", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
+                {
+                    ListViewItem item = lstView_DanhSachRole.SelectedItems[0];
+                    rolesBus.deleteSoftRole(int.Parse(item.SubItems[0].Text));
+                    printListView();
+                    MessageBox.Show("Xóa thành công !!", "Thông báo");
+                }
+                
             }
         }
     }

@@ -20,6 +20,10 @@ namespace DAL
         {
             return db.getDataTable($"select Booking_Details_id,Booking_Details.booking_id,Booking_Details.room_id,total_price,Booking_Details.room_id,Rooms.room_number,Rooms.room_type,Rooms.bed_type,price_per_night from Booking_Details,Rooms,Bookings where Booking_Details.booking_id=Bookings.booking_id and Booking_Details.room_id = Rooms.room_id and  Booking_Details.Booking_id = {booking_id}");
         }
+        public DataTable getDataAllByBookingId(int booking_id)
+        {
+            return db.getDataTable($"select Booking_Details_id,Booking_Details.booking_id,Booking_Details.room_id,total_price,Booking_Details.room_id,Rooms.room_number,Rooms.room_type,Rooms.bed_type,price_per_night,Booking_details.price from Booking_Details,Rooms,Bookings where Booking_Details.booking_id=Bookings.booking_id and Booking_Details.room_id = Rooms.room_id and  Booking_Details.Booking_id = {booking_id}");
+        }
         public int insertData(int booking_id,int room_id,float price)
         {
             SqlParameter[] para = new SqlParameter[]
@@ -43,7 +47,25 @@ namespace DAL
             return db.ExcuteSQL("sp_service_details_update_quantity", para);
 
         }
+        public int changeRoomByIdBookingAndRoomId(int idBooking,int idRoomCurrent,int idRoomChange,float price,float priceOld,float priceNew)
+        {
+            SqlParameter[] para = new SqlParameter[]
+          {
+                    new SqlParameter("@booking_id",idBooking),
+                    new SqlParameter("@room_idCurrent",idRoomCurrent),
+                     new SqlParameter("@room_idChange",idRoomChange),
+                     new SqlParameter("@price",price),
+                     new SqlParameter("@priceOld",priceOld),
+                    new SqlParameter("@priceNew",priceNew),
 
+
+
+
+
+          };
+
+            return db.ExcuteSQL("sp_Booking_details_Update_Room", para);
+        }
 
     }
 }

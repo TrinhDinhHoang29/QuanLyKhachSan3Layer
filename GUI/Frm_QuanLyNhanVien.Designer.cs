@@ -38,19 +38,19 @@ namespace GUI
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbBox_Roles = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_XoaNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_SuaNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XoaTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
             this.btn_ThemTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TimKiemNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_TimKiemNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lstView_DanhSachNV = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_TimKiemNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_TimKiemNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,7 +60,7 @@ namespace GUI
             // txt_MatKhau
             // 
             this.txt_MatKhau.Location = new System.Drawing.Point(142, 56);
-            this.txt_MatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MatKhau.Name = "txt_MatKhau";
             this.txt_MatKhau.Size = new System.Drawing.Size(209, 24);
             this.txt_MatKhau.TabIndex = 8;
@@ -68,7 +68,7 @@ namespace GUI
             // txt_TenDangNhap
             // 
             this.txt_TenDangNhap.Location = new System.Drawing.Point(142, 30);
-            this.txt_TenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_TenDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TenDangNhap.Name = "txt_TenDangNhap";
             this.txt_TenDangNhap.Size = new System.Drawing.Size(209, 24);
             this.txt_TenDangNhap.TabIndex = 9;
@@ -119,9 +119,9 @@ namespace GUI
             this.groupBox1.Controls.Add(this.txt_TenDangNhap);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(9, 166);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(399, 135);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
@@ -139,42 +139,42 @@ namespace GUI
             this.cbBox_Roles.ForeColor = System.Drawing.Color.Black;
             this.cbBox_Roles.ItemHeight = 30;
             this.cbBox_Roles.Location = new System.Drawing.Point(142, 86);
-            this.cbBox_Roles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBox_Roles.Margin = new System.Windows.Forms.Padding(2);
             this.cbBox_Roles.Name = "cbBox_Roles";
             this.cbBox_Roles.Size = new System.Drawing.Size(209, 36);
             this.cbBox_Roles.TabIndex = 12;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btn_XoaNhanVien);
+            this.groupBox2.Controls.Add(this.btn_SuaNhanVien);
             this.groupBox2.Controls.Add(this.btn_XoaTaiKhoan);
             this.groupBox2.Controls.Add(this.btn_ThemTaiKhoan);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(9, 325);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(399, 95);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
-            // btn_XoaNhanVien
+            // btn_SuaNhanVien
             // 
-            this.btn_XoaNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_XoaNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_XoaNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_XoaNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_XoaNhanVien.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.btn_XoaNhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XoaNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaNhanVien.Location = new System.Drawing.Point(277, 25);
-            this.btn_XoaNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_XoaNhanVien.Name = "btn_XoaNhanVien";
-            this.btn_XoaNhanVien.Size = new System.Drawing.Size(98, 45);
-            this.btn_XoaNhanVien.TabIndex = 16;
-            this.btn_XoaNhanVien.Text = "Sửa";
-            this.btn_XoaNhanVien.Click += new System.EventHandler(this.btn_XoaNhanVien_Click);
+            this.btn_SuaNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SuaNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SuaNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_SuaNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_SuaNhanVien.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btn_SuaNhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_SuaNhanVien.Location = new System.Drawing.Point(157, 25);
+            this.btn_SuaNhanVien.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_SuaNhanVien.Name = "btn_SuaNhanVien";
+            this.btn_SuaNhanVien.Size = new System.Drawing.Size(98, 45);
+            this.btn_SuaNhanVien.TabIndex = 16;
+            this.btn_SuaNhanVien.Text = "Sửa";
+            this.btn_SuaNhanVien.Click += new System.EventHandler(this.btn_SuaNhanVien_Click);
             // 
             // btn_XoaTaiKhoan
             // 
@@ -185,8 +185,8 @@ namespace GUI
             this.btn_XoaTaiKhoan.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_XoaTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaTaiKhoan.Location = new System.Drawing.Point(159, 25);
-            this.btn_XoaTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_XoaTaiKhoan.Location = new System.Drawing.Point(268, 25);
+            this.btn_XoaTaiKhoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XoaTaiKhoan.Name = "btn_XoaTaiKhoan";
             this.btn_XoaTaiKhoan.Size = new System.Drawing.Size(98, 45);
             this.btn_XoaTaiKhoan.TabIndex = 17;
@@ -203,7 +203,7 @@ namespace GUI
             this.btn_ThemTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThemTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btn_ThemTaiKhoan.Location = new System.Drawing.Point(40, 25);
-            this.btn_ThemTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ThemTaiKhoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ThemTaiKhoan.Name = "btn_ThemTaiKhoan";
             this.btn_ThemTaiKhoan.Size = new System.Drawing.Size(98, 45);
             this.btn_ThemTaiKhoan.TabIndex = 18;
@@ -219,64 +219,10 @@ namespace GUI
             this.panel1.Controls.Add(this.guna2ComboBox2);
             this.panel1.Controls.Add(this.lstView_DanhSachNV);
             this.panel1.Location = new System.Drawing.Point(412, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 508);
             this.panel1.TabIndex = 16;
-            // 
-            // lstView_DanhSachNV
-            // 
-            this.lstView_DanhSachNV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.lstView_DanhSachNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstView_DanhSachNV.FullRowSelect = true;
-            this.lstView_DanhSachNV.GridLines = true;
-            this.lstView_DanhSachNV.HideSelection = false;
-            this.lstView_DanhSachNV.Location = new System.Drawing.Point(4, 45);
-            this.lstView_DanhSachNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lstView_DanhSachNV.Name = "lstView_DanhSachNV";
-            this.lstView_DanhSachNV.Size = new System.Drawing.Size(648, 459);
-            this.lstView_DanhSachNV.TabIndex = 21;
-            this.lstView_DanhSachNV.UseCompatibleStateImageBehavior = false;
-            this.lstView_DanhSachNV.View = System.Windows.Forms.View.Details;
-            this.lstView_DanhSachNV.SelectedIndexChanged += new System.EventHandler(this.lstView_DanhSachNV_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Mã nhân viên";
-            this.columnHeader1.Width = 104;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tên đăng nhập";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 147;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Mật khẩu";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 154;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Loại tài khoản";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 138;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(108, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
             // 
             // btn_TimKiemNhanVien
             // 
@@ -331,6 +277,60 @@ namespace GUI
             this.guna2ComboBox2.Size = new System.Drawing.Size(140, 36);
             this.guna2ComboBox2.TabIndex = 22;
             // 
+            // lstView_DanhSachNV
+            // 
+            this.lstView_DanhSachNV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lstView_DanhSachNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstView_DanhSachNV.FullRowSelect = true;
+            this.lstView_DanhSachNV.GridLines = true;
+            this.lstView_DanhSachNV.HideSelection = false;
+            this.lstView_DanhSachNV.Location = new System.Drawing.Point(4, 45);
+            this.lstView_DanhSachNV.Margin = new System.Windows.Forms.Padding(2);
+            this.lstView_DanhSachNV.Name = "lstView_DanhSachNV";
+            this.lstView_DanhSachNV.Size = new System.Drawing.Size(648, 459);
+            this.lstView_DanhSachNV.TabIndex = 21;
+            this.lstView_DanhSachNV.UseCompatibleStateImageBehavior = false;
+            this.lstView_DanhSachNV.View = System.Windows.Forms.View.Details;
+            this.lstView_DanhSachNV.SelectedIndexChanged += new System.EventHandler(this.lstView_DanhSachNV_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã nhân viên";
+            this.columnHeader1.Width = 104;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên đăng nhập";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 147;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Mật khẩu";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 154;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Loại tài khoản";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.Width = 138;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(108, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // Frm_QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,7 +343,7 @@ namespace GUI
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeBox = false;
             this.Name = "Frm_QuanLyNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -367,7 +367,7 @@ namespace GUI
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Guna.UI2.WinForms.Guna2Button btn_XoaNhanVien;
+        private Guna.UI2.WinForms.Guna2Button btn_SuaNhanVien;
         private Guna.UI2.WinForms.Guna2Button btn_XoaTaiKhoan;
         private Guna.UI2.WinForms.Guna2Button btn_ThemTaiKhoan;
         private System.Windows.Forms.Panel panel1;

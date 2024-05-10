@@ -48,10 +48,11 @@ namespace GUI
         }
         private void Frm_QuanLyNhanVien_Load(object sender, EventArgs e)
         {
-            foreach (DataRow row in roleBus.getDataAll().Rows)
-            {
-                cbBox_Roles.Items.Add(row[1].ToString());
-            }
+            
+            cbBox_Roles.DataSource = roleBus.getDataAll();
+            cbBox_Roles.DisplayMember = "role_title";
+            cbBox_Roles.ValueMember = "role_id";
+            cbBox_Roles.SelectedIndex = 0;
             printListView();
         }
 
@@ -127,31 +128,7 @@ namespace GUI
 
         private void btn_XoaNhanVien_Click(object sender, EventArgs e)
         {
-            if (lstView_DanhSachNV.SelectedItems.Count > 0)
-            {
-                string tenDangNhap = txt_TenDangNhap.Text;
-                string matKhau = txt_MatKhau.Text;
 
-                int idLoaiTaiKhoang = 0;
-                foreach (DataRow row in roleBus.getDataRolesByTitle(cbBox_Roles.Text).Rows)
-                {
-                    idLoaiTaiKhoang = int.Parse(row[0].ToString());
-                }
-
-                ListViewItem item = lstView_DanhSachNV.SelectedItems[0];
-                int idNhanVien = Convert.ToInt32(item.SubItems[0].Text);
-                if (tenDangNhap != "" && matKhau != "" && idLoaiTaiKhoang > 0)
-                {
-                    if (nv.updateData(idNhanVien, tenDangNhap, matKhau, idLoaiTaiKhoang) != 0)
-                        MessageBox.Show("Update thành công", "Thông báo");
-                    else
-                        MessageBox.Show("Update không thành công", "Thông báo");
-                    printListView();
-                    txt_TenDangNhap.Text = "";
-                    txt_MatKhau.Text = "";
-                    cbBox_Roles.Text = "";
-                }
-            }
         }
 
         private void btn_TimKiemNhanVien_Click(object sender, EventArgs e)
@@ -174,6 +151,27 @@ namespace GUI
                     lstView_DanhSachNV.Items.Add(item);
                 }
             }
+        }
+
+        private void btn_SuaNhanVien_Click(object sender, EventArgs e)
+        {
+            if (lstView_DanhSachNV.SelectedItems.Count > 0)
+            {
+                if (txt_TenDangNhap.Text != "" && txt_MatKhau.Text != "" && cbBox_Roles.Text != "")
+                {
+
+                    MessageBox.Show("Sửa thông tin thành công !!");
+                    nv.updateData(int.Parse(lstView_DanhSachNV.SelectedItems[0].SubItems[0].Text), txt_TenDangNhap.Text, txt_MatKhau.Text,int.Parse(cbBox_Roles.SelectedValue.ToString()));
+                    printListView();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thông tin không thành công !!");
+
+                }
+            }
+
+
         }
     }
 }

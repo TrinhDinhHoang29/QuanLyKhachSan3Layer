@@ -63,6 +63,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4550883_glass_loupe_magnifier_magnifying_search_icon {
+            get {
+                object obj = ResourceManager.GetObject("4550883_glass_loupe_magnifier_magnifying_search_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5027835_analytics_chart_graph_statistics_icon {
             get {
                 object obj = ResourceManager.GetObject("5027835_analytics_chart_graph_statistics_icon", resourceCulture);

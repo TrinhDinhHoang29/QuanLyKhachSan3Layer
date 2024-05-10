@@ -74,7 +74,7 @@ namespace GUI
                     if (i == 1)
                     {
                         int customerId = Convert.ToInt32(row[i].ToString());
-                        DataTable tableCustomer = khachHangBus.getDataById(customerId);
+                        DataTable tableCustomer = khachHangBus.getDataByIdDeleted(customerId);
                         foreach (DataRow rowCustomer in tableCustomer.Rows)
                         {
                             item.SubItems.Add($"{rowCustomer[1].ToString()} {rowCustomer[2].ToString()}");
@@ -82,7 +82,7 @@ namespace GUI
                     }else if (i==4)
                     {
                         int accountId = Convert.ToInt32(row[i].ToString());
-                        DataTable tableAccount = nhanVienBus.getDataById(accountId);
+                        DataTable tableAccount = nhanVienBus.getDataFullById(accountId);
                         foreach (DataRow rowAccount in tableAccount.Rows)
                         {
                             item.SubItems.Add($"{rowAccount[1].ToString()}");
@@ -287,6 +287,12 @@ namespace GUI
             {
                 e.Handled = true;
             }
+        }
+
+        private void date_CheckIn_ValueChanged(object sender, EventArgs e)
+        {
+            printTotalPriceRoom();
+
         }
     }
 }

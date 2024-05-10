@@ -16,6 +16,8 @@ namespace GUI
         Booking_DetailsBUS bookingDetailsBus = new Booking_DetailsBUS();
         BookingsBUS bookingsBus = new BookingsBUS();
         private Service_DetailsBUS serviceDetailBus = new Service_DetailsBUS();
+        private NhanVienBUS nhanVienBus = new NhanVienBUS();
+        private KhachHangBUS khachHangBus = new KhachHangBUS();
         private string maHoaDon;
         private bool checkPaid=false;
         public Frm_HoaDon(string maHoaDon)
@@ -39,8 +41,10 @@ namespace GUI
             DataRow bookingsRow = bookingsBus.getDataById(int.Parse(maHoaDon)).Rows[0];
             string ngayO = $"{bookingsRow[2].ToString()} - {bookingsRow[3].ToString()}";
             lb_NgayO.Text = ngayO;
-            lb_TenNhanVien.Text = bookingsRow[4].ToString();
-            lb_TenKhachHang.Text = bookingsRow[1].ToString();
+
+            lb_TenNhanVien.Text = nhanVienBus.getDataById(int.Parse(bookingsRow[4].ToString())).Rows[0][1].ToString() ;
+            DataTable khachHang = khachHangBus.getDataById(int.Parse(bookingsRow[1].ToString()));
+            lb_TenKhachHang.Text = khachHang.Rows[0][1].ToString()+" "+khachHang.Rows[0][2].ToString();
             if (bookingsRow[6].ToString() == "Paid")
                 this.checkPaid = true;
 
@@ -66,7 +70,6 @@ namespace GUI
             foreach (DataRow rowBookingDetail in bookingDetailsBus.getDataByBookingId(int.Parse(maHoaDon)).Rows)
             {
                 ListViewItem item = new ListViewItem(rowBookingDetail[5].ToString());
-                //item.SubItems.Add(rowBookingDetail[5].ToString());
                 item.SubItems.Add(rowBookingDetail[6].ToString());
                 item.SubItems.Add(rowBookingDetail[7].ToString());
                 item.SubItems.Add(rowBookingDetail[8].ToString());
@@ -127,6 +130,7 @@ namespace GUI
         {
             bookingsBus.updateStatusById(int.Parse(maHoaDon), "Paid");
             MessageBox.Show("Thanh toán thành công !!", "Thông báo");
+            this.Close();
 
 
         }
@@ -134,6 +138,14 @@ namespace GUI
         private void btn_close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_quantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -94,21 +94,27 @@ namespace GUI
         {
             if (lstView_DanhSachPhong.SelectedItems.Count > 0)
             {
-                ListViewItem Item = lstView_DanhSachPhong.SelectedItems[0];
-                int idPhong = Convert.ToInt32(Item.SubItems[0].Text);
-                if (roomBus.deleteDataSoft(idPhong) != 0)
+
+                DialogResult result = MessageBox.Show("Bạn có chất muốn xoá ?", "Thông báo", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo");
-                    printListView();
-                    txt_SoPhong.Text = "";
-                    txt_Gia.Text = "";
-                    cbBox_KieuGiuong.Text = "";
-                    cbBox_KieuPhong.Text = "";
+                    ListViewItem Item = lstView_DanhSachPhong.SelectedItems[0];
+                    int idPhong = Convert.ToInt32(Item.SubItems[0].Text);
+                    if (roomBus.deleteDataSoft(idPhong) != 0)
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo");
+                        printListView();
+                        txt_SoPhong.Text = "";
+                        txt_Gia.Text = "";
+                        cbBox_KieuGiuong.Text = "";
+                        cbBox_KieuPhong.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thành công", "Thông báo");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa không thành công", "Thông báo");
-                }
+               
 
             }
             else

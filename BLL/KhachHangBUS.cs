@@ -44,6 +44,10 @@ namespace BLL
         {
             return kh.getIdAndInsert( first_name,  last_name,  email,  phone,  address);
         }
+        public DataTable getDataByIdDeleted(int id)
+        {
+            return kh.getDataByIdDeleted(id);
+        }
 
     }
 }

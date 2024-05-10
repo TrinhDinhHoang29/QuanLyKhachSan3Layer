@@ -29,6 +29,14 @@ namespace BLL
         {
             return bookingDetailsDal.updateQuantity(booking_id, service_id, quantity);
         }
+        public int changeRoomByIdBookingAndRoomId(int idBooking, int idRoomCurrent, int idRoomChange, float price, float priceOld, float priceNew)
+        {
+            return bookingDetailsDal.changeRoomByIdBookingAndRoomId(idBooking, idRoomCurrent, idRoomChange,price,priceOld,priceNew);
+        }
+        public DataTable getDataAllByBookingId(int booking_id)
+        {
+            return bookingDetailsDal.getDataAllByBookingId(booking_id);
+        }
 
 
     }

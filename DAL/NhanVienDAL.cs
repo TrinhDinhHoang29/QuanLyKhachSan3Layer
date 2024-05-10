@@ -89,5 +89,9 @@ namespace DAL
 
             db.ExcuteSQL("sp_account_Update_Password", para);
         }
+        public DataTable getDataFullById(int id)
+        {
+           return db.getDataTable($"SELECT * FROM Accounts WHERE account_id = {id}");
+        }
     }
 }

@@ -238,6 +238,7 @@ namespace GUI
             this.date_CheckIn.Name = "date_CheckIn";
             this.date_CheckIn.Size = new System.Drawing.Size(354, 24);
             this.date_CheckIn.TabIndex = 19;
+            this.date_CheckIn.ValueChanged += new System.EventHandler(this.date_CheckIn_ValueChanged);
             // 
             // label10
             // 

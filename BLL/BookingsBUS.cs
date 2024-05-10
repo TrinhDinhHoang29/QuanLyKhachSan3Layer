@@ -58,5 +58,34 @@ namespace BLL
         {
             return bookings.GetMonthlyBookingDataForYear(year);
         }
+        public DataTable getBookingsByFullNameCustomer(string fullName)
+        {
+            return bookings.getBookingsByFullNameCustomer(fullName);
+        }
+        public DataTable getBookingsCurrentDateByFullNameCustomer(string fullName)
+        {
+            return bookings.getBookingsCurrentDateByFullNameCustomer(fullName);
+        }
+        public DataTable getBookingsCurrentDate()
+        {
+            return bookings.getBookingsCurrentDate();
+        }
+        public DataTable getBookingsByStatus(string status)
+        {
+            return bookings.getBookingsByStatus(status);
+        }
+        public DataTable getBookingsByStatusAndFullName(string status, string fullName)
+        {
+            return bookings.getBookingsByStatusAndFullName(status,fullName);
+        }
+        public DataTable getBookingsAfterCheckin()
+        {
+            return bookings.getBookingsAfterCheckin();
+        }
+        public DataTable getBookingsAfterCheckinByFullName(string fullName)
+        {
+            return bookings.getBookingsAfterCheckinByFullName(fullName);
+        }
+
     }
 }

@@ -88,5 +88,9 @@ namespace DAL
            };
             return db.GetParamsExcuteSQL("sp_customer_getIdAndInsert", para);
         }
+        public DataTable getDataByIdDeleted(int id)
+        {
+            return db.getDataTable($"SELECT * FROM Customers WHERE customer_id = {id}");
+        }
     }
 }

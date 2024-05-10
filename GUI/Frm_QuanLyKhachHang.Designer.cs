@@ -44,7 +44,6 @@ namespace GUI
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_SuaKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XoaKhachHang = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_ThemKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_TenKhachHang = new System.Windows.Forms.TextBox();
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
@@ -200,7 +199,6 @@ namespace GUI
             // 
             this.groupBox2.Controls.Add(this.btn_SuaKhachHang);
             this.groupBox2.Controls.Add(this.btn_XoaKhachHang);
-            this.groupBox2.Controls.Add(this.btn_ThemKhachHang);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(2, 380);
             this.groupBox2.Name = "groupBox2";
@@ -218,9 +216,9 @@ namespace GUI
             this.btn_SuaKhachHang.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_SuaKhachHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SuaKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_SuaKhachHang.Location = new System.Drawing.Point(262, 33);
+            this.btn_SuaKhachHang.Location = new System.Drawing.Point(202, 33);
             this.btn_SuaKhachHang.Name = "btn_SuaKhachHang";
-            this.btn_SuaKhachHang.Size = new System.Drawing.Size(98, 45);
+            this.btn_SuaKhachHang.Size = new System.Drawing.Size(123, 45);
             this.btn_SuaKhachHang.TabIndex = 16;
             this.btn_SuaKhachHang.Text = "Sửa";
             this.btn_SuaKhachHang.Click += new System.EventHandler(this.btn_SuaKhachHang_Click);
@@ -234,28 +232,12 @@ namespace GUI
             this.btn_XoaKhachHang.FillColor = System.Drawing.Color.MediumTurquoise;
             this.btn_XoaKhachHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaKhachHang.Location = new System.Drawing.Point(158, 33);
+            this.btn_XoaKhachHang.Location = new System.Drawing.Point(51, 33);
             this.btn_XoaKhachHang.Name = "btn_XoaKhachHang";
-            this.btn_XoaKhachHang.Size = new System.Drawing.Size(98, 45);
+            this.btn_XoaKhachHang.Size = new System.Drawing.Size(123, 45);
             this.btn_XoaKhachHang.TabIndex = 17;
             this.btn_XoaKhachHang.Text = "Xóa";
             this.btn_XoaKhachHang.Click += new System.EventHandler(this.btn_XoaKhachHang_Click);
-            // 
-            // btn_ThemKhachHang
-            // 
-            this.btn_ThemKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThemKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThemKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThemKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThemKhachHang.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.btn_ThemKhachHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThemKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemKhachHang.Location = new System.Drawing.Point(54, 33);
-            this.btn_ThemKhachHang.Name = "btn_ThemKhachHang";
-            this.btn_ThemKhachHang.Size = new System.Drawing.Size(98, 45);
-            this.btn_ThemKhachHang.TabIndex = 18;
-            this.btn_ThemKhachHang.Text = "Thêm";
-            this.btn_ThemKhachHang.Click += new System.EventHandler(this.btn_ThemKhachHang_Click);
             // 
             // groupBox1
             // 
@@ -410,7 +392,6 @@ namespace GUI
         private System.Windows.Forms.GroupBox groupBox2;
         private Guna.UI2.WinForms.Guna2Button btn_SuaKhachHang;
         private Guna.UI2.WinForms.Guna2Button btn_XoaKhachHang;
-        private Guna.UI2.WinForms.Guna2Button btn_ThemKhachHang;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_TenKhachHang;
         private System.Windows.Forms.TextBox txt_DiaChi;
