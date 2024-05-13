@@ -75,11 +75,15 @@ namespace BLL
             // Lấy thông tin người dùng từ database dựa trên username
             DataTable dt = nv.getDataByUsername(username);
 
+          
             // Kiểm tra xem có dữ liệu trả về từ database hay không
             if (dt.Rows.Count > 0)
             {
+                if (dt.Rows[0]["deleted"].ToString() == "True")
+                    return false;
                 // Lấy mật khẩu từ dữ liệu trả về
                 string storedPassword = dt.Rows[0]["password_hash"].ToString();
+
                 // So sánh mật khẩu đã nhập với mật khẩu trong database
                 if (password == storedPassword)
                 {

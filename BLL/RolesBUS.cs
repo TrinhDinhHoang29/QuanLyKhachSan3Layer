@@ -52,5 +52,10 @@ namespace BLL
         {
             return rolesDal.getDataRolesById(role_id);
         }
+        public int updateData(int id, string role_title, string description)
+        {
+            return rolesDal.updateData(id, role_title, description);
+        }
+
     }
 }

@@ -27,6 +27,10 @@ namespace DAL
                             };
             return db.ExcuteSQL("sp_roles_Insert", para);
         }
+        public int updateData(int id,string role_title,string description)
+        {
+            return db.ExcuteSQl($"UPDATE roles SET role_title = '{role_title}',description='{description}' WHERE role_id = {id}");
+        }
         public DataTable getDataRolesByTitle (string role_title)
         {
             return db.getDataTable($"SELECT * FROM roles where role_title = '{role_title}'");

@@ -113,33 +113,41 @@ namespace GUI
 
             if (lstView_DanhSachRole.SelectedItems.Count > 0)
             {
-                ListViewItem item = lstView_DanhSachRole.SelectedItems[0];
-                int id = int.Parse(item.SubItems[0].Text);
-                string idCustomersPermission = rolesBus.GetDataTablePermissionByTitle("Customers permission").Rows[0][0].ToString();
-                string idRoomsPermission = rolesBus.GetDataTablePermissionByTitle("Rooms permission").Rows[0][0].ToString();
-                string idServicesPermission = rolesBus.GetDataTablePermissionByTitle("Services permission").Rows[0][0].ToString();
-                string idManagementPermission = rolesBus.GetDataTablePermissionByTitle("Management permission").Rows[0][0].ToString();
-                foreach(string on in listOn)
+                string tenVaiTro = txt_TenVaiTro.Text;
+                string moTaVaiTro = txt_MoTaVaiTro.Text;
+                if (tenVaiTro.Trim() != "" && moTaVaiTro.Trim() != "")
                 {
-                    if (rolesBus.checkPermission(id, on))
-                        continue;
-                    else
+
+                    ListViewItem item = lstView_DanhSachRole.SelectedItems[0];
+                    int id = int.Parse(item.SubItems[0].Text);
+                    string idCustomersPermission = rolesBus.GetDataTablePermissionByTitle("Customers permission").Rows[0][0].ToString();
+                    string idRoomsPermission = rolesBus.GetDataTablePermissionByTitle("Rooms permission").Rows[0][0].ToString();
+                    string idServicesPermission = rolesBus.GetDataTablePermissionByTitle("Services permission").Rows[0][0].ToString();
+                    string idManagementPermission = rolesBus.GetDataTablePermissionByTitle("Management permission").Rows[0][0].ToString();
+                    foreach (string on in listOn)
                     {
-                        string idPermission = rolesBus.GetDataTablePermissionByTitle(on).Rows[0][0].ToString();
-                        rolesBus.InsertdataRolesDetails(id, int.Parse(idPermission));
+                        if (rolesBus.checkPermission(id, on))
+                            continue;
+                        else
+                        {
+                            string idPermission = rolesBus.GetDataTablePermissionByTitle(on).Rows[0][0].ToString();
+                            rolesBus.InsertdataRolesDetails(id, int.Parse(idPermission));
+                        }
                     }
-                }
-                foreach(string off in listOff)
-                {
-                    if (rolesBus.checkPermission(id, off))
+                    foreach (string off in listOff)
                     {
-                        string idPermission = rolesBus.GetDataTablePermissionByTitle(off).Rows[0][0].ToString();
-                        rolesBus.deleteDataRolesDetails(id, int.Parse(idPermission));
+                        if (rolesBus.checkPermission(id, off))
+                        {
+                            string idPermission = rolesBus.GetDataTablePermissionByTitle(off).Rows[0][0].ToString();
+                            rolesBus.deleteDataRolesDetails(id, int.Parse(idPermission));
+                        }
+                        else
+                            continue;
                     }
-                    else
-                        continue;
+                    rolesBus.updateData(id,tenVaiTro,moTaVaiTro);
+                    MessageBox.Show("Sửa quyền thành công !!", "Thông báo");
                 }
-                MessageBox.Show("Sửa quyền thành công !!", "Thông báo");
+               
 
             }
 

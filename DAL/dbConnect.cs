@@ -42,7 +42,7 @@ namespace DAL
         }
         public int ExcuteSQl(string strSQL)
         {
-            SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd = new SqlCommand(strSQL,conn);
             conn.Open();
             int row = cmd.ExecuteNonQuery();
             conn.Close();

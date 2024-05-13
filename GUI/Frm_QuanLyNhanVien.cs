@@ -17,8 +17,10 @@ namespace GUI
         NhanVienBUS nv = new NhanVienBUS();
         RolesBUS roleBus = new RolesBUS();
         NhanVienDTO nhanVienDTO = new NhanVienDTO();
-        public Frm_QuanLyNhanVien()
+        private string userName;
+        public Frm_QuanLyNhanVien(string userName)
         {
+            this.userName = userName;
             InitializeComponent();
         }
 
@@ -95,17 +97,23 @@ namespace GUI
         {
             if (lstView_DanhSachNV.SelectedItems.Count > 0)
             {
-                ListViewItem Item = lstView_DanhSachNV.SelectedItems[0];
-                int idKhachHang = Convert.ToInt32(Item.SubItems[0].Text);
-                if (nv.deleteDataSoft(idKhachHang) != 0)
+                DialogResult result = MessageBox.Show("Bạn có chất muốn xoá !!", "Thông báo",MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo");
-                    printListView();
-                }
-                else
-                {
-                    MessageBox.Show("Xóa không thành công", "Thông báo");
-                }
+                    ListViewItem Item = lstView_DanhSachNV.SelectedItems[0];
+                    int idKhachHang = Convert.ToInt32(Item.SubItems[0].Text);
+                    if (Item.SubItems[1].Text != userName)
+                    {
+                        nv.deleteDataSoft(idKhachHang);
+                        MessageBox.Show("Xóa thành công", "Thông báo");
+                        printListView();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thành công", "Thông báo");
+                    }
+                }    
+               
 
             }
             else
@@ -159,10 +167,26 @@ namespace GUI
             {
                 if (txt_TenDangNhap.Text != "" && txt_MatKhau.Text != "" && cbBox_Roles.Text != "")
                 {
+                    try
+                    {
+                        if(nv.updateData(int.Parse(lstView_DanhSachNV.SelectedItems[0].SubItems[0].Text), txt_TenDangNhap.Text, txt_MatKhau.Text, int.Parse(cbBox_Roles.SelectedValue.ToString())) != 0)
+                        {
+                            MessageBox.Show("Sửa thông tin thành công !!");
+                            printListView();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa thông tin không thành công !!");
 
-                    MessageBox.Show("Sửa thông tin thành công !!");
-                    nv.updateData(int.Parse(lstView_DanhSachNV.SelectedItems[0].SubItems[0].Text), txt_TenDangNhap.Text, txt_MatKhau.Text,int.Parse(cbBox_Roles.SelectedValue.ToString()));
-                    printListView();
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Sửa thông tin không thành công !!");
+
+                    }
+
+
                 }
                 else
                 {

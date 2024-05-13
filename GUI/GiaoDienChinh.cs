@@ -71,7 +71,7 @@ namespace GUI
             {
                 if (row[3].ToString() == "Accounts permission")
                 {
-                    Form frm_QuanLiNhanVien = new Frm_QuanLyNhanVien();
+                    Form frm_QuanLiNhanVien = new Frm_QuanLyNhanVien(userName);
                     frm_QuanLiNhanVien.Show();
                     return;
                 }
@@ -481,8 +481,6 @@ namespace GUI
         private void btn_CoKhach_Click(object sender, EventArgs e)
         {
             updateStatus();
-
-
             DataTable dt = roomsBus.getDataCoKhach();
             panel_ListRooms.BringToFront();
             int tongTrang = dt.Rows.Count;

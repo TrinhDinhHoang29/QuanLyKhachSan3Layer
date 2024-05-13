@@ -140,7 +140,7 @@ namespace GUI
                     if (roomBus.updateData(idRoom, soPhong, kieuPhong, kieuGiuong, float.Parse(gia),statusId) != 0)
                         MessageBox.Show("Update thành công", "Thông báo");
                     else
-                        MessageBox.Show("Update không thành công", "Thông báo");
+                        MessageBox.Show("Update không thành công !", "Thông báo");
                     printListView();
                     txt_SoPhong.Text = "";
                     txt_Gia.Text = "";

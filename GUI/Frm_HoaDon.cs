@@ -42,8 +42,8 @@ namespace GUI
             string ngayO = $"{bookingsRow[2].ToString()} - {bookingsRow[3].ToString()}";
             lb_NgayO.Text = ngayO;
 
-            lb_TenNhanVien.Text = nhanVienBus.getDataById(int.Parse(bookingsRow[4].ToString())).Rows[0][1].ToString() ;
-            DataTable khachHang = khachHangBus.getDataById(int.Parse(bookingsRow[1].ToString()));
+            lb_TenNhanVien.Text = nhanVienBus.getDataFullById(int.Parse(bookingsRow[4].ToString())).Rows[0][1].ToString();
+            DataTable khachHang = khachHangBus.getDataByIdDeleted(int.Parse(bookingsRow[1].ToString()));
             lb_TenKhachHang.Text = khachHang.Rows[0][1].ToString()+" "+khachHang.Rows[0][2].ToString();
             if (bookingsRow[6].ToString() == "Paid")
                 this.checkPaid = true;
