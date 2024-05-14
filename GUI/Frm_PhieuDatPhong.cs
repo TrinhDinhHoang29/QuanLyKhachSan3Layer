@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using DTO;
 using BLL;
+using Guna.UI2.WinForms;
+using System.Diagnostics.Eventing.Reader;
 
 namespace GUI
 {
@@ -32,10 +34,6 @@ namespace GUI
         private DataRow accounts()
         {
             return nhanVienBus.getDataAllByUserName(this.userName).Rows[0];
-        }
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
         private void printListViewRooms() // Hàm xuất ra trên listView 
         {
@@ -74,15 +72,16 @@ namespace GUI
                     if (i == 1)
                     {
                         int customerId = Convert.ToInt32(row[i].ToString());
-                        DataTable tableCustomer = khachHangBus.getDataByIdDeleted(customerId);
+                        DataTable tableCustomer = khachHangBus.getDataById(customerId);
                         foreach (DataRow rowCustomer in tableCustomer.Rows)
                         {
                             item.SubItems.Add($"{rowCustomer[1].ToString()} {rowCustomer[2].ToString()}");
                         }
-                    }else if (i==4)
+                    }
+                    else if (i == 4)
                     {
                         int accountId = Convert.ToInt32(row[i].ToString());
-                        DataTable tableAccount = nhanVienBus.getDataFullById(accountId);
+                        DataTable tableAccount = nhanVienBus.getDataById(accountId);
                         foreach (DataRow rowAccount in tableAccount.Rows)
                         {
                             item.SubItems.Add($"{rowAccount[1].ToString()}");
@@ -145,7 +144,7 @@ namespace GUI
 
 
         }
-        private bool checkDate(DateTime date_checkIn,DateTime date_checkOut)
+        private bool checkDate(DateTime date_checkIn, DateTime date_checkOut)
         {
             if (lstView_DanhSachPhong.SelectedItems.Count > 0)
             {
@@ -171,28 +170,38 @@ namespace GUI
             string phoneKhachHang = txt_SoDienThoai.Text;
             string diaChiKhachHang = txt_DiaChi.Text;
             string sdateCheckIn = date_CheckIn.Value.ToString("MM/dd/yyyy"), sdateCheckOut = date_CheckOut.Value.ToString("MM/dd/yyyy");
-            DateTime dateCheckIn = DateTime.Parse(sdateCheckIn), dateCheckOut= DateTime.Parse(sdateCheckOut);
+            DateTime dateCheckIn = DateTime.Parse(sdateCheckIn), dateCheckOut = DateTime.Parse(sdateCheckOut);
             TimeSpan difference = dateCheckOut.Subtract(dateCheckIn);
             // Lấy số ngày dưới dạng số nguyên
             int numberOfDays = (int)difference.TotalDays;
-            if (numberOfDays<1)
+            if (numberOfDays < 1)
             {
-                MessageBox.Show("Ngày không hợp lệ!!","Thông báo");
+                MessageBox.Show("Ngày không hợp lệ!!", "Thông báo");
                 return;
             }
-            if (checkDate(dateCheckIn, dateCheckOut)==false)
+            if (checkDate(dateCheckIn, dateCheckOut) == false)
             {
-                MessageBox.Show("Ngày này đã có khách đặt !!","Thông báo");
+                MessageBox.Show("Ngày này đã có khách đặt !!", "Thông báo");
                 return;
             }
-            
+
             if (hoKhachHang != "" && tenKhachHang != "" && emailKhachHang != "" && phoneKhachHang != "" && diaChiKhachHang != "" && txt_TongTien.Text != "")
             {
                 float tongTien = float.Parse(txt_TongTien.Text.Replace(" VND", "").Replace(",", ""));
                 try
                 {
-                    int idKhachHang = khachHangBus.getIdAndInsert(hoKhachHang, tenKhachHang, emailKhachHang, phoneKhachHang, diaChiKhachHang);
-                    int idBookings = bookingsBus.getIdAndInsert(idKhachHang, dateCheckIn, dateCheckOut,int.Parse( accounts()[0].ToString()), tongTien);
+                    int idKhachHang;
+
+                    if (chk_KhachMoi.Checked == false)
+                    {
+                        idKhachHang = int.Parse(txtMaKH.Text);
+                    }
+                    else
+                    {
+                        idKhachHang = khachHangBus.getIdAndInsert(tenKhachHang, hoKhachHang, emailKhachHang, phoneKhachHang, diaChiKhachHang);
+                    }
+
+                    int idBookings = bookingsBus.getIdAndInsert(idKhachHang, dateCheckIn, dateCheckOut, int.Parse(accounts()[0].ToString()), tongTien);
                     foreach (ListViewItem item in lstView_DanhSachPhong.SelectedItems)
                     {
                         int idRooms = Convert.ToInt32(item.SubItems[0].Text);
@@ -206,7 +215,7 @@ namespace GUI
                 }
                 catch
                 {
-                    MessageBox.Show("Thêm không thất bại !!");
+                    MessageBox.Show("Thêm thất bại !!");
 
                 }
             }
@@ -217,10 +226,10 @@ namespace GUI
         }
         private void updateStatus()
         {
-           DataTable roomsStatus=roomBus.updateStatus();
+            DataTable roomsStatus = roomBus.updateStatus();
 
-            
-             foreach (DataRow row in roomBus.getDataAll().Rows)
+
+            foreach (DataRow row in roomBus.getDataAll().Rows)
             {
                 bool coHieu = false;
                 foreach (DataRow rowStatus in roomsStatus.Rows)
@@ -246,9 +255,9 @@ namespace GUI
                 }
                 if (coHieu == false)
                 {
-                        int roomId = Convert.ToInt32(row[0].ToString());
-                        float roomPrice = float.Parse(row[4].ToString());
-                        roomBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 1);
+                    int roomId = Convert.ToInt32(row[0].ToString());
+                    float roomPrice = float.Parse(row[4].ToString());
+                    roomBus.updateData(roomId, row[1].ToString(), row[2].ToString(), row[3].ToString(), roomPrice, 1);
                 }
             }
         }
@@ -289,10 +298,72 @@ namespace GUI
             }
         }
 
-        private void date_CheckIn_ValueChanged(object sender, EventArgs e)
+        private void btn_XacNhanDatPhong_Enter(object sender, EventArgs e)
         {
-            printTotalPriceRoom();
+            btn_XacNhanDatPhong.BorderColor = Color.Red;
+            btn_XacNhanDatPhong.BorderThickness = 2;
+        }
 
+        private void btn_XacNhanDatPhong_Leave(object sender, EventArgs e)
+        {
+            btn_XacNhanDatPhong.BorderColor = Color.Transparent;
+            btn_XacNhanDatPhong.BorderThickness = 0;
+        }
+
+        private void chk_KhachMoi_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_KhachMoi.Checked == true)
+            {
+                txtMaKH.Text = "";
+                grp_ThongTinKhachHang.Enabled = true;
+                grp_TimKhachHang.Enabled = false;
+                foreach (Control control in grp_ThongTinKhachHang.Controls)
+                {
+                    if (control is TextBox)
+                    {
+                        control.Text = "";
+                    }
+                }
+
+            }
+            else
+            {
+                grp_ThongTinKhachHang.Enabled = false;
+                grp_TimKhachHang.Enabled = true;
+            }
+        }
+
+        private void btn_TimMaKH_Click(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrWhiteSpace(txtMaKH.Text))
+            {
+                int maKH = int.Parse(txtMaKH.Text);
+                DataTable dt = khachHangBus.getDataById(maKH);
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show($"Mã khách hàng '{maKH}' Không tồn tại");
+                }
+                else
+                {
+                    txt_HoKhachHang.Text = dt.Rows[0]["last_name"].ToString();
+                    txt_TenKhachHang.Text = dt.Rows[0]["first_name"].ToString();
+                    txt_Email.Text = dt.Rows[0]["email"].ToString();
+                    txt_SoDienThoai.Text = dt.Rows[0]["phone"].ToString();
+                    txt_DiaChi.Text = dt.Rows[0]["address"].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập mã khách hàng");
+            }
+        }
+
+        private void txtMaKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

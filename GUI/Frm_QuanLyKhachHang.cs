@@ -112,11 +112,11 @@ namespace GUI
             if (lstView_DanhSachKhachHang.SelectedItems.Count > 0)
             {
                 ListViewItem item = lstView_DanhSachKhachHang.SelectedItems[0];
-                txt_TenKhachHang.Text = item.SubItems[1].Text;
-                txt_HoKhachHang.Text = item.SubItems[2].Text;
-                txt_DiaChi.Text = item.SubItems[3].Text;
+                txt_HoKhachHang.Text = item.SubItems[1].Text;
+                txt_TenKhachHang.Text = item.SubItems[2].Text;
+                txt_Email.Text = item.SubItems[3].Text;
                 txt_SoDienThoai.Text = item.SubItems[4].Text;
-                txt_Email.Text = item.SubItems[5].Text;
+                txt_DiaChi.Text = item.SubItems[5].Text;
 
             }
         }

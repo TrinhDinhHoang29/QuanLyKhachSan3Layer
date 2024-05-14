@@ -53,9 +53,10 @@
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(121, 38);
-            this.btn_Save.TabIndex = 16;
+            this.btn_Save.TabIndex = 5;
             this.btn_Save.Text = "Lưu";
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            this.btn_Save.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn_Save_KeyPress);
             // 
             // btn_Exit
             // 
@@ -69,7 +70,7 @@
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(121, 38);
-            this.btn_Exit.TabIndex = 17;
+            this.btn_Exit.TabIndex = 6;
             this.btn_Exit.Text = "Thoát";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
@@ -84,7 +85,7 @@
             this.chk_ShowPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chk_ShowPassword.Name = "chk_ShowPassword";
             this.chk_ShowPassword.Size = new System.Drawing.Size(127, 20);
-            this.chk_ShowPassword.TabIndex = 15;
+            this.chk_ShowPassword.TabIndex = 4;
             this.chk_ShowPassword.Text = "hiển thị mật khẩu";
             this.chk_ShowPassword.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chk_ShowPassword.UncheckedState.BorderRadius = 0;
@@ -110,7 +111,7 @@
             this.txt_ConfirmNewPassword.PlaceholderText = "";
             this.txt_ConfirmNewPassword.SelectedText = "";
             this.txt_ConfirmNewPassword.Size = new System.Drawing.Size(229, 31);
-            this.txt_ConfirmNewPassword.TabIndex = 11;
+            this.txt_ConfirmNewPassword.TabIndex = 3;
             // 
             // txt_NewPassword
             // 
@@ -130,7 +131,7 @@
             this.txt_NewPassword.PlaceholderText = "";
             this.txt_NewPassword.SelectedText = "";
             this.txt_NewPassword.Size = new System.Drawing.Size(229, 31);
-            this.txt_NewPassword.TabIndex = 12;
+            this.txt_NewPassword.TabIndex = 2;
             // 
             // txt_CurrentPassword
             // 
@@ -150,7 +151,7 @@
             this.txt_CurrentPassword.PlaceholderText = "";
             this.txt_CurrentPassword.SelectedText = "";
             this.txt_CurrentPassword.Size = new System.Drawing.Size(229, 31);
-            this.txt_CurrentPassword.TabIndex = 13;
+            this.txt_CurrentPassword.TabIndex = 1;
             // 
             // txt_Username
             // 
@@ -171,7 +172,7 @@
             this.txt_Username.PlaceholderText = "";
             this.txt_Username.SelectedText = "";
             this.txt_Username.Size = new System.Drawing.Size(229, 31);
-            this.txt_Username.TabIndex = 14;
+            this.txt_Username.TabIndex = 0;
             // 
             // label4
             // 
@@ -180,7 +181,7 @@
             this.label4.Location = new System.Drawing.Point(53, 226);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(158, 24);
-            this.label4.TabIndex = 10;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Xác nhận mật khẩu";
             // 
             // label3
@@ -190,7 +191,7 @@
             this.label3.Location = new System.Drawing.Point(96, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 24);
-            this.label3.TabIndex = 9;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Mật khẩu mới";
             // 
             // label2
@@ -200,7 +201,7 @@
             this.label2.Location = new System.Drawing.Point(65, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 24);
-            this.label2.TabIndex = 8;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu hiện tại";
             // 
             // label1
@@ -210,7 +211,7 @@
             this.label1.Location = new System.Drawing.Point(92, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 24);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Tên tài khoản";
             // 
             // Frm_DoiMatKhau

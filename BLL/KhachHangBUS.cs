@@ -40,6 +40,7 @@ namespace BLL
         {
             return kh.deleteDataSoft(id);
         }
+
         public int getIdAndInsert(string first_name, string last_name, string email, string phone, string address)
         {
             return kh.getIdAndInsert( first_name,  last_name,  email,  phone,  address);

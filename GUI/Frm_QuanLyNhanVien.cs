@@ -62,15 +62,15 @@ namespace GUI
         {
             string tenDangNhap = txt_TenDangNhap.Text;
             string matKhau = txt_MatKhau.Text;
-            int idLoaiTaiKhoang = 0;
+            int idLoaiTaiKhoan = 0;
             foreach (DataRow row in roleBus.getDataRolesByTitle(cbBox_Roles.Text).Rows)
             {
-                idLoaiTaiKhoang = int.Parse(row[0].ToString());
+                idLoaiTaiKhoan = int.Parse(row[0].ToString());
             }
 
-            if (tenDangNhap != "" && matKhau != "" && idLoaiTaiKhoang>0)
+            if (tenDangNhap != "" && matKhau != "" && idLoaiTaiKhoan>0)
             {
-                if (nv.insertData(tenDangNhap, matKhau, idLoaiTaiKhoang) != 0)
+                if (nv.insertData(tenDangNhap, matKhau, idLoaiTaiKhoan) != 0)
                 {
                     MessageBox.Show("Thêm tài khoản thành công !!", "Thông báo");
                     printListView();
@@ -97,7 +97,7 @@ namespace GUI
         {
             if (lstView_DanhSachNV.SelectedItems.Count > 0)
             {
-                DialogResult result = MessageBox.Show("Bạn có chất muốn xoá !!", "Thông báo",MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show("Bạn có chắc muốn xoá !!", "Thông báo",MessageBoxButtons.YesNo);
                 if(result == DialogResult.Yes)
                 {
                     ListViewItem Item = lstView_DanhSachNV.SelectedItems[0];

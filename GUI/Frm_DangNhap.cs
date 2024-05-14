@@ -19,6 +19,7 @@ namespace GUI
         public Frm_DangNhap()
         {
             InitializeComponent();
+            this.AcceptButton = btnLogin;   
         }
         NhanVienDTO obj = new NhanVienDTO();// value object
         NhanVienBUS bus = new NhanVienBUS();// Business logic layer
@@ -56,6 +57,15 @@ namespace GUI
                 // Đăng nhập thất bại
                 labelError.Visible = true;
                 labelError.Text = "Tên đăng nhập hoặc mật khẩu sai.";
+            }
+        }
+
+        private void btnLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnLogin.Focus();
+                btnLogin_Click(sender, e);
             }
         }
     }

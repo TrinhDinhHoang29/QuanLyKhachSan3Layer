@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DTO;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,18 @@ namespace GUI
         private void Frm_DoiMatKhau_Load(object sender, EventArgs e)
         {
             txt_Username.Text = BLL.NhanVienBUS.getUserName();
+            // Thiết lập nút lưu (btn_Save) là nút mặc định của form
+            this.AcceptButton = btn_Save;
+
+            foreach (Control control in Controls)
+            {
+                if (control is Guna2Button)
+                {
+                    control.Enter += new EventHandler(this.Button_Enter);
+                    control.Leave += new EventHandler(this.Button_Leave);
+                }
+            }
+
         }
         private void btn_Save_Click(object sender, EventArgs e)
         {
@@ -84,5 +97,29 @@ namespace GUI
             }
 
         }
+
+        private void btn_Save_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btn_Save.Focus();
+                btn_Save_Click(sender, e);
+            }
+        }
+
+        private void Button_Enter(object sender, EventArgs e)
+        {
+            var button = sender as Guna2Button;
+            button.BorderColor = Color.Red; // Thiết lập màu border của button khi focus
+            button.BorderThickness = 2; // Thiết lập độ dày của border
+        }
+
+        private void Button_Leave(object sender, EventArgs e)
+        {
+            var button = sender as Guna2Button;
+            button.BorderColor = Color.Transparent; // Loại bỏ border khi mất focus
+            button.BorderThickness = 0; // Loại bỏ border khi mất focus
+        }
+
     }
 }

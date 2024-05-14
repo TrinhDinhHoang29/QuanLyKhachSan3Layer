@@ -33,37 +33,6 @@ namespace GUI
             return nv.getDataAllByUserName(this.userName).Rows[0];
         }
 
-        private void btn_DanhSachQuanLy_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void uC_BaoCaoThongKe1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btn_BaoCaoThongKe_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label31_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_QuanLyNhanVien_Click(object sender, EventArgs e)
         {
@@ -72,7 +41,7 @@ namespace GUI
                 if (row[3].ToString() == "Accounts permission")
                 {
                     Form frm_QuanLiNhanVien = new Frm_QuanLyNhanVien(userName);
-                    frm_QuanLiNhanVien.Show();
+                    frm_QuanLiNhanVien.ShowDialog();
                     return;
                 }
             }
@@ -88,7 +57,7 @@ namespace GUI
                 if (row[3].ToString() == "Customers permission")
                 {
                     Form frm_QuanLiKhachHang = new Frm_QuanLyKhachHang();
-                    frm_QuanLiKhachHang.Show();
+                    frm_QuanLiKhachHang.ShowDialog();
                     return;
                 }
             }
@@ -103,7 +72,7 @@ namespace GUI
                 if (row[3].ToString() == "Services permission")
                 {
                     Form frm_QuanLyDichVu = new Frm_QuanLyTienIch();
-                    frm_QuanLyDichVu.Show();
+                    frm_QuanLyDichVu.ShowDialog();
                     return;
                 }
             }
@@ -118,7 +87,7 @@ namespace GUI
                 if (row[3].ToString() == "Rooms permission")
                 {
                     Form frm_QuanLyPhong = new Frm_QuanLyPhong();
-                    frm_QuanLyPhong.Show();
+                    frm_QuanLyPhong.ShowDialog();
                     return;
                 }
             }
@@ -129,7 +98,7 @@ namespace GUI
         private void btn_ThongKeDanhThu_Click(object sender, EventArgs e)
         {
             Form frm_ThongKeDanhThu = new Frm_ThongKeDoanhThu();
-            frm_ThongKeDanhThu.Show();
+            frm_ThongKeDanhThu.ShowDialog();
         }
 
         private void Frm_QuanLyKhachSan_Load(object sender, EventArgs e)
@@ -296,13 +265,13 @@ namespace GUI
             Button button = sender as Button;
             DataRow bookingRow = bookingsBus.getDataByIdRoomAndCurrentDate(int.Parse(button.Text.Split(' ')[1]).ToString()).Rows[0];
             Form hoaDon = new Frm_HoaDon(bookingRow[1].ToString());
-            hoaDon.Show();
+            hoaDon.ShowDialog();
         }
         public void room_click1(object sender, EventArgs e)
         {
 
             Form phieuDatPhong = new Frm_PhieuDatPhong(userName);
-            phieuDatPhong.Show();
+            phieuDatPhong.ShowDialog();
         }
         public Button buttonPagination(int toaDoX, int toaDoY, int text)
         {
@@ -367,7 +336,7 @@ namespace GUI
                 if (row[3].ToString() == "Management permission")
                 {
                     Form frm_QuanLiTrangThai = new Frm_Roles();
-                    frm_QuanLiTrangThai.Show();
+                    frm_QuanLiTrangThai.ShowDialog();
                     return;
                 }
             }
@@ -378,7 +347,7 @@ namespace GUI
         private void btn_DatPhong_Click(object sender, EventArgs e)
         {
             Form frm_DatPhong = new Frm_PhieuDatPhong(this.userName);
-            frm_DatPhong.Show();
+            frm_DatPhong.ShowDialog();
         }
 
         private void updateStatus()
@@ -430,14 +399,14 @@ namespace GUI
                 return;
             }
             Form frm_DangNhap = new Frm_DangNhap();
-            frm_DangNhap.Show();
+            frm_DangNhap.ShowDialog();
             this.Hide(); // Ẩn form hiện tại thay vì đóng nó.
         }
 
         private void btn_DoiMatKhau_Click(object sender, EventArgs e)
         {
             Frm_DoiMatKhau frm_DoiMatKhau = new Frm_DoiMatKhau();
-            frm_DoiMatKhau.Show();
+            frm_DoiMatKhau.ShowDialog();
         }
 
         private void btn_TatCaPhong_Click(object sender, EventArgs e)
@@ -522,7 +491,7 @@ namespace GUI
 
 
             Form frmThanhToan = new Frm_ThanhToan();
-            frmThanhToan.Show();
+            frmThanhToan.ShowDialog();
         }
 
         private void tabControl_DrawItem(object sender, DrawItemEventArgs e)
@@ -539,7 +508,12 @@ namespace GUI
         private void btn_ThongKeHoaDon_Click(object sender, EventArgs e)
         {
             Frm_ThongKePhong frm_ThongKePhong = new Frm_ThongKePhong();
-            frm_ThongKePhong.Show();
+            frm_ThongKePhong.ShowDialog();
+        }
+
+        private void Frm_QuanLyKhachSan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
