@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using BLL;
+using System.IO;
+
 namespace GUI
 {
     public partial class Frm_HoaDon : Form
@@ -20,10 +22,12 @@ namespace GUI
         private KhachHangBUS khachHangBus = new KhachHangBUS();
         private string maHoaDon;
         private bool checkPaid=false;
+
         public Frm_HoaDon(string maHoaDon)
         {
             InitializeComponent();
             this.maHoaDon = maHoaDon;
+            
 
         }
 
@@ -128,9 +132,31 @@ namespace GUI
 
         private void btn_XacNhan_Click(object sender, EventArgs e)
         {
-            bookingsBus.updateStatusById(int.Parse(maHoaDon), "Paid");
-            MessageBox.Show("Thanh toán thành công !!", "Thông báo");
-            this.Close();
+            DialogResult result = MessageBox.Show("Yes để thanh toán !", "Thông báo",MessageBoxButtons.YesNo);
+            if(result == DialogResult.Yes)
+            {
+                txt_quantity.Visible = false;
+                btn_Sua.Visible = false;
+                btn_XacNhan.Visible = false;
+                lb_mes.Visible = true;
+                bookingsBus.updateStatusById(int.Parse(maHoaDon), "Paid");
+                MessageBox.Show("Thanh toán thành công !!", "Thông báo");
+                string folderPath = @"D:\InvoiceImages";
+
+                // Kiểm tra và tạo thư mục nếu chưa tồn tại
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                // Đường dẫn file bao gồm thư mục và tên file
+                string filePath = Path.Combine(folderPath, $"invoice_image_{this.maHoaDon}.png");
+
+                // Lưu hình ảnh của form hiện tại
+                this.SaveInvoiceAsImage(filePath);
+                this.Close();
+
+            }
 
 
         }
@@ -146,6 +172,19 @@ namespace GUI
             {
                 e.Handled = true;
             }
+        }
+        public void SaveInvoiceAsImage(string filePath)
+        {
+            // Tạo một Bitmap với kích thước của form
+            using (Bitmap bitmap = new Bitmap(this.Width, this.Height))
+            {
+                // Vẽ form lên bitmap
+                this.DrawToBitmap(bitmap, new Rectangle(0, 0, this.Width, this.Height));
+
+                // Lưu bitmap ra file
+                bitmap.Save(filePath);
+            }
+
         }
     }
 }
